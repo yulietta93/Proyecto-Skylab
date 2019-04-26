@@ -1,44 +1,40 @@
 import React, { Component } from "react";
-import HomeBackground from "./HomeBackground.jpg";
-import logo from "./logo-blanco.svg";
-import "./index.css";
+import { BrowserRouter as Router,Route, Switch } from "react-router-dom";
+
+import Home from "../../pages/Home";
+import Habitaciones from "../../pages/Habitaciones";
+import Habitacion01 from "../../pages/Habitacion01";
+import Habitacion02 from "../../pages/Habitacion02";
+import Habitacion03 from "../../pages/Habitacion03";
+import Ofertas from "../../pages/Ofertas";
+import Servicios from "../../pages/Servicios";
 
 class App extends Component {
   render() {
     return (
-      <div class="container-home">
-        <img
-          src={HomeBackground}
-          alt="background"
-          width="100%"
-          className="background-home"
-        />
-        <img src={logo} alt="logotipo" width="100%" className="logo" />
+      <div className="routes">
+        <Router>
 
-        <div className="texto-cabecera">
-          <h1>
-            Welcome to <br />
-            your news home
-          </h1>
-          <span className="slogan-h1">Slogan, slogan slogan ipsum</span>
-          <span className="discover">Discover nature</span>
-          <span className="scroll"> Scroll more</span>
-          <span className="slogan-vertical"> Slogan, slogan slogan ipsum</span>
-        </div>
-        <div class ="container-body">
-        <div className="about">
-          <h2>
-            What's <br />
-            NN?
-          </h2>
-          <p className="text-about">
-            Ark-Shelters are prefabricated, fully finished, modular <br/>units. By a
-            lake, deep in a forest, at the edge of a field,<br/> a steep mountain
-            hill or your<br/>city rooftop! Make your dream come true, installed in
-            one day,<br/> no extra on-site work.
-          </p>
-        </div>
-      </div>
+          <Switch>
+            <Route path="/" component={Home} />
+            <Route path="/habitaciones" component={Habitaciones} />
+            <Route
+              path="/habitaciones/:habitaciones01"
+              component={Habitacion01}
+            />
+            <Route
+              path="/habitaciones/:habitaciones02"
+              component={Habitacion02}
+            />
+            <Route
+              path="/habitaciones/:habitaciones03"
+              component={Habitacion03}
+            />
+            <Route path="/ofertas" component={Ofertas} />
+            <Route path="/servicios" component={Servicios} />
+          </Switch>
+
+        </Router>
       </div>
     );
   }
