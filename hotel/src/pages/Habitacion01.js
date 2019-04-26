@@ -6,7 +6,7 @@ export default class Habitacion01 extends Component {
       return (
         <div>
           Habitacion01
-          <Link to="/habitaciones/:habitaciones01">Habitacion Junior</Link>
+          <Link to="/habitaciones/:habitacion01">Habitacion Junior</Link>
         </div>
       )
     }

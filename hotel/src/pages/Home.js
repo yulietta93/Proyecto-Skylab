@@ -10,13 +10,18 @@ class App extends Component {
   render() {
     return (
       <div class="container-home">
+      <img src={logo} alt="logotipo" width="100%" className="logo" />
+        <Link to="/">Home</Link>
+      <Link to="/habitaciones">Habitaciones</Link>
+      <Link to="/ofertas">Ofertas </Link>
+      <Link to="/servicios">Servicios</Link>
         <img
           src={HomeBackground}
           alt="background"
           width="100%"
           className="background-home"
         />
-        <img src={logo} alt="logotipo" width="100%" className="logo" />
+        
 
         <div className="texto-cabecera">
           <h1>
@@ -37,13 +42,12 @@ class App extends Component {
           <p className="text-about">
             Ark-Shelters are prefabricated, fully finished, modular <br/>units. By a
             lake, deep in a forest, at the edge of a field,<br/> a steep mountain
-            hill or your<br/>city rooftop! Make your dream come true, installed in
+            hill or yourcity rooftop! Make<br/> your dream come true, installed in
             one day,<br/> no extra on-site work.
           </p>
         </div>
       </div>
-      <Link to="/">Home</Link>
-      <Link to="/habitaciones">habitaciones</Link>
+    
       </div>
     );
   }

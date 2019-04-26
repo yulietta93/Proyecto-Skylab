@@ -14,26 +14,15 @@ class App extends Component {
     return (
       <div className="routes">
         <Router>
-
           <Switch>
-            <Route path="/" component={Home} />
+          <Route path="/habitaciones/:habitacion01"component={Habitacion01}/>
+          <Route path="/habitaciones/:habitacion02" component={Habitacion02}/>
+            <Route path="/habitaciones/:habitacion03" component={Habitacion03}/>
             <Route path="/habitaciones" component={Habitaciones} />
-            <Route
-              path="/habitaciones/:habitaciones01"
-              component={Habitacion01}
-            />
-            <Route
-              path="/habitaciones/:habitaciones02"
-              component={Habitacion02}
-            />
-            <Route
-              path="/habitaciones/:habitaciones03"
-              component={Habitacion03}
-            />
             <Route path="/ofertas" component={Ofertas} />
             <Route path="/servicios" component={Servicios} />
+            <Route path="/" component={Home} />
           </Switch>
-
         </Router>
       </div>
     );

@@ -50,40 +50,37 @@ margin-top:-75%;
 .container-body{
     display: grid;
     width: 100%;
-    grid-template-columns: 360px 1fr;    
+ /*   grid-template-columns: 360px 1fr;    
     grid-column-gap: 30px;
-    align-content: center;
+    align-content: center;*/
 
 }
 
+/*
 .about{
     display: grid;
   width: 100%;
   grid-template-columns: 360px 1fr;                                                                                                                                                                      
 }
+*/
 h2{
     font-size: 30px;
-    margin-top:130%;
+    margin-top:35%;
     display: flex;
     justify-content: center;
-    margin-left: 60%;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 360px 1fr;    
-    column-gap: 10%;
+    margin-left: -40%;
+ 
 }
 
 .text-about{
     display: grid;
     font-size: 25px;
     line-height: 30px;
-    margin-top:80%;
-    margin-left:10%;
+    margin-top:-6.5%;
+    margin-left:13%;
     display: flex;
     justify-content: center;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 360px 4fr;    
+   
 
 
 

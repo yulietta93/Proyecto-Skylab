@@ -5,7 +5,7 @@ export default class Habitacion01 extends Component {
     render() {
       return (
         <div>
-          Ofertas
+          servicios
           <Link to="/servicios"> Servicios</Link>
         </div>
       )
