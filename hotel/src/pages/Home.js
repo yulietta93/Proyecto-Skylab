@@ -4,6 +4,8 @@ import logo from "./logo-blanco.svg";
 import "./index.css";
 import { Link } from 'react-router-dom';
 
+import ListRoomsHome from '../components/ListRoomsHome';
+
   
 
 class App extends Component {
@@ -46,6 +48,7 @@ class App extends Component {
             one day,<br/> no extra on-site work.
           </p>
         </div>
+        <ListRoomsHome/>
       </div>
     
       </div>

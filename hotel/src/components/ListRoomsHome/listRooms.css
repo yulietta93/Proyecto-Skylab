@@ -1,0 +1,11 @@
+.image-room-home{
+    background-size: contain;
+    width: 20%;
+    max-height: 30%;
+    margin-left: 25%;
+}
+
+.titulo-list-room{
+    margin-top:50%;
+    color:red;
+}
