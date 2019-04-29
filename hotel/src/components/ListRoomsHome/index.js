@@ -1,25 +1,25 @@
-import React, { Component } from 'react'
-import habitacion from "./habitacion.jpg";
-
-import "./listRooms.css";
+import React, { Component } from "react";
+//import habitacion from "./habitacion.jpg"; //imagen
 
 
-export default class ListRoomsHome extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
+const ListRoomsHome = (props) => (
+  <div className="rooms-container">
   
-    }
-  }
+     <div className="image-rooms-home">
+        <img className="image-rooms" src={props.imagenUrl} />
+      </div>
+      <div className="content">
+         <h3>{props.title} </h3>
+         <p>{props.description} </p>
+         <img className="picto" src={props.picto} />
+         <img className="picto2" src={props.picto2} />
+         <img className="picto3" src={props.picto3} />
+         <span>{props.price}</span>
+      </div>
+  </div>);
 
-  render(){
-      return(
-        <h2 className="titulo-list-room">Find your room in a small <br/> oasis in the middle of <br/> nature </h2>,
-        <img src ={habitacion} alt="habitacion"  className="image-room-home" />
-      )
-  }
-}
+export default ListRoomsHome;
 
 
-// Añadir Botones con Funciones
+
+

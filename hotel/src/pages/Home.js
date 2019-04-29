@@ -1,14 +1,19 @@
 import React, { Component } from "react";
-import HomeBackground from "./HomeBackground.jpg";
-import logo from "./logo-blanco.svg";
-import "./index.css";
 import { Link } from 'react-router-dom';
+import "./index.css";
 
-import ListRoomsHome from '../components/ListRoomsHome';
+//Imagenes
+import logo from "./logo-blanco.svg";
+import HomeBackground from "./HomeBackground.jpg";
 
-  
 
-class App extends Component {
+//componentes
+import RoomsHome from '../components/ListRoomsHome/RoomsHome';
+
+
+class Home extends Component {
+
+
   render() {
     return (
       <div class="container-home">
@@ -31,8 +36,7 @@ class App extends Component {
             your news home
           </h1>
           <span className="slogan-h1">Slogan, slogan slogan ipsum</span>
-          <span className="discover">Discover nature</span>
-          <span className="scroll"> Scroll more</span>
+          <span className="discover">Discover nature <br/> Scroll more</span>
           <span className="slogan-vertical"> Slogan, slogan slogan ipsum</span>
         </div>
         <div class ="container-body">
@@ -48,7 +52,7 @@ class App extends Component {
             one day,<br/> no extra on-site work.
           </p>
         </div>
-        <ListRoomsHome/>
+        <RoomsHome/>
       </div>
     
       </div>
@@ -56,4 +60,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;
