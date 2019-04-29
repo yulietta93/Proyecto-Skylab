@@ -9,6 +9,7 @@ import HomeBackground from "./HomeBackground.jpg";
 
 //componentes
 import RoomsHome from '../components/ListRoomsHome/RoomsHome';
+import PictosHome from '../components/Pictos/PictosHome';
 
 
 class Home extends Component {
@@ -53,6 +54,7 @@ class Home extends Component {
           </p>
         </div>
         <RoomsHome/>
+        <PictosHome/>
       </div>
     
       </div>
