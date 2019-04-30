@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router,Route, Switch } from "react-router-dom";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 import Home from "../../pages/Home";
 import Habitaciones from "../../pages/Habitaciones";

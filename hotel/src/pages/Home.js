@@ -10,6 +10,7 @@ import HomeBackground from "./HomeBackground.jpg";
 //componentes
 import RoomsHome from '../components/ListRoomsHome/RoomsHome';
 import PictosHome from '../components/Pictos/PictosHome';
+import Test from '../components/Slider/Test';
 
 
 class Home extends Component {
@@ -55,6 +56,8 @@ class Home extends Component {
         </div>
         <RoomsHome/>
         <PictosHome/>
+        <Test/>
+      
       </div>
     
       </div>

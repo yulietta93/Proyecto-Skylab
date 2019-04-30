@@ -62,7 +62,7 @@ export default class RoomsHome extends Component {
             price={element.price}
           />
         ))}
-        <button onClick=""> Book now </button>
+        <button onClick=""> Book now </button> 
         <button onClick=""> Book now </button>
         <button onClick=""> Book now </button>
       </div>

@@ -1,0 +1,46 @@
+/*.container-slider{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left:2%;
+    background-color: red;
+    color: white;
+}*/
+
+/*Todo el slider*/
+.rcs_sliderSet{
+    background-color: white;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left:2%;
+
+}
+
+/*Caja que contiene imagenes*/
+.rcs_sliderBox{
+    background-color: white;
+    border: "1px solid #e1e4e8",
+
+}
+
+/*Conjunto de botones*/
+.rcs_buttonSet{
+    background-color: white;
+}
+
+/*Boton individual*/
+.rcs_buttonWrapper{
+    background-color: transparent;
+}
+
+/*Image */
+.rcs_slideCon{
+
+}
+
+/*Botones Slider*/
+
+.rcs_dotsSet{
+display: none;
+}
