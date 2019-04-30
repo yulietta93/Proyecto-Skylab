@@ -4,12 +4,14 @@
     display: flex;
     justify-content: center;
     margin-left:3.4%;
+  
 }
 
 /*Caja que contiene imagenes*/
 .rcs_sliderBox {
-    width: 30%;
+    width: 40% ;
     background-color: white !important;
+   
 }
 
 /*Conjunto de botones*/
@@ -38,6 +40,7 @@ border-color: transparent !important;
 /*Imagen individual*/
 .itemWrapper{
     background-color: transparent;
+  
 }
 
 /*Botones Slider*/
