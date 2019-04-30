@@ -82,3 +82,13 @@ h2{
     justify-content: center;
 }
 
+.text-gallery{
+    display: grid;
+    font-size: 16px;
+    line-height: 19px;
+   /* display: flex;
+    justify-content: center;*/
+    margin-left:9%;
+
+}
+

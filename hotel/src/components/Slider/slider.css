@@ -1,42 +1,43 @@
-/*.container-slider{
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    margin-left:2%;
-    background-color: red;
-    color: white;
-}*/
-
 /*Todo el slider*/
 .rcs_sliderSet{
-    background-color: white;
-    width: 30%;
+    width: 20% !important;
     display: flex;
     justify-content: center;
-    margin-left:2%;
-
+    margin-left:3.4%;
 }
 
 /*Caja que contiene imagenes*/
-.rcs_sliderBox{
-    background-color: white;
-    border: "1px solid #e1e4e8",
-
+.rcs_sliderBox {
+    width: 30%;
+    background-color: white !important;
 }
 
 /*Conjunto de botones*/
 .rcs_buttonSet{
-    background-color: white;
+    background-color: transparent ;
+
+}
+
+.rcs_arrowBtn {
+    background-color:transparent !important;
+    color: black !important;
+
 }
 
 /*Boton individual*/
 .rcs_buttonWrapper{
     background-color: transparent;
+ 
 }
 
 /*Image */
 .rcs_slideCon{
+border-color: transparent !important;
+}
 
+/*Imagen individual*/
+.itemWrapper{
+    background-color: transparent;
 }
 
 /*Botones Slider*/
@@ -44,3 +45,4 @@
 .rcs_dotsSet{
 display: none;
 }
+

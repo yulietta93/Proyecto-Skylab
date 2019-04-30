@@ -2,12 +2,12 @@
 //MENU
 //IDIOMAS CON REDUX
 
-/*import React, {Component} from 'react';
+import React, {Component} from 'react';
 
-class Header extends Component {
+export default class Footer extends Component{
     render() {
       return (
-      
+      <h2>holi</h2>
         );
     }
-}*/
+}

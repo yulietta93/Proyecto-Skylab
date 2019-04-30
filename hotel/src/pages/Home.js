@@ -10,7 +10,8 @@ import HomeBackground from "./HomeBackground.jpg";
 //componentes
 import RoomsHome from '../components/ListRoomsHome/RoomsHome';
 import PictosHome from '../components/Pictos/PictosHome';
-import Test from '../components/Slider/Test';
+import Gallery from '../components/Slider/Gallery';
+import Footer from '../components/Footer/Footer';
 
 
 class Home extends Component {
@@ -56,8 +57,10 @@ class Home extends Component {
         </div>
         <RoomsHome/>
         <PictosHome/>
-        <Test/>
-      
+        <h2>Find your room in a <br/>small oasis in the <br/> middle of nature</h2>
+        <Gallery/>
+        <p className="text-gallery"> A building with roots in the textile industry, converted into a <br/> hotel. A hotel situated above a passage frequented by <br/>merchants, neighbors and visitors. We believe in the evolution <br/>of spaces and respect for the surrounding areas.</p>
+        <Footer/>
       </div>
     
       </div>

@@ -53,9 +53,9 @@ export default class RoomsHome extends Component {
         ,
         {this.state.list.map(element => (
           <ListRoomsHome
-            imagenUrl={element.imagenUrl}
+            imagenUrl={element.imagenUrl} className="image-rooms"
             title={element.title}
-            description={element.description}
+            description={element.description} 
             picto={element.picto}
             picto2={element.picto2}
             picto3={element.picto3}
