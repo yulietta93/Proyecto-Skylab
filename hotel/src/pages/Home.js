@@ -20,7 +20,7 @@ class Home extends Component {
         <div className="container">
           <div className="row align-self-center">
             <div className="tittleAbout col-2">
-              <h2>
+              <h2 className="col-3">
                 What's <br /> NN?
               </h2>
             </div>
@@ -36,15 +36,15 @@ class Home extends Component {
 
         <RoomsHome />
         <PictosHome />
-        <h2>
-          Find your room in a <br />
+        <h2 className="galery-text">
+          Galery Find your room in a <br />
           small oasis in the <br /> middle of nature
         </h2>
 
-        {/*<Gallery />*/}
+        <Gallery />
 
         <p className="text-gallery">
-          {" "}
+         
           A building with roots in the textile industry, converted into a <br />{" "}
           hotel. A hotel situated above a passage frequented by <br />
           merchants, neighbors and visitors. We believe in the evolution <br />

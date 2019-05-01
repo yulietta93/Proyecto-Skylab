@@ -1,9 +1,19 @@
+@font-face {
+    font-family: "Circular-Book";
+    font-style: normal;
+    font-weight: normal;
+    src: local("CircularStd-Book"),
+      url(../../fonts/CircularStd-Book.otf) format("otf");
+  }
+
+
+
 /*Todo el slider*/
 .rcs_sliderSet{
-    width: 20% !important;
+    width: 60% !important;
     display: flex;
     justify-content: center;
-    margin-left:3.4%;
+    margin-left:20%;
   
 }
 

@@ -23,14 +23,16 @@ export default class Header extends Component {
           <img src={HomeBackground} alt="background" className="background-home"/>
 
           <div className="texto-cabecera">
+         
+     
             <h1>
               Welcome to <br />
-              your news home
+              your new home
             </h1>
-            <span className="slogan-h1">Slogan, slogan slogan ipsum</span>
-            <span className="discover">
-              Discover nature <br /> Scroll more
-            </span>
+            <span className="slogan-h1">SloganH11 H1, slogan slogan ipsum</span>
+            {/*<span className="discover" >Discover nature  <br/>Scroll more </span>*/}
+           
+            
             <span className="slogan-vertical">
               Slogan, slogan slogan ipsum
             </span>

@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import ListRoomsHome from "./index.js";
+import "./listRooms.scss";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default class RoomsHome extends Component {
   constructor() {
@@ -46,26 +48,33 @@ export default class RoomsHome extends Component {
 
   render() {
     return (
-      <div className="Container">
-        <h2 className="titulo-list-room">
-          Find your room in a small <br /> oasis in the middle of <br /> nature{" "}
-        </h2>
-        
-        {this.state.list.map(element => (
-          <ListRoomsHome
-            imagenUrl={element.imagenUrl} className="image-rooms"
-            title={element.title}
-            description={element.description} 
-            picto={element.picto}
-            picto2={element.picto2}
-            picto3={element.picto3}
-            price={element.price}
-          />
-        ))}
-        <button onClick=""> Book now </button> 
-        <button onClick=""> Book now </button>
-        <button onClick=""> Book now </button>
-      </div>
+      <div className="contenedor">
+
+         
+            <h2 className="titulo-list-room">
+              Find your room in a small <br /> oasis in the middle of <br />{" "}
+              nature
+            </h2>
+
+
+            <div className="list-room-content">
+          {this.state.list.map(element => (
+            <ListRoomsHome
+              imagenUrl={element.imagenUrl}
+              className="image-rooms"
+              title={element.title}
+              description={element.description}
+              picto={element.picto}
+              picto2={element.picto2}
+              picto3={element.picto3}
+              price={element.price}
+            />
+          ))}
+          </div>
+          </div>
+
+
+      
     );
   }
 }

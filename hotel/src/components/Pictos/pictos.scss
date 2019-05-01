@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Circular-Black";
+    font-style: normal;
+    font-weight: normal;
+    src: local("CircularStd-Black"),
+      url(../../fonts/CircularStd-Black.otf) format("otf");
+  }
+
+.container-pictos{
+
+
+
+}
+
+.titulo-list-picto{
+    font-family: "Circular-Black";
+    font-size: 20px;
+    margin-top:5%;
+
+}
+
+.pictos-list{
+    margin-top:4%;
+    margin-left: 40%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+
+}
+
+.pictos-list2{
+    margin-top:4%;
+    margin-left: 11%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+
+}
+
+
+.picto-list-1, .picto-list-2, .picto-list-3, .picto-list-4,
+.picto-list-5, .picto-list-6, .picto-list-7, .picto-list-8{
+    padding-right: 7%;
+    width: 12%;
+}

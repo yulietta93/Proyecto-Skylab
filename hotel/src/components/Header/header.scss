@@ -15,6 +15,13 @@
 }
 
 
+.logo {
+    width: 4%;
+    margin-left: 5%;
+    margin-top: -31%;
+    position: absolute;
+  }
+
 .background-home {
   background-size: cover;
   width: 1420px;
@@ -28,42 +35,33 @@ h1 {
   line-height: 70px;
   margin-left: 4%;
   font-family: "Circular-Black";
+  position:relative;
 }
 
 .slogan-h1 {
-  font-family: "Circular-Book";
-  color: white;
-  margin-left: 33%;
-  margin-top: -7%;
-  font-size: 16px;
+    font-family: "Circular-Book";
+    color: white;
+    margin-left: 27%;
+    margin-top: -30%;
+    font-size: 16px;
 }
+  
 
-.discover {
-  color: white;
-  font-size: 20px;
-  margin-top: 60%;
-  margin-left: -40%;
-}
-
-.scroll {
-  color: gainsboro;
-  font-size: 20px;
-  margin-top: 40%;
-}
+.discover{
+    color: white;
+    font-family: "Circular-Book";
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 2%;
+  }
 
 .slogan-vertical {
   font-family: "Circular-Book";
-  font-size: 1px;
+  font-size: 16px;
   color: white;
   writing-mode: vertical-lr;
   margin-left: 95%;
-  margin-top: -30%;
-}
-
-.logo {
-  width: 4%;
-  margin-left: 5%;
-  margin-top: -65%;
+  margin-top: -40%;
 }
 
 .container-body {
