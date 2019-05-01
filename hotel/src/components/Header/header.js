@@ -3,9 +3,11 @@
 //IDIOMAS CON REDUX
 
 import React, {Component} from 'react';
+import "./header.scss";
+
 //Imagenes
-import logo from "./logo-blanco.svg";
-import HomeBackground from "./HomeBackground.jpg";
+import logo from "../../image/logo-blanco.svg";
+import HomeBackground from "../../image/HomeBackground.jpg";
 
 
 //<Link to="/">Home</Link>
@@ -18,11 +20,8 @@ export default class Header extends Component {
     return (
 
   <div className="cabecera">
-          <img
-            src={HomeBackground}
-            alt="background"
-            className="background-home"
-          />
+          <img src={HomeBackground} alt="background" className="background-home"/>
+
           <div className="texto-cabecera">
             <h1>
               Welcome to <br />

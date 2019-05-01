@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Circular-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Black"),
+    url(../../fonts/CircularStd-Black.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Circular-Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Book"),
+    url(../../fonts/CircularStd-Book.otf) format("otf");
+}
+
+
+.background-home {
+  background-size: cover;
+  width: 1420px;
+  height: 690px;
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  margin-top: -30%;
+  line-height: 70px;
+  margin-left: 4%;
+  font-family: "Circular-Black";
+}
+
+.slogan-h1 {
+  font-family: "Circular-Book";
+  color: white;
+  margin-left: 33%;
+  margin-top: -7%;
+  font-size: 16px;
+}
+
+.discover {
+  color: white;
+  font-size: 20px;
+  margin-top: 60%;
+  margin-left: -40%;
+}
+
+.scroll {
+  color: gainsboro;
+  font-size: 20px;
+  margin-top: 40%;
+}
+
+.slogan-vertical {
+  font-family: "Circular-Book";
+  font-size: 1px;
+  color: white;
+  writing-mode: vertical-lr;
+  margin-left: 95%;
+  margin-top: -30%;
+}
+
+.logo {
+  width: 4%;
+  margin-left: 5%;
+  margin-top: -65%;
+}
+
+.container-body {
+  display: grid;
+  width: 100%;
+  /*   grid-template-columns: 360px 1fr;    
+    grid-column-gap: 30px;
+    align-content: center;*/
+}
