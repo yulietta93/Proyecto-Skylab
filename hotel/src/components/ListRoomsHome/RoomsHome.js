@@ -50,7 +50,7 @@ export default class RoomsHome extends Component {
         <h2 className="titulo-list-room">
           Find your room in a small <br /> oasis in the middle of <br /> nature{" "}
         </h2>
-        ,
+        
         {this.state.list.map(element => (
           <ListRoomsHome
             imagenUrl={element.imagenUrl} className="image-rooms"

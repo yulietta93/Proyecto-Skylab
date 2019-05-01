@@ -35,13 +35,15 @@
 /*Image */
 .rcs_slideCon{
 border-color: transparent !important;
+
 }
 
 /*Imagen individual*/
-.itemWrapper{
+.itemWrapper[style]{
     background-color: transparent;
-  
+    max-width: 30% !important;
 }
+
 
 /*Botones Slider*/
 
