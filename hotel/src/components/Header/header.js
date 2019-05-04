@@ -15,14 +15,15 @@ import HomeBackground from "../../image/HomeBackground.jpg";
 //<Link to="/ofertas">Ofertas </Link>
 //<Link to="/servicios">Servicios</Link>
 
+
+
 export default class Header extends Component {
   render() {
     return (
 
   <div className="cabecera">
-          <img src={HomeBackground} alt="background" className="background-home"/>
-
-          <div className="texto-cabecera">
+<iframe src="https://player.vimeo.com/video/120909442?autoplay=1&color=ffffff&title=0&byline=0&portrait=0" width="1900" height="700" frameborder="0" allow="autoplay; fullscreen" allowfullscreen className="video"></iframe>        
+  <div className="texto-cabecera">
          
      
             <h1>

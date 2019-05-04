@@ -1,20 +1,40 @@
 @font-face {
-    font-family: "Circular-Black";
-    font-style: normal;
-    font-weight: normal;
-    src: local("CircularStd-Black"),
-      url(../../fonts/CircularStd-Black.otf) format("otf");
-  }
+  font-family: "Circular-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Black"),
+    url(../../fonts/CircularStd-Black.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Circular-Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Book"),
+    url(../../fonts/CircularStd-Book.otf) format("otf");
+}
+
+.container-rooms-home {
+ display: grid;
+  /*grid-template-columns: 119px 119px 119px 119px 119px 119px 119px 119px 119px 119px 119px 119px;*/
+  grid-auto-rows: 300px;
+  grid-auto-flow: column;
+  grid-auto-columns: 336px;
+
+}
+
+.image-rooms {
+  display: grid;
+  background-size: contain;
+  width: 180px;
+  height: 220px;
   
-  @font-face {
-    font-family: "Circular-Book";
-    font-style: normal;
-    font-weight: normal;
-    src: local("CircularStd-Book"),
-      url(../../fonts/CircularStd-Book.otf) format("otf");
-  }
+}
 
 
+
+
+/*
 .titulo-list-room{
     margin-top:7%;
     font-size: 22px;
@@ -35,4 +55,4 @@
     flex-direction: row;
     justify-content: flex-start;
     align-content: center;
-}
+}*/
