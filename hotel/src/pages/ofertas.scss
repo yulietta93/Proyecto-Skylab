@@ -13,24 +13,12 @@
   src: local("CircularStd-Book"),
     url(../fonts/CircularStd-Book.otf) format("otf");
 }
-@font-face {
-    font-family: "Circular-Black";
-    font-style: normal;
-    font-weight: normal;
-    src: local("CircularStd-Black"),
-      url(../fonts/CircularStd-Black.otf) format("otf");
-  }
-  
-  @font-face {
-    font-family: "Circular-Book";
-    font-style: normal;
-    font-weight: normal;
-    src: local("CircularStd-Book"),
-      url(../fonts/CircularStd-Book.otf) format("otf");
-  }
-  
+
   .offer-left {
       margin-left:20%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
   
   }
   
@@ -60,6 +48,7 @@
 
   .offer-right {
     margin-left:20%;
+    margin-top:-40%;
 
 }
 
@@ -78,13 +67,14 @@ width: 350px;
  margin-top:-9%;
 }
 
-.ddescription-offer-right {
+.description-offer-right {
   font-family: "Circular-Book";
   font-size:16px;
   width: 400px;
-  margin-top:-12%;
-  margin-left: 50%;
+  margin-top:-10%;
+  margin-left: 43%;
 }
 
-.button-offer-left {
+.button-offer-right{
+    margin-left:43%;
 }

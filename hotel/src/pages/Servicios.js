@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./home.scss";
+import "./servicios.scss";
 import "bootstrap/dist/css/bootstrap.css";
 
 //image
@@ -17,8 +17,8 @@ export default class Servicios extends Component {
       <div>
         <Header />
 
-        <div className="section01">
-            <h2> Discover the real <br /> ipsum nature!</h2>
+        <div className="section01-service">
+            <h2 className="title-service-01"> Discover the real <br /> ipsum nature!</h2>
             <p className="text-service">
                Lorem ipsum dolor sit amet consectetur adipiscing elit nibh
                venenatis, tellus malesuada tempor curabitur iaculis ultricies nulla
@@ -26,24 +26,30 @@ export default class Servicios extends Component {
                pulvinar nisl sodales vivamus ligula, luctus vulputate tristique
                torquent curae nulla placerat mi curabitur suscipit, nostra cras
                euismod at.</p>
-          <img src={piscina} alt="img-destacado-room" className="img-destacado-room"width="20%"/>
-          <button onClick="">Boow now</button>
+          <img src={piscina} alt="img01-service" className="img01-service"/>
+          <button onClick="" className="button-service-01">Boow now</button>
         </div>
 
         <div className="section02">
-            <h2>Find your room in a <br/>small oasis in the <br/>middle of nature</h2>
-            <img src={piscina} alt="img-destacado-room2" className="img-destacado-room2"width="20%"/>
-            <img src={piscina} alt="img-destacado-room3" className="img-destacado-room3"width="20%"/>
-            <p className="text-service02">Lorem ipsum dolor sit amet consectetur adipiscing elit nibh venenatis </p>
-            <button onClick="">Boow now</button>
+            <h2 className="title-service-02">Gastronomy
+              It’s not <br />about eating,<br /> it’s about enjoying <br />every bite.</h2>
+            <img src="https://images.unsplash.com/photo-1521962347155-662d077f81e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"alt="img02-service" className="img02-service"/>
+            <img src="https://images.unsplash.com/photo-1514537099923-4c0fc7c73161?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2592&q=80"alt="img03-service" className="img03-service"/>
+            <p className="text-service02">Headed up by a Michelin star chef, our restaurant represents a firm commitment to local cuisine and Catalan products that will far exceed your expectations</p>
+            <button onClick="" className="button-service-02">Boow now</button>
         </div>
 
         <PictosHome />
 
         <div className="section03">
-          <h2>Reward yourself with a hot <br/>shower after a long day and then<br/>slide in-between the sheets of our <br/>incredible beds.</h2>
-          <img src={piscina} alt="img-destacado-room4" className="img-destacado-room4" width="20%"/>
-          <button onClick="">Boow now</button>
+          <h2 className="title-service-03">For casual meetings,<br />
+our Multi-purpose Room.</h2>
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="img01-service" className="img04-service"/>
+          <img src="https://images.unsplash.com/photo-1511376979163-f804dff7ad7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="img01-service" className="img05-service"/>
+          <p className="text-service03">
+               Lorem ipsum dolor sit amet consectetur adipiscing elit nibh
+               venenatis, tellus malesuada tempor curabitur iaculis ultricies nulla
+               lectus rutrum porttitor.</p>
         </div>
 
         <Footer />
