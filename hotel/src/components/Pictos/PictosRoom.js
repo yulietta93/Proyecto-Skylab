@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ListPictos from "./index.js";
 
+import './pictos.scss'
+
 export default class PictosRoom extends Component {
   constructor() {
     super();
@@ -24,24 +26,32 @@ export default class PictosRoom extends Component {
 
   render() {
     return (
-      <div className="Container-pictos">
+      <div className="container">
         <h2 className="titulo-list-picto">
-        Pictogramas especificos de servicios<br/> que aporta la habitacion en concreto
+        Services. <br/>Enjoy your stay with us.
         </h2>
-        
+        <div className="pictos-list">
         {this.state.listPictos.map(element => (
           <ListPictos
             picto01={element.picto01}
             picto02={element.picto02}
             picto03={element.picto03}
             picto04={element.picto04}
+   
+          />
+        ))}
+</div>
+<div className="pictos-list2">
+
+        {this.state.listPictos2.map(element => (
+          <ListPictos
             picto05={element.picto05}
             picto06={element.picto06}
             picto07={element.picto07}
             picto08={element.picto08}
-
           />
         ))}
+      </div>
       </div>
     );
   }

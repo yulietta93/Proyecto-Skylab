@@ -77,7 +77,7 @@ export default class Ofertas extends Component {
     return (
       <div>
         <Header />
-
+      <div className="contenedor-offers">
         {this.state.listLeft.map(element => (
           <OfferLeft
             title={element.title}
@@ -95,6 +95,7 @@ export default class Ofertas extends Component {
         ))}
 
         <Footer />
+      </div>
       </div>
     );
   }
