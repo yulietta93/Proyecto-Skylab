@@ -2,9 +2,13 @@ import React, { Component } from "react";
 
 const ListPictos = props => (
   <div>
+
     <img className="picto-list-1" src={props.picto01} width="7%" />
+     
 
     <img className="picto-list-2" src={props.picto02} width="7%" />
+
+    
 
     <img className="picto-list-3" src={props.picto03} width="7%"/>
 

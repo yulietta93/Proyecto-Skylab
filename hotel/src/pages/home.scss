@@ -14,38 +14,39 @@
       url(../fonts/CircularStd-Book.otf) format("otf");
   }
 
-h2{
+.about-tittle{
     font-family: "Circular-Black";
-    font-size: 15px;
-    color:black;
-}
-.galery-text, .about-tittle{
-
+    font-size: 22px;
+    margin-top:210%;
+    margin-left:-65%;
+    }
+    
+.galery-tittle{
 font-family: "Circular-Black";
-font-size: 20px;
-margin-top:5%;
-
+font-size: 22px;
+margin-top:7%;
+margin-left:-40%;
 }
 
 .textAbout{
     font-family: "Circular-Book";
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
-    margin-top:-7.4%;
+    margin-top:-6%;
     margin-left:35%;
 
 }
 
 .text-gallery{
     font-family: "Circular-Book";
+    width: 500px;
     display: grid;
     font-size: 15px;
     line-height: 19px;
     display: flex;
     justify-content: center;
-    margin-left:-3.5%;
-
-
+    margin-left:33%;
+    text-align: center;
 }
 
 .tittleAbout{

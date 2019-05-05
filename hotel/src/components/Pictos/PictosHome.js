@@ -10,18 +10,18 @@ export default class PictosHome extends Component {
       listPictos: [
         {
           picto01: "https://image.flaticon.com/icons/png/512/121/121800.png",
-          picto02: "https://image.flaticon.com/icons/png/512/121/121800.png",
-          picto03: "https://image.flaticon.com/icons/png/512/121/121800.png",
-          picto04: "https://image.flaticon.com/icons/png/512/121/121800.png",
+          picto02: "https://image.flaticon.com/icons/svg/748/748151.svg",
+          picto03: "https://image.flaticon.com/icons/svg/1653/1653798.svg",
+          picto04: "https://image.flaticon.com/icons/svg/1694/1694119.svg",
 
         },
       ],
       listPictos2: [
         {
-          picto05: "https://image.flaticon.com/icons/png/512/121/121800.png",
-          picto06: "https://image.flaticon.com/icons/png/512/121/121800.png",
-          picto07: "https://image.flaticon.com/icons/png/512/121/121800.png",
-          picto08: "https://image.flaticon.com/icons/png/512/121/121800.png",
+          picto05: "https://image.flaticon.com/icons/svg/1715/1715800.svg",
+          picto06: "https://image.flaticon.com/icons/svg/1591/1591853.svg",
+          picto07: "https://image.flaticon.com/icons/svg/1170/1170688.svg",
+          picto08: "https://image.flaticon.com/icons/svg/112/112516.svg",
         },
       ]
 
@@ -30,9 +30,9 @@ export default class PictosHome extends Component {
 
   render() {
     return (
-      <div className="container-pictos">
+      <div className="container">
         <h2 className="titulo-list-picto">
-        Pictogramas generales <br/>de servicios que aporta <br/>el hotel en general
+        Services. <br/>Enjoy your stay with us.
         </h2>
         <div className="pictos-list">
         {this.state.listPictos.map(element => (
