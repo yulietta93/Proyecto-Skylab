@@ -21,3 +21,12 @@
     margin-top: 4.1% !important;
     margin-left: 8%;
   }
+
+  @media (max-width: 375px) {
+    .mb-4, .container-content, .mt-4, .rowm, .probar{
+      margin-top: 7% !important;
+      margin-left: 5%;
+    }
+
+    
+  }

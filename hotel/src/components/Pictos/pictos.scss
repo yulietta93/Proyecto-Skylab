@@ -1,50 +1,74 @@
 @font-face {
-    font-family: "Circular-Black";
-    font-style: normal;
-    font-weight: normal;
-    src: local("CircularStd-Black"),
-      url(../../fonts/CircularStd-Black.otf) format("otf");
-  }
-
-.container{
-
-
-
+  font-family: "Circular-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Black"),
+    url(../../fonts/CircularStd-Black.otf) format("otf");
 }
 
-.titulo-list-picto{
+.titulo-list-picto {
+  font-family: "Circular-Black";
+  font-size: 20px;
+  margin-top: 5%;
+  margin-left: -49%;
+}
+
+.pictos-list {
+  margin-top: 6%;
+  margin-left: 43%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.pictos-list2 {
+  margin-top: 4%;
+  margin-left: 14%;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+.picto-list-1,
+.picto-list-2,
+.picto-list-3,
+.picto-list-4,
+.picto-list-5,
+.picto-list-6,
+.picto-list-7,
+.picto-list-8 {
+  padding-right: 7%;
+  width: 12%;
+}
+
+@media (max-width: 375px) {
+  .titulo-list-picto {
     font-family: "Circular-Black";
     font-size: 20px;
-    margin-top:5%;
-    margin-left:-49%;
+    margin-top: 5%;
+    margin-left: -19%;
+  }
 
-}
+  .pictos-list {
+    margin-left: 35%;
+  }
 
-.pictos-list{
-    margin-top:6%;
-    margin-left: 43%;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
-
-}
-
-.pictos-list2{
-    margin-top:4%;
-    margin-left: 14%;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-content: center;
-
-}
-
-
-.picto-list-1, .picto-list-2, .picto-list-3, .picto-list-4,
-.picto-list-5, .picto-list-6, .picto-list-7, .picto-list-8{
-    padding-right: 7%;
-    width: 12%;
+  .pictos-list2 {
+    margin-top: -5%;
+    margin-left: 35%;
+  }
+  .picto-list-1,
+  .picto-list-2,
+  .picto-list-3,
+  .picto-list-4,
+  .picto-list-5,
+  .picto-list-6,
+  .picto-list-7,
+  .picto-list-8 {
+    padding-right: 11%;
+    width: 23%;
+  }
 }

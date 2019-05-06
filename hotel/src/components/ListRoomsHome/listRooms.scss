@@ -15,8 +15,7 @@
 }
 
 .container-rooms-home {
-  margin-top:25%;
-
+  margin-top: 25%;
   width: 20%;
   padding: 0.5%;
   padding-right: 10px;
@@ -25,10 +24,6 @@
   justify-content: center;
   align-content: center;
   margin-bottom: 40px;
-
-  /*border: 1px solid #cdcdcd;
-  border-radius: 3px;
-  box-shadow: 0 0 4px 1px #626262;*/
 }
 
 .titulo-list-room {
@@ -36,12 +31,10 @@
   font-size: 22px;
   margin-top: 8%;
   margin-left: -9%;
-  position:absolute;
+  position: absolute;
 }
 
-
 .contenedor {
-
   margin-left: 33%;
   width: 70%;
   display: flex;
@@ -49,7 +42,6 @@
   //justify-content: space-between;
   flex-wrap: wrap;
   align-content: flex-start;
-
 }
 
 .image-rooms {
@@ -98,6 +90,87 @@ button:hover {
   border: 1px solid black;
 }
 
-.picto2, .picto3{
+.picto2,
+.picto3 {
   padding-left: 3%;
+}
+
+@media (max-width: 375px) {
+  .container-rooms-home {
+    margin-top: 25%;
+    width: 20%;
+    padding: 0.5%;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 40px;
+  }
+
+  .titulo-list-room {
+    margin-left: -18%;
+  }
+  .container-rooms-home {
+    margin-top: 50%;
+    margin-left: -25%;
+  }
+  .contenedor {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-between;
+    align-content: center;
+  }
+
+  .image-rooms {
+    background-size: contain;
+    width: 160px;
+    height: 220px;
+  }
+
+  .titlle-rooms-home {
+    font-family: "Circular-Black";
+    font-size: 20px;
+    margin-top: 3%;
+    margin-left: 0%;
+  }
+
+  .description-rooms-home {
+    margin-top: -40%;
+    font-size: 15px;
+    width: 165px;
+  }
+
+  .pictogramas-list-room {
+    display: none;
+  }
+
+  .price {
+    font-family: "Circular-Black";
+    font-size: 13px;
+    margin-left: 1%;
+    margin-top: 2%;
+  }
+
+  button {
+    font-family: "Circular-Book";
+    color: white;
+    background-color: black;
+    width: 90px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+
+  .picto2,
+  .picto3 {
+    padding-left: 3%;
+  }
 }
