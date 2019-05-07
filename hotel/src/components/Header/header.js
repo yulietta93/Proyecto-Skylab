@@ -1,7 +1,3 @@
-// LOGOTIPO
-//MENU
-//IDIOMAS CON REDUX
-
 import React, { Component } from "react";
 import "./header.scss";
 

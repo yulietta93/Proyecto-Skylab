@@ -7,10 +7,9 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
+import reducers from './redux/reducers';
 
-//import reducers from './redux/reducers';
-
-//const store = createStore(reducers);
+const store = createStore(reducers);
 
 const firebase = require('firebase/app');
 
@@ -27,9 +26,9 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
 
   ReactDOM.render(
-   // <Provider store={store}>
+    <Provider store={store}>
       <App />
-  //  </Provider>  
+    </Provider>  
     , document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

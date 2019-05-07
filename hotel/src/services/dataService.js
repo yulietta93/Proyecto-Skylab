@@ -2,6 +2,7 @@ import * as firebase from 'firebase';
 
 export default class DataService {
 
+//CONSEGUIR CONTACTOS
   static async getContacts() {
     const db = firebase.firestore();
     let results = [];
@@ -21,6 +22,12 @@ export default class DataService {
     return results;
   }
 
+  static async addObjectWithId(collection, objId, data) {
+    return await DataService.updateDetail(collection, objId, data)
+  }
+
+  
+//DETALLES CONTACTO
   static async getObjectDetail(collection, objId) {
     const db = firebase.firestore();
     let contact = null;
@@ -37,10 +44,7 @@ export default class DataService {
     return contact;
   }
 
-  static async addObjectWithId(collection, objId, data) {
-    return await DataService.updateDetail(collection, objId, data)
-  }
-
+ 
   static async updateDetail(collection, id, data) {
     const db = firebase.firestore();
     let success = true;
@@ -55,6 +59,7 @@ export default class DataService {
     return success;
   }
 
+  //VER CONTACTOS
   static observeContacts(callback, userId){
     const db = firebase.firestore();
 
@@ -73,6 +78,7 @@ export default class DataService {
     })
   }
 
+  //BORRAR CONTACTOS
   static async deleteContact(contactId) {
     const db = firebase.firestore();
     let success = true;
@@ -88,6 +94,7 @@ export default class DataService {
     return success;
   }
 
+  //AÑADIR CONTACTOS
   static async addContact(contactData) {
     const db = firebase.firestore();
     let success = false;
@@ -105,4 +112,3 @@ export default class DataService {
   }
 
 }
-
