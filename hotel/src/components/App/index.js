@@ -4,6 +4,8 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import { connect } from "react-redux";
 import { setUserInfo } from "../../redux/actions/userActions";
 
+
+
 import ContactList from "../../pages/ContactsList";
 import ContactDetail from "../../pages/ContactDetail";
 import Signup from "../../pages/Signup";
@@ -65,12 +67,12 @@ class App extends Component {
               <li> <Link to="/home">Home</Link></li>
               {!userInfo && (<li> <Link to="/signup">Signup</Link></li>)}
               {!userInfo && ( <li><Link to="/login">Login</Link> </li>)}
-              {userInfo && <li onClick={this.logout}>Logout</li>}
+              {userInfo && (<li onClick={this.logout}>Logout</li>)}
               <li> <Link to="/habitaciones">Rooms</Link></li>
               <li> <Link to="/ofertas">Offers</Link></li>
               <li> <Link to="/servicios">Services</Link></li>
             </ul>
-            {userInfo && (<div><span>Hola: {userInfo.name}</span> </div>)}
+            {userInfo && (<div><span className="saludo">Hola: {userInfo.name}</span> </div>)}
            
           </nav>
 

@@ -27,6 +27,7 @@ export default class ContactForm extends Component {
     const {name, email} = this.state;
     return (
       <div className="contact-form">
+      <h1>CONTACT FORM</h1>
         <form onSubmit={this.onSubmitForm} className="form">
           <div>
             <label>Name</label>

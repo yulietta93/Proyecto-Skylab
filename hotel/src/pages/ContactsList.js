@@ -1,10 +1,12 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import DataService from '../services/dataService'
-import ContactForm from '../components/ContactForm';
+import DataService from '../services/dataService';
+import StorageService from '../services/storageService';
+import ContactForm from '../components/ContactForm/index';
 import withUser from '../helpers/withUser'
 
 import './contactlist.scss'
+
 
 class ContactList extends React.Component {
   constructor(props) {
@@ -14,6 +16,7 @@ class ContactList extends React.Component {
       contacts: [],
       loading: false
     }
+
     this.unobserveContacts = null;
   }
 
@@ -60,7 +63,9 @@ class ContactList extends React.Component {
     //   this.getData();
     // }
   }
- 
+
+  
+
   onCreateContact = async ({name, email, message}) => {
     const { userInfo } = this.props;
 
@@ -90,11 +95,11 @@ class ContactList extends React.Component {
 
     return (
       <div className="fireabse-app">
-        <h1 className="tittle-list">Contact</h1>
+        <h1>Contacts manager</h1>
         {loading && <div>LOADING...</div>}
         {!loading && (
           contacts.length <= 0 ? 
-          <p className="no-results">No results</p> :
+          <p>No results</p> :
           (
             <div>
               <section>{this.renderContactsTable(contacts)}</section>
@@ -111,7 +116,7 @@ class ContactList extends React.Component {
 
   renderContactsTable = (contacts) => {
     return (
-      <table className="ver-tabla">
+      <table>
           <thead>
             <tr>
               <th>ID</th>

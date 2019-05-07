@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import AuthService from '../services/authService';
 import DataService from '../services/dataService';
 
-import '../pages/signup.scss'
+import '../pages/signup.scss';
+
 export default class Signup extends Component {
   constructor(props) {
     super(props);
@@ -21,26 +22,28 @@ export default class Signup extends Component {
   }
 
   componentDidMount() {
-    AuthService.registerAuthObserver(user => {
+    AuthService.registerAuthObserver((user) => {
       if (user) {
+        // User is signed in.
         const { name, lastname, email } = this.state;
-        const success = DataService.addObjectWithId("users", user.uid, {
-          name,
-          lastname,
+        const success = DataService.addObjectWithId('user', user.uid, { 
+          name, 
+          lastname, 
           email,
-          uid: user.uid
+          uid: user.uid 
         });
 
         if(success) {
-          this.props.history.push('/home')
+          console.log("GUARDAR NUEVO USUARIO EN REDUX");
+          this.props.history.push('/home');
         }
+        
       } else {
-        console.log("ojo, no hay usuario")
-      }
-    });
-  }
+        console.log("OJO: no hay usuario")
 
-  
+      }
+    })
+  }
 
   onSignup = async (e) => {
     e.preventDefault();
@@ -60,7 +63,7 @@ export default class Signup extends Component {
 
     return (
       <div>
-        <h1 className="tittle-signup">Signup and manage your contacts now!</h1>
+        <h1>Signup and manage your contacts now!</h1>
         <form onSubmit={this.onSignup} className="form-signup">
           <div>
             <label>Name</label>
@@ -75,10 +78,10 @@ export default class Signup extends Component {
             <input type="email" name="email" value={email} onChange={this.onChangeInput} />
           </div>
           <div>
-            <label>Password</label>
+            <label>Contraseña</label>
             <input type="password" name="password" value={password} onChange={this.onChangeInput} />
           </div>
-          <button>Registrer</button>
+          <button className="crear-cuenta">¡Crear cuenta!</button>
           {errorMessage && <p>{errorMessage}</p>}
         </form>
       </div>

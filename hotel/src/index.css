@@ -4,6 +4,11 @@
 
 }
 
+.saludo{
+    font-size: 40px;
+    color:red;
+}
+
 h1{
     color:white;
     font-size: 80px;
