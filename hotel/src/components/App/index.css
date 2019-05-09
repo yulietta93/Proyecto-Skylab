@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Circular-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Black"),
+    url(../../fonts/CircularStd-Black.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Circular-Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Book"),
+    url(../../fonts/CircularStd-Book.otf) format("otf");
+}
+
+.nav-container {
+  width: 100%;
+  background-color: red;
+  height: 40px;
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  justify-content: space-between;
+  color: white;
+}
+
+a {
+  color: white !important;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-top: -11%;
+}
+
+nav ul li a {
+  padding: 1rem 0;
+  margin: 0 1rem;
+  position: relative;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+/*
+  nav ul li a:last-child{
+      margin-right: 0;
+  }*/
+
+nav ul li a::before,
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  transform: scaleX(0);
+}
+
+nav ul li a::before {
+  top: 0;
+}
+
+nav ul li a::after {
+  bottom: 0;
+  transform-origin: left;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+  transform: scaleX(1);
+}
+
+.saludo-container {
+  padding-right: 10%;
+  margin-top: -38%;
+  color: white;
+  margin-left: -64%;
+  margin-right: 50px;
+}
+
+.saludo {
+  color: white;
+  font-size: 14px;
+  font-family: "Circular-Book";
+}
+
+.login-container {
+  margin-left: 45%;
+  margin-top: -4%;
+  margin-right: 9%;
+}
+
+.logout {
+  margin-left: -10%;
+  margin-top: -20%;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.logout-container {
+  color: yellow;
+  margin-right: 30%;
+}

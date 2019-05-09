@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { connect } from "react-redux";
 import { setUserInfo } from "../../redux/actions/userActions";
-
-
+import './index.css';
 
 import ContactList from "../../pages/ContactsList";
 import ContactDetail from "../../pages/ContactDetail";
@@ -61,18 +60,25 @@ class App extends Component {
 
     return (
       <main>
+
         <Router>
-          <nav>
-            <ul>
+          <nav className="nav-container">
+              <ul>   
               <li> <Link to="/home">Home</Link></li>
-              {!userInfo && (<li> <Link to="/signup">Signup</Link></li>)}
-              {!userInfo && ( <li><Link to="/login">Login</Link> </li>)}
-              {userInfo && (<li onClick={this.logout}>Logout</li>)}
               <li> <Link to="/habitaciones">Rooms</Link></li>
               <li> <Link to="/ofertas">Offers</Link></li>
               <li> <Link to="/servicios">Services</Link></li>
             </ul>
-            {userInfo && (<div><span className="saludo">Hola: {userInfo.name}</span> </div>)}
+            <ul className="login-container">
+              {!userInfo && (<li> <Link to="/signup">Signup</Link></li>)}
+              {!userInfo && ( <li><Link to="/login">Login</Link> </li>)}
+              </ul>
+              <ul className="logout-container">
+              {userInfo && (<div className="saludo-container"><span className="saludo">{userInfo.name}</span> </div>)}
+              {userInfo && (<li onClick={this.logout} className="logout"><u>Logout</u></li>)}
+            
+              </ul>
+          
            
           </nav>
 
