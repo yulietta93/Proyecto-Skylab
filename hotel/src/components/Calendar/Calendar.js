@@ -7,7 +7,6 @@ import { withRouter } from 'react-router-dom'
 
 //Imagenes
 import logo from "../../image/logo-blanco.svg";
-import Calendar from "../Calendar/Calendar";
 //import HomeBackground from "../../image/HomeBackground.jpg";
 
 //<Link to="/">Home</Link>
@@ -15,8 +14,8 @@ import Calendar from "../Calendar/Calendar";
 //<Link to="/ofertas">Ofertas </Link>
 //<Link to="/servicios">Servicios</Link>
 
-class Header extends Component {
-/*
+class Calendar extends Component {
+
   state = {
     startDate: null,
     endDate: null,
@@ -47,37 +46,30 @@ class Header extends Component {
       this.setState({[event.target.name]: event.target.value})
     }
 
-  }*/
+  }
 
   render() {
     return (
-      <div className="cabecera">
-        <iframe
-          src="https://player.vimeo.com/video/120909442?autoplay=1&color=ffffff&title=0&byline=0&portrait=0"
-          width="1900"
-          height="700"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-          className="video"
-        />
-        <div className="texto-cabecera">
-          <h1>
-            Welcome to <br />
-            your new home
-          </h1>
-        </div>
-        <img src={logo} alt="logotipo" width="100%" className="logo" />
-
-        <div className="line" />
-
-        <h2 className="title-booknow">
-          Reserve a <br />
-          room. <br />
-          Choose
-          <br /> yours!
-        </h2>
-        <Calendar />
+        <div>
+        <form className="form-book" id="motor" onSubmit={this.handleReservation}>
+          <label> Check-in </label>
+          <br />
+          <input name="startDate" type="date" id="entrada" className="entrada" onChange={this.handleReservationData}/>
+          <br />
+          <label> Check-out </label>
+          <br />
+          <input name="endDate" type="date" id="salida" onChange={this.handleReservationData}/>
+          <br />
+          <label> Room </label>
+          <br />
+          <select name="roomType" id="room" onChange={this.handleReservationData}>
+            <option value="junior">Junior Suite</option>
+            <option value="standar">Junior Suite Standar</option>
+            <option value="premium">Junior Suite Premium</option>
+          </select>
+          <br /> <br />
+          <button type="submit">Boow now</button>
+        </form>
       </div>
     );
   }
@@ -92,4 +84,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   null,
   mapDispatchToProps
-)(withRouter(Header));
+)(withRouter(Calendar));
