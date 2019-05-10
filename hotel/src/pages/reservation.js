@@ -6,25 +6,34 @@ import DataService from "../services/dataService";
 
 class Reservation extends Component {
 
-  async componentDidMount() {
-    const rooms = await DataService.getAvailableRoomsByDates(this.props.reservation)
-    console.log('DataService', rooms)
+  state = {
+    rooms: null
   }
 
-
-
-
-
-
-
-
-
+  async componentDidMount() {
+    const rooms = await DataService.getAvailableRoomsByDates(this.props.reservation)
+    this.setState({rooms})
+  }
 
   render() {
+    const {rooms} = this.state
     return (
       <div>
         <h3>List Rooms</h3>
         <pre>{JSON.stringify(this.props.reservation, null, 4)}</pre>
+        <div>
+          {rooms && rooms.map(room => {
+            if(room.available) {
+              return <div>
+                {room.price}
+                {room.name}
+                {room.typology}
+                {room.totalRooms}
+              </div>
+            }
+          })}
+        </div>
+
       </div>
     );
   }

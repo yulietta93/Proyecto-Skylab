@@ -42,9 +42,8 @@ static async getAvailableRoomsByDates(userbook) {
 
       const objectResult = {available: null, ...doc.data()}
       objectResult.reservation.map(book => {
-      debugger 
-        if(book.startDate.timestamp > userbook.startDate && book.endDate.timestamp > userbook.startDate || 
-           book.startDate.timestamp < userbook.startDate && book.endDate.timestamp < userbook.startDate) {
+        if(book.startDate.timestamp > userbook.startDate.timestamp && book.endDate.timestamp > userbook.startDate.timestamp || 
+           book.startDate.timestamp < userbook.startDate.timestamp && book.endDate.timestamp < userbook.startDate.timestamp) {
           objectResult.available = true
         } else {
           objectResult.available = false
