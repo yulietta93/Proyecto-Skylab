@@ -16,7 +16,7 @@
 
 .nav-container {
   width: 100%;
-  background-color: red;
+  background-color: black;
   height: 40px;
   padding-top: 5rem;
   display: flex;
@@ -76,7 +76,7 @@ nav ul li a:hover::after {
 
 .saludo-container {
   padding-right: 10%;
-  margin-top: -38%;
+  margin-top: -20%;
   color: white;
   margin-left: -64%;
   margin-right: 50px;
@@ -90,7 +90,7 @@ nav ul li a:hover::after {
 
 .login-container {
   margin-left: 45%;
-  margin-top: -4%;
+  margin-top: -3%;
   margin-right: 9%;
 }
 
@@ -101,6 +101,6 @@ nav ul li a:hover::after {
   letter-spacing: 2px;
 }
 .logout-container {
-  color: yellow;
+  color: white;
   margin-right: 30%;
 }

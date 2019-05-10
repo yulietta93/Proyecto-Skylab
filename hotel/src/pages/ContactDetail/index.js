@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import DataService from '../services/dataService';
-import ContactForm from '../components/ContactForm';
-import withUser from '../helpers/withUser';
+import DataService from '../../services/dataService';
+import ContactForm from '../../components/ContactForm';
+import withUser from '../../helpers/withUser';
 
-import './detail.scss'
+import '../detail.scss'
 
 //ES SOLO  UN MODELO DE FORMULARIO
 

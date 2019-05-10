@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import ListRoomsHome from "./index.js";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+
 import "./listRooms.scss";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -55,8 +57,6 @@ export default class RoomsHome extends Component {
               Find your room in a small <br /> oasis in the middle of <br />
               nature
             </h2>
-
-
 
           {this.state.list.map(element => (
             <ListRoomsHome

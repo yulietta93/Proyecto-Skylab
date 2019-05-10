@@ -19,6 +19,7 @@ import Habitacion02 from "../../pages/Habitacion02";
 import Habitacion03 from "../../pages/Habitacion03";
 import Ofertas from "../../pages/Ofertas";
 import Servicios from "../../pages/Servicios";
+import Reservation from '../../pages/reservation';
 
 class App extends Component {
   constructor(props) {
@@ -83,6 +84,7 @@ class App extends Component {
           </nav>
 
           <Switch>
+            <Route path="/reservation" component={Reservation} />
             <Route path="/home" component={Home} />
             <Route path="/habitaciones/:habitacion01"component={Habitacion01}/>
             <Route path="/habitaciones/:habitacion02" component={Habitacion02}/>
@@ -93,7 +95,7 @@ class App extends Component {
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
             <Route path="/contact/:id" component={ContactDetail} />
-            <Route path="/" component={ContactList} />
+            <Route path="/" component={ContactList} /> 
           </Switch>
         </Router>
       </main>

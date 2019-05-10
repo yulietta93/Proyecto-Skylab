@@ -3,12 +3,63 @@ import * as firebase from 'firebase';
 export default class DataService {
 
 //CONSEGUIR CONTACTOS
-  static async getContacts() {
+
+ /* static async getContacts() {
     const db = firebase.firestore();
     let results = [];
 
     try {
       const querySnapshot = await db.collection("contacts").get();
+
+      querySnapshot.forEach(doc => {
+        const objectResult = doc.data();
+        objectResult.id = doc.id;
+        results.push(objectResult);
+      }) 
+    } catch (err) {
+			console.log("TCL: DataService -> getContacts -> err", err)
+    }
+
+    return results;
+  }
+*/
+
+static async getAvailableRoomsByDates(date) {
+  const db = firebase.firestore();
+  let results = [];
+
+  // const startDate = date.startDate.timestamp
+  // const endDate = date.startDate.timestamp
+
+  // console.log('startDate', startDate)
+  // console.log('endDate', endDate)
+  try {
+    const querySnapshot = await db.collection('rooms').get();
+
+    querySnapshot.forEach(doc => {
+      console.log('reservartion', doc.data().reservation)
+      const objectResult = doc.data();
+      objectResult.id = doc.id;
+
+      //Mirar para cada objectResult el array de reservations
+      // Y setear una propiedad nueva "available" == true o false
+
+      results.push(objectResult);
+    }) 
+  } catch (err) {
+    console.log("TCL: DataService -> getContacts -> err", err)
+  }
+
+  return results;
+}
+
+
+  static async getCollection(collection) {
+    const db = firebase.firestore();
+    let results = [];
+
+    try {
+      const querySnapshot = await db.collection(collection).get();
 
       querySnapshot.forEach(doc => {
         const objectResult = doc.data();
@@ -43,7 +94,6 @@ export default class DataService {
 
     return contact;
   }
-
  
   static async updateDetail(collection, id, data) {
     const db = firebase.firestore();
