@@ -1,4 +1,5 @@
 import * as firebase from 'firebase';
+import { debug } from 'util';
 
 export default class DataService {
 
@@ -24,7 +25,7 @@ export default class DataService {
   }
 */
 
-static async getAvailableRoomsByDates(date) {
+static async getAvailableRoomsByDates(userbook) {
   const db = firebase.firestore();
   let results = [];
 
@@ -34,16 +35,18 @@ static async getAvailableRoomsByDates(date) {
   // console.log('startDate', startDate)
   // console.log('endDate', endDate)
   try {
-    const querySnapshot = await db.collection('rooms').get();
+    const querySnapshot = await db.collection('rooms').where('typology', '==', userbook.roomType).get();
 
     querySnapshot.forEach(doc => {
 
-      const startDate = {timestamp: 1556661600}
-      const endDate = {timestamp: 1559253600}
 
-      const objectResult = {available: true, ...doc.data()}
+      const objectResult = {available: null, ...doc.data()}
       objectResult.reservation.map(book => {
-        if(!book.startDate.timestamp >= startDate && !book.endDate.timestamp >= endDate) {
+      debugger 
+        if(book.startDate.timestamp > userbook.startDate && book.endDate.timestamp > userbook.startDate || 
+           book.startDate.timestamp < userbook.startDate && book.endDate.timestamp < userbook.startDate) {
+          objectResult.available = true
+        } else {
           objectResult.available = false
         }
       })
