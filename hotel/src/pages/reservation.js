@@ -11,6 +11,15 @@ class Reservation extends Component {
     console.log('DataService', rooms)
   }
 
+
+
+
+
+
+
+
+
+  
   render() {
     console.log(this.props.reservation, 'eeeeeeppppp')
     return (
@@ -21,6 +30,14 @@ class Reservation extends Component {
     );
   }
 }
+
+
+
+
+
+
+
+
 
 const mapStateToProps = state => {
   return {

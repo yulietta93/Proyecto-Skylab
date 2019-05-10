@@ -37,8 +37,17 @@ static async getAvailableRoomsByDates(date) {
     const querySnapshot = await db.collection('rooms').get();
 
     querySnapshot.forEach(doc => {
-      console.log('reservartion', doc.data().reservation)
-      const objectResult = doc.data();
+
+      const startDate = {timestamp: 1556661600}
+      const endDate = {timestamp: 1559253600}
+
+      const objectResult = {available: true, ...doc.data()}
+      objectResult.reservation.map(book => {
+        if(!book.startDate.timestamp >= startDate && !book.endDate.timestamp >= endDate) {
+          objectResult.available = false
+        }
+      })
+
       objectResult.id = doc.id;
 
       //Mirar para cada objectResult el array de reservations
