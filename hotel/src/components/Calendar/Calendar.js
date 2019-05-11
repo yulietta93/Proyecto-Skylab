@@ -5,22 +5,25 @@ import { connect } from 'react-redux'
 import {setReservation} from '../../redux/actions/reservationActions'
 import { withRouter } from 'react-router-dom'
 
-//Imagenes
-import logo from "../../image/logo-blanco.svg";
-//import HomeBackground from "../../image/HomeBackground.jpg";
-
-//<Link to="/">Home</Link>
-//<Link to="/habitaciones">Habitaciones</Link>
-//<Link to="/ofertas">Ofertas </Link>
-//<Link to="/servicios">Servicios</Link>
 
 class Calendar extends Component {
+constructor(props){
+super(props)
 
-  state = {
+const storageState = localStorage.getItem('setReservation') ? JSON.parse(localStorage.getItem('setReservation')) : {}
+
+  this.state = {
     startDate: null,
     endDate: null,
     roomType: null
   }
+}
+  
+/*
+  store.subscribe(() => {
+    localStorage.setItem('cartReducer', JSON.stringify(store.getState() ));
+   })*/
+
 
   handleReservation = () => {
     const {startDate, endDate, roomType} = this.state
@@ -40,10 +43,21 @@ class Calendar extends Component {
         timestamp: parsedDate
       }
         this.setState({[event.target.name]: date})
+        /*traer de localstorage setReservation 
+        obj = localStorage...
+        if(!obj) obj = {}
+        obj[event.target.startDate] = date
+        
+        */
     }
 
     if(event.target.name === 'roomType') {
       this.setState({[event.target.name]: event.target.value})
+
+      /*
+       obj = localStorage...
+        obj[event.target.name] = event.target.value 
+       */
     }
 
   }
