@@ -62,8 +62,6 @@ class Header extends Component {
         <img src={logo} alt="logotipo" width="100%" className="logo" />
 
         <div className="line" />
-
-       
         <Calendar />
       </div>
     );

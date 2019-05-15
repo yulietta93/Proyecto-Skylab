@@ -17,7 +17,6 @@ class Home extends Component {
     return (
       <div>
         <Header />
-    
         <div className="container">
           <div className="row align-self-center">
             <div className="tittleAbout col-2">

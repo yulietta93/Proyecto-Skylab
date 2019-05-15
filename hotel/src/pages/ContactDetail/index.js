@@ -19,6 +19,7 @@ class ContactDetail extends Component {
 
   async componentDidMount(){
     const contact = await DataService.getObjectDetail('contact', this.props.match.params.id);
+
     this.setState({contact, loading: false})
   }
 

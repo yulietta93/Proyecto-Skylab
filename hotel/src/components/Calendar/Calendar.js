@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import { setReservation } from "../../redux/actions/reservationActions";
 import { withRouter } from "react-router-dom";
 import "./calendar.scss";
+import storage from "../../utils/storage"
 
 class Calendar extends Component {
   constructor(props) {
@@ -23,8 +24,16 @@ class Calendar extends Component {
     localStorage.setItem('cartReducer', JSON.stringify(store.getState() ));
    })*/
 
-  handleReservation = () => {
+  handleReservation = (e) => {
+    e.preventDefault();
+   
     const { startDate, endDate, roomType } = this.state;
+
+    // this.props.reservation
+    const calendar = {startDate, endDate, roomType}
+    storage.setCalendar(calendar);
+
+
     this.props.setReservation({ startDate, endDate, roomType });
     this.props.history.push("/reservation");
   };
@@ -40,6 +49,8 @@ class Calendar extends Component {
         timestamp: parsedDate
       };
       this.setState({ [event.target.name]: date });
+
+    
       /*traer de localstorage setReservation 
         obj = localStorage...
         if(!obj) obj = {}
@@ -67,7 +78,7 @@ class Calendar extends Component {
           Choose
           <br /> yours!
         </h2>
-        <form className="form-book" id="motor"onSubmit={this.handleReservation}>
+        <form className="form-book" id="motor" onSubmit={this.handleReservation}>
           <label> Check-in </label>
           <br />
           <input name="startDate" type="date" id="entrada" className="entrada"onChange={this.handleReservationData}/>

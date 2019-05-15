@@ -26,6 +26,7 @@ export default class DataService {
 */
 
 static async getAvailableRoomsByDates(userbook) {
+  debugger;
   const db = firebase.firestore();
   let results = [];
 
@@ -42,12 +43,18 @@ static async getAvailableRoomsByDates(userbook) {
 
       const objectResult = {available: null, ...doc.data()}
       objectResult.reservation.map(book => {
-        if(book.startDate.timestamp > userbook.startDate.timestamp && book.endDate.timestamp > userbook.startDate.timestamp || 
-           book.startDate.timestamp < userbook.startDate.timestamp && book.endDate.timestamp < userbook.startDate.timestamp) {
+        // if((book.startDate.timestamp > userbook.startDate.timestamp && book.endDate.timestamp > userbook.startDate.timestamp) && 
+        //    (book.startDate.timestamp < userbook.startDate.timestamp && book.endDate.timestamp < userbook.startDate.timestamp)) {
+        //   objectResult.available = true
+        // } else {
+        //   objectResult.available = false
+        // }
+        if(Math.random() >= 0.5) {
           objectResult.available = true
-        } else {
+        }else {
           objectResult.available = false
         }
+
       })
 
       objectResult.id = doc.id;
