@@ -4,7 +4,6 @@ import DataService from '../../services/dataService';
 import ContactForm from '../../components/ContactForm';
 import withUser from '../../helpers/withUser';
 
-import '../detail.scss'
 
 //ES SOLO  UN MODELO DE FORMULARIO
 
@@ -19,7 +18,7 @@ class ContactDetail extends Component {
   }
 
   async componentDidMount(){
-    const contact = await DataService.getObjectDetail('contacts', this.props.match.params.id);
+    const contact = await DataService.getObjectDetail('contact', this.props.match.params.id);
     this.setState({contact, loading: false})
   }
 
@@ -30,7 +29,7 @@ class ContactDetail extends Component {
     }
 
     const { id } = this.props.match.params;
-    const success = DataService.updateDetail('contacts', id, updateContact);
+    const success = DataService.updateDetail('contact', id, updateContact);
     
     if(success) {
       this.props.history.push('/')

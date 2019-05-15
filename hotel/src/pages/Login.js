@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import AuthService from '../services/authService'
 import Modal from '../components/Modal';
 
-import './login.scss'
+import '../style/login.scss'
 
 export default class Signup extends Component {
   constructor(props) {
@@ -56,7 +56,7 @@ export default class Signup extends Component {
 
   onCloseModal = () => {
     this.setState({showModal: false});
-    this.props.history.push('/home'); 
+    this.props.history.push('/'); 
   }
 
   render() {

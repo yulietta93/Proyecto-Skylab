@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 import Header from "../components/Header/header";
 import Footer from "../components/Footer/Footer";
-import PictosRoom from "../components/Pictos/PictosRoom";
 import piscina from "../image/piscina.jpg";
+import PictosHome from '../components/Pictos/PictosHome';
 
 
 //FALTA AÑADIR SLIDER GALERIA
@@ -51,7 +51,7 @@ export default class Habitacion02 extends Component {
             descriptionroom={element.descriptionroom}
           />
         ))}
-        <PictosRoom />
+        <PictosHome />
         <div className="destacado">
           <h4>
             Destacado-Reward yourself with a <br /> hot shower after a long day

@@ -16,9 +16,9 @@ export default class RoomsHome extends Component {
           title: "Junior Suite",
           description:
             "With all the amenities you need.For you, your family and your friends",
-            picto: "https://image.flaticon.com/icons/png/512/114/114833.png",
-            picto2: "https://image.flaticon.com/icons/svg/112/112516.svg",
-            picto3: "https://image.flaticon.com/icons/svg/1694/1694119.svg",
+          picto: "https://image.flaticon.com/icons/png/512/114/114833.png",
+          picto2: "https://image.flaticon.com/icons/svg/112/112516.svg",
+          picto3: "https://image.flaticon.com/icons/svg/1694/1694119.svg",
           price: "from 150€/night"
         },
         {
@@ -39,9 +39,9 @@ export default class RoomsHome extends Component {
           title: "Room Premium",
           description:
             "Immerse yourself in the true NN by opening the doors of the terrace",
-            picto: "https://image.flaticon.com/icons/png/512/114/114833.png",
-            picto2: "https://image.flaticon.com/icons/svg/112/112516.svg",
-            picto3: "https://image.flaticon.com/icons/svg/1694/1694119.svg",
+          picto: "https://image.flaticon.com/icons/png/512/114/114833.png",
+          picto2: "https://image.flaticon.com/icons/svg/112/112516.svg",
+          picto3: "https://image.flaticon.com/icons/svg/1694/1694119.svg",
           price: "from 300€/night"
         }
       ]
@@ -51,32 +51,34 @@ export default class RoomsHome extends Component {
   render() {
     return (
       <div className="contenedor">
-
-         
-            <h2 className="titulo-list-room">
-              Find your room in a small <br /> oasis in the middle of <br />
-              nature
-            </h2>
-
-          {this.state.list.map(element => (
-            <ListRoomsHome
-              imagenUrl={element.imagenUrl}
-              className="image-rooms"
-              title={element.title}
-              description={element.description}
-              picto={element.picto}
-              picto2={element.picto2}
-              picto3={element.picto3}
-              price={element.price}
-            />
-          ))}
-
-        
-          </div>
-
-
-
-      
+        <h2 className="titulo-list-room">
+          Find your room in a small <br /> oasis in the middle of <br />
+          nature
+        </h2>
+        {this.state.list.map(element => (
+          <ListRoomsHome
+            imagenUrl={element.imagenUrl}
+            className="image-rooms"
+            title={element.title}
+            description={element.description}
+            picto={element.picto}
+            picto2={element.picto2}
+            picto3={element.picto3}
+            price={element.price}
+          />
+        ))}
+        <div className="container-button-viewmore">
+          <Link to="/habitaciones/habitacion01">
+            <button className="viewmore-home-room01">View More</button>
+          </Link>
+          <Link to="/habitaciones/habitacion02">
+            <button className="viewmore-home-room02">View More</button>
+          </Link>
+          <Link to="/habitaciones/habitacion03">
+            <button className="viewmore-home-room03">View More</button>
+          </Link>
+        </div>
+      </div>
     );
   }
 }

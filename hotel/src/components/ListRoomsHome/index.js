@@ -18,9 +18,7 @@ const ListRoomsHome = props => (
     <img className="picto2" src={props.picto2} width="16%" />
     <img className="picto3" src={props.picto3} width="16%" />
     </div>
- 
 
-    
     <span className ="price">{props.price}</span>
   </div>
 

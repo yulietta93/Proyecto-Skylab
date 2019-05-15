@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import AuthService from '../services/authService';
 import DataService from '../services/dataService';
-
-import '../pages/signup.scss';
+import '../style/signup.scss';
 
 export default class Signup extends Component {
   constructor(props) {

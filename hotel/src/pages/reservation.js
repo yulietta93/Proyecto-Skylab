@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+
 import { setReservation } from "../redux/actions/reservationActions";
 import AuthService from "../services/authService";
 import DataService from "../services/dataService";
 import Calendar from "../components/Calendar/Calendar";
-import "../pages/reservation.scss";
+import "../style/reservation.scss";
 
 class Reservation extends Component {
   state = {
@@ -16,7 +18,13 @@ class Reservation extends Component {
       this.props.reservation
     );
     this.setState({ rooms });
+
   }
+
+  onRoomDetailClicked = (roomsId) => {
+    this.props.history.push(`/roomdetail/${roomsId}`);
+  }
+
 
   render() {
     const { rooms } = this.state;
@@ -24,8 +32,9 @@ class Reservation extends Component {
       <div>
         <h3>List Rooms</h3>
         <pre>{JSON.stringify(this.props.reservation, null, 4)}</pre>
+        
 
-        <Calendar />
+        <Calendar/>
         <div>
           {rooms &&
             rooms.map(room => {
@@ -38,8 +47,9 @@ class Reservation extends Component {
                     {room.totalRooms}
                     {room.description}
                     <img src={room.image} />
-
-                    <button>Select</button>
+                
+                    <button onClick={() => this.onRoomDetailClicked(room.id)} > Detail</button>
+             
                   </div>
                 );
               }

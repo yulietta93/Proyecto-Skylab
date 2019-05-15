@@ -1,19 +1,11 @@
 import React, { Component } from "react";
-/*import "./header.scss";*/
+import "./header.scss"
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { connect } from 'react-redux'
 import {setReservation} from '../../redux/actions/reservationActions'
 import { withRouter } from 'react-router-dom'
-
-//Imagenes
 import logo from "../../image/logo-blanco.svg";
 import Calendar from "../Calendar/Calendar";
-//import HomeBackground from "../../image/HomeBackground.jpg";
-
-//<Link to="/">Home</Link>
-//<Link to="/habitaciones">Habitaciones</Link>
-//<Link to="/ofertas">Ofertas </Link>
-//<Link to="/servicios">Servicios</Link>
 
 class Header extends Component {
 /*
@@ -71,12 +63,7 @@ class Header extends Component {
 
         <div className="line" />
 
-        <h2 className="title-booknow">
-          Reserve a <br />
-          room. <br />
-          Choose
-          <br /> yours!
-        </h2>
+       
         <Calendar />
       </div>
     );

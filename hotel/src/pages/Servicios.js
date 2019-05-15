@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./servicios.scss";
+import "../style/servicios.scss";
 import "bootstrap/dist/css/bootstrap.css";
 
 //image

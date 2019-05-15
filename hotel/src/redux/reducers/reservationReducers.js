@@ -1,3 +1,5 @@
+
+
 const defaultState = {
     reservation: null
   }
@@ -16,3 +18,5 @@ const defaultState = {
   
     return state;
   }
+
+  

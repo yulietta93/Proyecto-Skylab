@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Circular-Black";
+    font-style: normal;
+    font-weight: normal;
+    src: local("CircularStd-Black"),
+      url(../../fonts/CircularStd-Black.otf) format("otf");
+  }
+  
+  @font-face {
+    font-family: "Circular-Book";
+    font-style: normal;
+    font-weight: normal;
+    src: local("CircularStd-Book"),
+      url(../../fonts/CircularStd-Book.otf) format("otf");
+  }
+  
+
+  .entrada {
+    z-index: 10;
+  }
+  .form-book {
+    display: block;
+    margin-top: 3%;
+    margin-left: 80%;
+  }
+  
+  .title-booknow {
+    font-size: 25px;
+    margin-top: 25%;
+    line-height: 25px;
+    margin-left: -45%;
+  }
+
+  .account {
+    font-size: 16px;
+    margin-left: 12%;
+  }
+
+  @media (max-width: 375px) {
+  
+    .form-book {
+      margin-top: -30%;
+      margin-left: 60%;
+    }
+  
+  }

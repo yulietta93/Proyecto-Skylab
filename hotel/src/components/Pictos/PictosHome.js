@@ -3,6 +3,7 @@ import ListPictos from "./index.js";
 import "./pictos.scss";
 import "bootstrap/dist/css/bootstrap.css";
 
+
 export default class PictosHome extends Component {
   constructor() {
     super();

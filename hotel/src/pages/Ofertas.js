@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import './ofertas.scss'
+import '../style/ofertas.scss'
 
 import "bootstrap/dist/css/bootstrap.css";
 

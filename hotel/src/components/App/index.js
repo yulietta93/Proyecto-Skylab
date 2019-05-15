@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { setUserInfo } from "../../redux/actions/userActions";
 import './index.css';
 
-import ContactList from "../../pages/ContactsList";
+
 import ContactDetail from "../../pages/ContactDetail";
 import Signup from "../../pages/Signup";
 import Login from "../../pages/Login";
@@ -20,6 +20,7 @@ import Habitacion03 from "../../pages/Habitacion03";
 import Ofertas from "../../pages/Ofertas";
 import Servicios from "../../pages/Servicios";
 import Reservation from '../../pages/reservation';
+import RoomDetail from '../../pages/RoomDetail';
 
 class App extends Component {
   constructor(props) {
@@ -65,7 +66,7 @@ class App extends Component {
         <Router>
           <nav className="nav-container">
               <ul>   
-              <li> <Link to="/home">Home</Link></li>
+              <li> <Link to="/">Home</Link></li>
               <li> <Link to="/habitaciones">Rooms</Link></li>
               <li> <Link to="/ofertas">Offers</Link></li>
               <li> <Link to="/servicios">Services</Link></li>
@@ -84,18 +85,19 @@ class App extends Component {
           </nav>
 
           <Switch>
+            <Route path="/roomdetail" component={RoomDetail} />
             <Route path="/reservation" component={Reservation} />
-            <Route path="/home" component={Home} />
-            <Route path="/habitaciones/:habitacion01"component={Habitacion01}/>
-            <Route path="/habitaciones/:habitacion02" component={Habitacion02}/>
-            <Route path="/habitaciones/:habitacion03" component={Habitacion03}/>
+            <Route path="/habitaciones/habitacion01"component={Habitacion01}/>
+            <Route path="/habitaciones/habitacion02" component={Habitacion02}/>
+            <Route path="/habitaciones/habitacion03" component={Habitacion03}/>
             <Route path="/habitaciones" component={Habitaciones} />
             <Route path="/ofertas" component={Ofertas} />
             <Route path="/servicios" component={Servicios} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
             <Route path="/contact/:id" component={ContactDetail} />
-            <Route path="/" component={ContactList} /> 
+            <Route path="/" component={Home} />
+
           </Switch>
         </Router>
       </main>

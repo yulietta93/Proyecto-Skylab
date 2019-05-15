@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import "./rooms.scss";
 
@@ -6,16 +7,14 @@ const ListRoomsHome = props => (
   <div className="container-rooms">
     <h3 className="titlle-rooms">{props.title} </h3>
     <h3 className="titlle2-rooms">{props.title2} </h3>
-
     <div className="container-image">
       <img className="image-rooms-" src={props.imagenUrl} />
       <img className="image-rooms2-" src={props.image2} />
       <img className="image-rooms3-" src={props.image3} />
     </div>
-
     <p className="description-rooms">{props.description} </p>
 
-    <button className="button-rooms-list">Book now</button>
+
   </div>
 );
 
@@ -77,7 +76,17 @@ export default class Rooms extends Component {
             description={element.description}
           />
         ))}
-       
+        <div className="container-button-viewmore-rooms">
+          <Link to="/habitaciones/habitacion01">
+            <button className="viewmore-rooms-room01">View More</button>
+          </Link>
+          <Link to="/habitaciones/habitacion02">
+            <button className="viewmore-rooms-room02">View More</button>
+          </Link>
+          <Link to="/habitaciones/habitacion03">
+            <button className="viewmore-rooms-room03">View More</button>
+          </Link>
+        </div>
       </div>
     );
   }

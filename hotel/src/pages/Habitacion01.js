@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./habitacion01.scss";
+import "../style/habitacion01.scss";
 
 import Header from "../components/Header/header";
 import Footer from "../components/Footer/Footer";
@@ -53,7 +53,10 @@ export default class Habitacion01 extends Component {
             descriptionroom={element.descriptionroom}
           />
         ))}
-        <button onClick="" className="button-room01">Book now</button>
+      
+          <Link to="/reservation">
+            <button className="button-room01">Book now</button>
+          </Link>
         <PictosHome />
         <div className="destacado02-room01">
           <h4 className="tittle-destacado02-room01">
