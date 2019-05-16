@@ -29,7 +29,6 @@ class Reservation extends Component {
       return;
     }
 
-
     this.setState({calendar:this.props.reservation})
 
     const rooms = await DataService.getAvailableRoomsByDates(
@@ -55,7 +54,6 @@ class Reservation extends Component {
 
   render() {
     const { rooms, calendar } = this.state;
-
 
     return (
       <div>

@@ -26,7 +26,6 @@ export default class DataService {
 */
 
 static async getAvailableRoomsByDates(userbook) {
-  debugger;
   const db = firebase.firestore();
   let results = [];
 
@@ -178,5 +177,23 @@ static async getAvailableRoomsByDates(userbook) {
 
     return success;
   }
+
+  
+//TRAER ROOMS ID 
+static async getRoomsDetail(collection, objId) {
+  const db = firebase.firestore();
+  let rooms = null;
+
+  try{ 
+    const roomsRef = await db.collection(collection).doc(objId).get();
+    if(roomsRef.exists) {
+      rooms = roomsRef.data();
+    }
+  } catch (err){
+    console.log("TCL: DataService -> getRoomsDetail -> err", err)
+  } 
+
+  return rooms;
+}
 
 }

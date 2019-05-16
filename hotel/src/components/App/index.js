@@ -85,7 +85,7 @@ class App extends Component {
           </nav>
 
           <Switch>
-            <Route path="/roomdetail" component={RoomDetail} />
+            <Route path="/roomdetail/:id" component={RoomDetail} />
             <Route path="/reservation" component={Reservation} />
             <Route path="/habitaciones/habitacion01"component={Habitacion01}/>
             <Route path="/habitaciones/habitacion02" component={Habitacion02}/>
