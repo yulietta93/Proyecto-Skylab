@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import AuthService from '../services/authService'
 import Modal from '../components/Modal';
+import 'rodal/lib/rodal.css';
 
 import '../style/login.scss'
 
@@ -43,7 +44,7 @@ export default class Signup extends Component {
     this.setState({errorMessage: ''});
 
     if(!email || !password) {
-      this.setState({errorMessage: 'Email y password necesarios para login... no?? '});
+      this.setState({errorMessage: 'Email y password son necesarios'});
       return;
     }
 

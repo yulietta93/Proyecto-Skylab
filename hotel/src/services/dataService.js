@@ -26,6 +26,7 @@ export default class DataService {
 */
 
 static async getAvailableRoomsByDates(userbook) {
+  console.log("userbook: ", userbook)
   const db = firebase.firestore();
   let results = [];
 
@@ -36,27 +37,26 @@ static async getAvailableRoomsByDates(userbook) {
   // console.log('endDate', endDate)
   try {
     const querySnapshot = await db.collection('rooms').where('typology', '==', userbook.roomType).get();
-
+    let roomsUnavailable = 0;
     querySnapshot.forEach(doc => {
+      const objectResult = {available: false, ...doc.data()}
 
-
-      const objectResult = {available: null, ...doc.data()}
-      objectResult.reservation.map(book => {
-        // if((book.startDate.timestamp > userbook.startDate.timestamp && book.endDate.timestamp > userbook.startDate.timestamp) && 
-        //    (book.startDate.timestamp < userbook.startDate.timestamp && book.endDate.timestamp < userbook.startDate.timestamp)) {
+      objectResult.reservation.forEach(book => {
+        if(book.endDate.timestamp > userbook.startDate.timestamp && 
+          book.startDate.timestamp < userbook.endDate.timestamp) {
+            roomsUnavailable++; 
+        }
+        // if(Math.random() >= 0.5) {
         //   objectResult.available = true
-        // } else {
+        // }else {
         //   objectResult.available = false
         // }
-        if(Math.random() >= 0.5) {
-          objectResult.available = true
-        }else {
-          objectResult.available = false
-        }
-
       })
 
       objectResult.id = doc.id;
+      if(roomsUnavailable < objectResult.totalRooms){
+        objectResult.available = true
+      }
 
       //Mirar para cada objectResult el array de reservations
       // Y setear una propiedad nueva "available" == true o false
@@ -194,6 +194,22 @@ static async getRoomsDetail(collection, objId) {
   } 
 
   return rooms;
+}
+
+//TRAER INFO FORMULARIO
+static async addForm(collection, data) {
+  const db = firebase.firestore();
+  let success = false;
+  try {
+    const docRef = await db.collection('reservation').add(data);
+
+    if (docRef && docRef.id) {
+      success = true;
+    }
+  } catch (err) {
+    console.log("TCL: DataService -> addContact -> err", err);
+  }
+  return success;
 }
 
 }

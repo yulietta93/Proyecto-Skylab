@@ -14,11 +14,9 @@ export default class AuthService {
     return error;
   }
 
-
 //ENTRAR
   static async login(email, password) {
     let error = null;
-
     try {
       await firebase.auth().signInWithEmailAndPassword(email, password);
     } catch (err) {
@@ -33,12 +31,10 @@ export default class AuthService {
     const errMsg = ERROR_MESSAGES[code];
     return errMsg || 'Error inesperado';
   }
-
-  
+    
   static registerAuthObserver(callback){
     return firebase.auth().onAuthStateChanged(callback);
   }
-
 
   //CERRAR SESION
   static logout() {
