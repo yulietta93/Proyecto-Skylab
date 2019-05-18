@@ -17,9 +17,7 @@ export default class TakeMoney extends Component {
     return (
       // ...
       <StripeCheckout
-        token={this.onToken}
-        stripeKey="pk_test_WL9oxOzrNIMQcUcNAkudoBq800BaehUXLY"
-      />
+        token={this.onToken} stripeKey="pk_test_WL9oxOzrNIMQcUcNAkudoBq800BaehUXLY" className="button-stripe"/>
     )
   }
 }

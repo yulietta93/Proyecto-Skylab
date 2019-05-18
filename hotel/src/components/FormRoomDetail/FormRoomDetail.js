@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import DataService from '../../services/dataService';
 
 export default class RoomDetail extends Component {
     constructor(props) {
@@ -16,35 +17,14 @@ export default class RoomDetail extends Component {
         this.setState({[e.target.name]: e.target.value})
       }
   
-      onFormSubmit = async (e) => {
-        e.preventDefault();
-        const { name, surname, phone, specialRequests } = this.state;
+      onFormSubmit = async (event) => {
+        event.preventDefault();
+        console.log("estado",this.state)
+        let {name,surname,phone,specialRequests}=this.state;
+        await DataService.addForm('reservations',{name:name,surname:surname,phone:phone,specialRequests:specialRequests});
+      
       }
     
-        // Add a new document with a generated id.
-        static async onFormSubmit(onFormSubmit) {
-          const db = firebase.firestore();
-          let success = false;
-      
-          try {
-            const docRef = await db.collection('reservation').add(onFormSubmit);
-            if(docRef && docRef.id) {
-              success = true;
-            }
-          } catch (err) {
-            console.log("TCL: DataService -> addContact -> err", err)
-          }
-      
-          return success;
-        }
-
-
-        /*this.setState({errorMessage: ''});
-        const error = await AuthService.signup(email, password)
-        if(error) {
-          this.setState({errorMessage: AuthService.getErrorMessage(error)});
-        }*/
-      
     
       render() {
           const{name, surname, phone, specialRequests}=this.state

@@ -201,9 +201,11 @@ static async addForm(collection, data) {
   const db = firebase.firestore();
   let success = false;
   try {
-    const docRef = await db.collection('reservation').add(data);
+    console.log("intento");
+    const docRef = await db.collection('reservations').add(data);
 
     if (docRef && docRef.id) {
+      console.log("success");
       success = true;
     }
   } catch (err) {
