@@ -16,33 +16,26 @@ class Reservation extends Component {
   };
 
   async componentDidMount() {
-
     if (storage.getCalendar()) {
       const calendar = storage.getCalendar();
-
       this.setState({calendar})
-
       const rooms = await DataService.getAvailableRoomsByDates(
-        calendar
+      calendar
       );
       this.setState({ rooms });
       return;
     }
-
     this.setState({calendar:this.props.reservation})
 
     const rooms = await DataService.getAvailableRoomsByDates(
-      this.props.reservation
-    );
+    this.props.reservation);
     this.setState({ rooms });
   }
 
   async componentDidUpdate(prevProps) {
     if (prevProps.reservation !== this.props.reservation) {
       this.setState({calendar:this.props.reservation})
-      const rooms = await DataService.getAvailableRoomsByDates(
-        this.props.reservation
-      );
+      const rooms = await DataService.getAvailableRoomsByDates(this.props.reservation);
       this.setState({ rooms });
     }
   }
@@ -51,17 +44,13 @@ class Reservation extends Component {
     this.props.history.push(`/roomdetail/${roomsId}`);
   }
 
-
   render() {
     const { rooms, calendar } = this.state;
 
     return (
       <div>
         <h3>List Rooms</h3>
-       
-
         <Calendar/>
-
         {calendar && calendar.startDate && calendar.endDate &&
         <div>
         <p><span>Inicio: </span><span>{calendar.startDate.displayDate}</span></p>
@@ -103,7 +92,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    setReservation: reservartion => dispatch(setReservation(reservartion))
+    setReservation: reservation => dispatch(setReservation(reservation))
   };
 };
 

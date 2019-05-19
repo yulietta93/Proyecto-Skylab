@@ -6,7 +6,6 @@ import AuthService from "../services/authService";
 import DataService from "../services/dataService";
 import "../style/reservation.scss";
 import storage from "../utils/storage";
-import TakeMoney from "../components/stripe/stripe";
 import Reservation from "../pages/reservation";
 import "../style/roomdetail.scss";
 import padlock from '../image/padlock.svg'
@@ -17,7 +16,7 @@ class RoomDetail extends Component {
     super(props);
     this.state = {
       room: null,
-      loading: true
+      loading: true,
     };
   }
   async componentDidMount() {
@@ -25,6 +24,8 @@ class RoomDetail extends Component {
     const room = await DataService.getRoomsDetail("rooms",this.props.match.params.id);
     this.setState({ room, loading: false });
   }
+
+
   render() {
     const { room, loading } = this.state;
     return (
@@ -42,7 +43,6 @@ class RoomDetail extends Component {
           <Link to="/reservation">
             <button>Atrás</button>
           </Link>
-
         </div>
         <div className="connecting-line" />
         <ul className="picto-text-info">
@@ -77,7 +77,7 @@ class RoomDetail extends Component {
 
        
           <FormRoomDetail />
-        <TakeMoney />
+
       </div>
     );
   }

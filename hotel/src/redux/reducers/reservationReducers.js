@@ -1,9 +1,6 @@
-
-
 const defaultState = {
     reservation: null
   }
-  
   export const reservationReducer = (state = defaultState, action) => {
     if(action.type === 'SET_USER_RESERVATION') {
       return {
@@ -15,8 +12,5 @@ const defaultState = {
         }
       }
     }
-  
     return state;
-  }
-
-  
+  }  

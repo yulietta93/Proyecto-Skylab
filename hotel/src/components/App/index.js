@@ -6,7 +6,6 @@ import { setUserInfo } from "../../redux/actions/userActions";
 import './index.css';
 
 
-import ContactDetail from "../../pages/ContactDetail";
 import Signup from "../../pages/Signup";
 import Login from "../../pages/Login";
 import AuthService from "../../services/authService";
@@ -21,6 +20,7 @@ import Ofertas from "../../pages/Ofertas";
 import Servicios from "../../pages/Servicios";
 import Reservation from '../../pages/reservation';
 import RoomDetail from '../../pages/RoomDetail';
+import ReservationsDetail from '../../pages/ReservationsDetail';
 
 class App extends Component {
   constructor(props) {
@@ -30,7 +30,6 @@ class App extends Component {
       loading: true
     };
   }
-
   componentDidMount() {
     AuthService.registerAuthObserver(async user => {
       if (user) {
@@ -57,14 +56,12 @@ class App extends Component {
   render() {
     const { userInfo } = this.props;
     const { loading } = this.state;
-
     if (loading) return <div>Loading</div>;
-
     return (
       <main>
-
-        <Router>
-          <nav className="nav-container">
+  
+        <Router> 
+          {/*<nav className="nav-container">
               <ul>   
               <li> <Link to="/">Home</Link></li>
               <li> <Link to="/habitaciones">Rooms</Link></li>
@@ -78,13 +75,11 @@ class App extends Component {
               <ul className="logout-container">
               {userInfo && (<div className="saludo-container"><span className="saludo">{userInfo.name}</span> </div>)}
               {userInfo && (<li onClick={this.logout} className="logout"><u>Logout</u></li>)}
-            
               </ul>
-          
-           
-          </nav>
+            </nav>*/}
 
           <Switch>
+            <Route path="/reservationsdetail/:id" component={ReservationsDetail} />
             <Route path="/roomdetail/:id" component={RoomDetail} />
             <Route path="/reservation" component={Reservation} />
             <Route path="/habitaciones/habitacion01"component={Habitacion01}/>
@@ -95,9 +90,7 @@ class App extends Component {
             <Route path="/servicios" component={Servicios} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
-            <Route path="/contact/:id" component={ContactDetail} />
             <Route path="/" component={Home} />
-
           </Switch>
         </Router>
       </main>

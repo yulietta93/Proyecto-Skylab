@@ -174,7 +174,6 @@ static async getAvailableRoomsByDates(userbook) {
     } catch (err) {
 			console.log("TCL: DataService -> addContact -> err", err)
     }
-
     return success;
   }
 
@@ -213,5 +212,23 @@ static async addForm(collection, data) {
   }
   return success;
 }
+
+
+//TRAER RESERVATIONS ID 
+static async getReservationsDetail(collection, objId) {
+  const db = firebase.firestore();
+  let reservations = null;
+  
+  try{ 
+    const reservationsRef = await db.collection(collection).doc(objId).get();
+    if(reservationsRef.exists) {
+      reservations = reservationsRef.data();
+    }
+  } catch (err){
+    console.log("TCL: DataService -> getRoomsDetail -> err NO FUNCIONA", err)
+  } 
+  return reservations;
+}
+
 
 }

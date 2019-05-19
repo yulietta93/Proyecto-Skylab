@@ -7,6 +7,7 @@ import { withRouter } from 'react-router-dom'
 import logo from "../../image/logo-blanco.svg";
 import Calendar from "../Calendar/Calendar";
 
+
 class Header extends Component {
 /*
   state = {
@@ -44,23 +45,14 @@ class Header extends Component {
   render() {
     return (
       <div className="cabecera">
-        <iframe
-          src="https://player.vimeo.com/video/120909442?autoplay=1&color=ffffff&title=0&byline=0&portrait=0"
-          width="1900"
-          height="700"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-          className="video"
-        />
-        <div className="texto-cabecera">
-          <h1>
-            Welcome to <br />
-            your new home
-          </h1>
-        </div>
-        <img src={logo} alt="logotipo" width="100%" className="logo" />
 
+        <iframe src="https://player.vimeo.com/video/120909442?autoplay=1&color=ffffff&title=0&byline=0&portrait=0" width="1900" height="700" frameborder="0" allow="autoplay; fullscreen" allowfullscreen className="video"/>
+        <div className="texto-cabecera">
+          <h1>Welcome to <br />your new home</h1>
+        </div>
+        <div className="image-logo">
+        {/*<img src={logo} alt="logotipo" width="100%" className="logo" />*/}
+        </div>
         <div className="line" />
         <Calendar />
       </div>

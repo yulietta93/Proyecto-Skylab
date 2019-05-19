@@ -3,14 +3,11 @@ import StripeCheckout from 'react-stripe-checkout';
 
 export default class TakeMoney extends Component {
   onToken = (token) => {
-    fetch('/save-stripe-token', {
-      method: 'POST',
-      body: JSON.stringify(token),
-    }).then(response => {
-      response.json().then(data => {
-        alert(`We are in business, ${data.email}`);
-      });
-    });
+   
+  //tener en mente la coleciion de reservation, tiene que tener el usuario id, el estado de si esta pagado o no. detalle / pago / fechas 
+  //para calcular precio final: restas los dos timestamps y lo restas entre
+  //ObserveContact para filtrar por usuario.
+
   }
   // ...
   render() {

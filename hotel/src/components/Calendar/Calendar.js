@@ -19,20 +19,13 @@ class Calendar extends Component {
     };
   }
 
-  /*
-  store.subscribe(() => {
-    localStorage.setItem('cartReducer', JSON.stringify(store.getState() ));
-   })*/
-
   handleReservation = (e) => {
     e.preventDefault();
-   
     const { startDate, endDate, roomType } = this.state;
 
     // this.props.reservation
     const calendar = {startDate, endDate, roomType}
     storage.setCalendar(calendar);
-
 
     this.props.setReservation({ startDate, endDate, roomType });
     this.props.history.push("/reservation");
@@ -55,7 +48,6 @@ class Calendar extends Component {
         obj = localStorage...
         if(!obj) obj = {}
         obj[event.target.startDate] = date
-        
         */
     }
 

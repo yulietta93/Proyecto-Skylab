@@ -1,7 +1,6 @@
 const defaultState = {
     user: null
   }
-  
   export const userReducer = (state = defaultState, action) => {
     if(action.type === 'SET_USER_INFO') {
       return {
@@ -9,6 +8,5 @@ const defaultState = {
         user: action.payload
       }
     }
-  
     return state;
   }

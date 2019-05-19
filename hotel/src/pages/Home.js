@@ -4,7 +4,7 @@ import "../style/home.scss";
 import "bootstrap/dist/css/bootstrap.css";
 
 //componentes
-
+import Toolbar from "../components/Toolbar/Toolbar";
 import Header from "../components/Header/header";
 import RoomsHome from "../components/ListRoomsHome/RoomsHome";
 import PictosHome from "../components/Pictos/PictosHome";
@@ -16,6 +16,7 @@ class Home extends Component {
   render() {
     return (
       <div>
+         <Toolbar />
         <Header />
         <div className="container">
           <div className="row align-self-center">

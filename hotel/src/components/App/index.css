@@ -13,7 +13,7 @@
   src: local("CircularStd-Book"),
     url(../../fonts/CircularStd-Book.otf) format("otf");
 }
-
+/*
 .nav-container {
   width: 100%;
   background-color: black;
@@ -47,7 +47,7 @@ nav ul li a {
 /*
   nav ul li a:last-child{
       margin-right: 0;
-  }*/
+  }
 
 nav ul li a::before,
 nav ul li a::after {
@@ -104,3 +104,4 @@ nav ul li a:hover::after {
   color: white;
   margin-right: 30%;
 }
+*/
