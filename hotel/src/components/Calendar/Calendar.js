@@ -63,31 +63,31 @@ class Calendar extends Component {
 
   render() {
     return (
-      <div>
-        <h2 className="title-booknow">
-          Reserve a <br />
-          room. <br />
+      <div className="container-calendar">
+         <h2 className="title-booknow">
+          Reserve <br />
+          a room. <br />
           Choose
           <br /> yours!
         </h2>
-        <form className="form-book" id="motor" onSubmit={this.handleReservation}>
-          <label> Check-in </label>
-          <br />
-          <input name="startDate" type="date" id="entrada" className="entrada"onChange={this.handleReservationData}/>
-          <br />
-          <label> Check-out </label>
-          <br />
-          <input name="endDate"type="date" id="salida" onChange={this.handleReservationData}/>
-          <br />
-          <label> Room </label>
-          <br />
-          <select name="roomType" id="room" onChange={this.handleReservationData}>
+        <form className="form-book" onSubmit={this.handleReservation}>
+          <label className="check-in-label"> Check-in </label>
+          <br/>
+          <input name="startDate" type="date" className="check-in" onChange={this.handleReservationData}/>
+          <br/>
+          <label className="check-out-label"> Check-out </label>
+          <br/>
+          <input name="endDate"type="date" className="check-out" onChange={this.handleReservationData}/>
+          <br/>
+          <label className="room-label"> Room </label>
+          <br/>
+          <select name="roomType" className="roomType" onChange={this.handleReservationData}>
             <option value="junior">Junior Suite</option>
             <option value="standar">Junior Suite Standar</option>
             <option value="premium">Junior Suite Premium</option>
           </select>
           <br /> <br />
-          <button type="submit">Boow now</button>
+          <button className="button-basic" type="submit">Book now</button>
         </form>
       </div>
     );

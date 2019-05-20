@@ -13,7 +13,7 @@
   src: local("CircularStd-Book"),
     url(../../fonts/CircularStd-Book.otf) format("otf");
 }
-
+/*
 .container-rooms-home {
   margin-top: 25%;
   width: 20%;
@@ -45,7 +45,7 @@
 }
 
 .image-rooms {
-  background-size: contain;
+  object-fit: cover;
   width: 160px;
   height: 200px;
 }
@@ -75,72 +75,66 @@
   margin-top: 2%;
 }
 
-button {
-  font-family: "Circular-Book";
-  color: white;
-  background-color: black;
-  width: 90px;
-  height: 35px;
-  font-size: 14px;
-}
-
-button:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-}
-
 .picto2,
 .picto3 {
   padding-left: 3%;
 }
+*/
 
-@media (max-width: 375px) {
+
   .container-rooms-home {
-    margin-top: 25%;
-    width: 20%;
-    padding: 0.5%;
-    padding-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     align-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 15%;
+  }
+ 
+  .titulo-list-room{
+    width: 70%;
+    font-family: "Circular-Black";
+    font-size: 22px;
+    margin-top: 8%;
+    position: absolute;
+    margin-left: 16%;
   }
 
-  .titulo-list-room {
-    margin-left: -18%;
-  }
-  .container-rooms-home {
-    margin-top: 50%;
-    margin-left: -25%;
-  }
-  .contenedor {
-    width: 70%;
+  .rooms-list-home{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    //justify-content: space-between;
     align-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top:40%;
+ 
   }
 
   .image-rooms {
-    background-size: contain;
+    object-fit: cover;
     width: 160px;
     height: 220px;
   }
 
-  .titlle-rooms-home {
+  .tittle-rooms-home{
     font-family: "Circular-Black";
     font-size: 20px;
-    margin-top: 3%;
-    margin-left: 0%;
+    margin-top:2%;
+    padding: 0;
+    margin-bottom:0;
+  }
+
+  .contenedor-rooms-home{
+    display:flex;
+    flex-direction: column;
   }
 
   .description-rooms-home {
-    margin-top: -40%;
+    font-family: "Circular-Book";
     font-size: 15px;
     width: 165px;
+    margin-top:3%;
   }
 
   .pictogramas-list-room {
@@ -149,28 +143,53 @@ button:hover {
 
   .price {
     font-family: "Circular-Black";
-    font-size: 13px;
-    margin-left: 1%;
-    margin-top: 2%;
+    font-size: 15px;
+    margin-top:-9%;
+
   }
 
-  button {
+  .button-viewmore-home {
     font-family: "Circular-Book";
     color: white;
     background-color: black;
     width: 90px;
     height: 35px;
     font-size: 14px;
+    border-color:transparent;
+    display: flex;
+    flex-direction: column;
+    border-color:transparent;
+    text-align: center;
+    margin-top:10px;
+    
+
+    
   }
 
-  button:hover {
+  .button-viewmore-home:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
+    
   }
 
   .picto2,
   .picto3 {
-    padding-left: 3%;
+    display: none;
   }
+
+
+.room01{
+margin-top:-230%;
+margin-left:28%;
 }
+
+.room02{
+  margin-top:100%;
+  margin-left:27%;
+  }
+
+  .room03{
+    margin-top:100%;
+    margin-left:27%;
+    }

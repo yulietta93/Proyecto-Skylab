@@ -31,7 +31,7 @@ export default class PictosHome extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container-pictos-home">
         <h2 className="titulo-list-picto">
         Services. <br/>Enjoy your stay with us.
         </h2>
@@ -42,7 +42,6 @@ export default class PictosHome extends Component {
             picto02={element.picto02}
             picto03={element.picto03}
             picto04={element.picto04}
-   
           />
         ))}
 </div>

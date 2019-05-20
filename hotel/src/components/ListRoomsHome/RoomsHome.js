@@ -24,7 +24,7 @@ export default class RoomsHome extends Component {
         {
           imagenUrl:
             "https://images.unsplash.com/photo-1522061634923-98236ee38c8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=658&q=80",
-          title: "Double Room",
+          title: "Standar",
           description:
             "Perfect for couples or people who come to NN accompanied",
           picto: "https://image.flaticon.com/icons/png/512/114/114833.png",
@@ -36,7 +36,7 @@ export default class RoomsHome extends Component {
         {
           imagenUrl:
             "https://images.unsplash.com/photo-1519449556851-5720b33024e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80",
-          title: "Room Premium",
+          title: "Premium",
           description:
             "Immerse yourself in the true NN by opening the doors of the terrace",
           picto: "https://image.flaticon.com/icons/png/512/114/114833.png",
@@ -50,11 +50,9 @@ export default class RoomsHome extends Component {
 
   render() {
     return (
-      <div className="contenedor">
-        <h2 className="titulo-list-room">
-          Find your room in a small <br /> oasis in the middle of <br />
-          nature
-        </h2>
+      <div className="contenedor-rooms-home">
+        <h2 className="titulo-list-room"> Find your room in a small  oasis in the middle of nature</h2>
+        <div className="rooms-list-home">
         {this.state.list.map(element => (
           <ListRoomsHome
             imagenUrl={element.imagenUrl}
@@ -67,15 +65,16 @@ export default class RoomsHome extends Component {
             price={element.price}
           />
         ))}
+        </div>
         <div className="container-button-viewmore">
           <Link to="/habitaciones/habitacion01">
-            <button className="viewmore-home-room01">View More</button>
+            <button className="button-viewmore-home room01">View More</button>
           </Link>
           <Link to="/habitaciones/habitacion02">
-            <button className="viewmore-home-room02">View More</button>
+            <button className="button-viewmore-home room02">View More</button>
           </Link>
           <Link to="/habitaciones/habitacion03">
-            <button className="viewmore-home-room03">View More</button>
+            <button className="button-viewmore-home room03">View More</button>
           </Link>
         </div>
       </div>

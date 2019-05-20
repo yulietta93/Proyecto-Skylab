@@ -6,7 +6,7 @@
     url(../../fonts/CircularStd-Black.otf) format("otf");
 }
 
-.titulo-list-picto {
+/*.titulo-list-picto {
   font-family: "Circular-Black";
   font-size: 20px;
   margin-top: 5%;
@@ -42,23 +42,36 @@
 .picto-list-8 {
   padding-right: 7%;
   width: 12%;
+}*/
+
+.container-pictos-home{
+margin-top:5%;
 }
 
-@media (max-width: 375px) {
   .titulo-list-picto {
     font-family: "Circular-Black";
-    font-size: 20px;
-    margin-top: 5%;
-    margin-left: -19%;
+    font-size: 22px;
+    margin-top: 10%;
+    margin-left: 5%;
   }
 
+div .pictos-list .pictos-list-2{
+  width: 400px;
+  height:400px;
+}
   .pictos-list {
-    margin-left: 35%;
+    margin-left: 25%;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
   }
 
   .pictos-list2 {
     margin-top: -5%;
-    margin-left: 35%;
+    margin-left: 25%;
   }
   .picto-list-1,
   .picto-list-2,
@@ -69,6 +82,7 @@
   .picto-list-7,
   .picto-list-8 {
     padding-right: 11%;
-    width: 23%;
+    width: 55px;
   }
-}
+  
+

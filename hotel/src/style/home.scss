@@ -14,7 +14,7 @@
     url(../fonts/CircularStd-Book.otf) format("otf");
 }
 
-.about-tittle {
+/*.about-tittle {
   font-family: "Circular-Black";
   font-size: 22px;
   margin-top: 210%;
@@ -54,38 +54,38 @@
   margin-top: 25%;
   display: flex;
   justify-content: center;
+}*/
+
+.container-textAbout {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 20%;
+  padding-right: 10%;
+  margin-top:10%;
 }
 
-@media (max-width: 375px) {
-  .about-tittle {
-    margin-top: 210%;
-    margin-left: -65%;
-  }
+.about-tittle {
+  font-family: "Circular-Black";
+  font-size: 22px;
+}
 
-  .textAbout {
-    font-size: 18px;
-    line-height: 20px;
-    margin-top: -15%;
-    margin-left: 55%;
-  }
-  
-  .galery-tittle {
-    margin-top: 11%;
-    margin-left: -20%;
-  }
+.textAbout {
+  font-family: "Circular-Book";
+  font-size: 18px;
+  line-height: 20px;
+}
 
-  .text-gallery {
-    font-family: "Circular-Book";
-    width: 350px;
-    margin-left: 9%;
-    margin-top:0%;
-  }
+.galery-tittle {
+  margin-top: 11%;
+  margin-left: -20%;
+}
 
-  .tittleAbout {
-    text-align: center;
-    margin-left: 17%;
-    margin-top: 25%;
-    display: flex;
-    justify-content: center;
-  }
+.text-gallery {
+  font-family: "Circular-Book";
+  width: 350px;
+  margin-left: 9%;
+  margin-top: 0%;
 }

@@ -21,8 +21,6 @@
     background-size: cover;
     width: 100%;
     background-color:black;
-    
-
 }
 
 .saludo{
@@ -67,11 +65,11 @@ margin-left:-40%;
 
 }
 
-.logo{
+/*.logo{
     width: 4%;
 margin-left:5%;
 margin-top:-75%;
-}
+}*/
 
 .container-body{
     display: grid;

@@ -39,21 +39,26 @@ class Header extends Component {
     if(event.target.name === 'roomType') {
       this.setState({[event.target.name]: event.target.value})
     }
-
   }*/
 
   render() {
     return (
-      <div className="cabecera">
+      <div className="cabecera">    
 
-        <iframe src="https://player.vimeo.com/video/120909442?autoplay=1&color=ffffff&title=0&byline=0&portrait=0" width="1900" height="700" frameborder="0" allow="autoplay; fullscreen" allowfullscreen className="video"/>
-        <div className="texto-cabecera">
-          <h1>Welcome to <br />your new home</h1>
+        <div className="video">
+          <iframe src="https://player.vimeo.com/video/120909442?autoplay=1&color=ffffff&title=0&byline=0&portrait=0"  width ="100%"frameborder="0" allow="autoplay; fullscreen" allowfullscreen/>
         </div>
-        <div className="image-logo">
-        {/*<img src={logo} alt="logotipo" width="100%" className="logo" />*/}
+
+     
+
+        <div className="image-mobile">
+            <img  src="https://images.unsplash.com/photo-1537240937103-98b1d7a1c466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"/> 
         </div>
+
+        <div className="h1-tittle"><h1>Back to <br />nature</h1></div>
         <div className="line" />
+      
+
         <Calendar />
       </div>
     );

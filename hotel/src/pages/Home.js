@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "../style/home.scss";
 import "bootstrap/dist/css/bootstrap.css";
 
 //componentes
-import Toolbar from "../components/Toolbar/Toolbar";
+
 import Header from "../components/Header/header";
 import RoomsHome from "../components/ListRoomsHome/RoomsHome";
 import PictosHome from "../components/Pictos/PictosHome";
@@ -16,23 +15,25 @@ class Home extends Component {
   render() {
     return (
       <div>
-         <Toolbar />
+       
         <Header />
-        <div className="container">
-          <div className="row align-self-center">
-            <div className="tittleAbout col-2">
-              <h2 className="col-3 about-tittle">
+        <div className="container-textAbout">
+
+            <div className="tittleAbout">
+              <h2 className="about-tittle">
                 What's <br /> NN?
               </h2>
             </div>
-            <div className="textAbout col-6">
-              Ark-Shelters are prefabricated, fully finished, modular units. By
+
+            <div className="textAbout">
+             <p> Ark-Shelters are prefabricated, fully finished, modular units. By
               a lake, deep in a forest, at the edge of a field, a steep mountain
               hill or yourcity rooftop! Make your dream come true, installed in
-              one day, no extra on-site work.
+              one day, no extra on-site work.</p>
             </div>
+
           </div>
-        </div>
+
         <RoomsHome />
         <PictosHome />
         <h2 className="galery-tittle">

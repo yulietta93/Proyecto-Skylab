@@ -5,12 +5,18 @@ import { connect } from "react-redux";
 import { setUserInfo } from "../../redux/actions/userActions";
 import './index.css';
 
+//NAVBAR
+import Toolbar from '../../components/Toolbar/Toolbar';
+import Backdrop from "../../components/Backdrop/Backdrop";
+import SideDrawer from "../../components/SideDrawer/SideDrawer";
 
-import Signup from "../../pages/Signup";
-import Login from "../../pages/Login";
+//SERVICES
 import AuthService from "../../services/authService";
 import DataService from "../../services/dataService";
 
+//PAGES
+import Signup from "../../pages/Signup";
+import Login from "../../pages/Login";
 import Home from "../../pages/Home";
 import Habitaciones from "../../pages/Habitaciones";
 import Habitacion01 from "../../pages/Habitacion01";
@@ -22,12 +28,14 @@ import Reservation from '../../pages/reservation';
 import RoomDetail from '../../pages/RoomDetail';
 import ReservationsDetail from '../../pages/ReservationsDetail';
 
+
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      loading: true
+      loading: true,
+      sideDrawerOpen:false,
     };
   }
   componentDidMount() {
@@ -53,30 +61,56 @@ class App extends Component {
     this.props.setUserInfo(null);
   };
 
+  //NAVBAR HAMBURG
+  DrawerToggleClickHandler = () => {
+    this.setState((prevState)=>{
+      return {sideDrawerOpen: !prevState.sideDrawerOpen};
+    });
+  };
+
+  //NAVBAR HAMBR
+  backdropClick = () => {
+    this.setState({sideDrawerOpen: false});
+  };
+
+
   render() {
+    //USER
     const { userInfo } = this.props;
     const { loading } = this.state;
     if (loading) return <div>Loading</div>;
+
+    //NAVBAR
+    let backdrop;
+    if(this.state.sideDrawerOpen){
+      backdrop= <Backdrop click={this.backdropClickHandler}/>;
+    }
+
     return (
-      <main>
-  
-        <Router> 
-          {/*<nav className="nav-container">
+        <main>
+            <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
+            <SideDrawer show={this.state.sideDrawerOpen}/>
+           {backdrop}
+            
+
+            <Router> 
+            <nav className="nav-container">
+            <ul className="login-container">
+              {!userInfo && <li><Link to="/signup">Signup</Link></li>}
+              {!userInfo && <li><Link to="/login">Login</Link></li>}
+              {userInfo && <li onClick={this.logout}>Logout</li>}
+              </ul>
+              {userInfo && <div><span>{userInfo.name}</span></div>}
+            </nav>
+            
+         {/* 
               <ul>   
               <li> <Link to="/">Home</Link></li>
               <li> <Link to="/habitaciones">Rooms</Link></li>
               <li> <Link to="/ofertas">Offers</Link></li>
               <li> <Link to="/servicios">Services</Link></li>
             </ul>
-            <ul className="login-container">
-              {!userInfo && (<li> <Link to="/signup">Signup</Link></li>)}
-              {!userInfo && ( <li><Link to="/login">Login</Link> </li>)}
-              </ul>
-              <ul className="logout-container">
-              {userInfo && (<div className="saludo-container"><span className="saludo">{userInfo.name}</span> </div>)}
-              {userInfo && (<li onClick={this.logout} className="logout"><u>Logout</u></li>)}
-              </ul>
-            </nav>*/}
+            */}
 
           <Switch>
             <Route path="/reservationsdetail/:id" component={ReservationsDetail} />
