@@ -14,71 +14,77 @@
     url(../fonts/CircularStd-Book.otf) format("otf");
 }
 
-.contenedor-offers{
+.contenedor-offer{
+  margin-top:5%;
+}
+
+.offer-left {
+  margin-left: 20%;
+  margin-top:10%;
+}
+
+.offer-right {
+  margin-left: 20%;
+  margin-top:16%;
+}
+
+.container-offer-right{
 
 }
 
-  .offer-left {
-      margin-left:20%;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-  
-  }
-  
-  .tittle-offer-left {
-    margin-top: 60%;
-    width: 380px;
-    font-family: "Circular-Black";
-    font-size: 20px;
-  }
-  
-  .image-offer-left {
-      width: 350px;
-   margin-left:45%;
-   margin-top:-6%;
-  }
-  
-  .description-offer-left {
-    font-family: "Circular-Book";
-    font-size:16px;
-    width: 400px;
-    margin-top:-12%;
-  }
-  
-  .button-offer-left {
-  }
-  
-
-  .offer-right {
-    margin-left:20%;
-    margin-top:-40%;
-
-}
-
-.tittle-offer-right {
-  margin-top: 90%;
+.tittle-offer-left {
   width: 380px;
   font-family: "Circular-Black";
   font-size: 20px;
-  margin-left:43%;
- 
+}
+
+.image-offer-left {
+  width: 350px;
+  margin-left: 45%;
+  margin-top: -6%;
+}
+
+.description-offer-left {
+  font-family: "Circular-Book";
+  font-size: 16px;
+  width: 400px;
+  margin-top: -12%;
+}
+
+
+.offer-right {
+  margin-left: 20%;
+}
+
+.tittle-offer-right{
+  width: 380px;
+  font-family: "Circular-Black";
+  font-size: 20px;
+  margin-left: 43%;
+  margin-top:-20%;
 }
 
 .image-offer-right {
-width: 350px;
- margin-left:0%;
- margin-top:-9%;
+  width: 350px;
+  margin-left: 0%;
+  margin-top: -9%;
 }
 
 .description-offer-right {
   font-family: "Circular-Book";
-  font-size:16px;
+  font-size: 16px;
   width: 400px;
-  margin-top:-10%;
+  margin-top: 0%;
   margin-left: 43%;
 }
 
+
+ //BUTTON
+
+ .button-offer-left{
+  margin-left:0%;
+}
+
 .button-offer-right{
-    margin-left:43%;
+  margin-left:43%;
 }

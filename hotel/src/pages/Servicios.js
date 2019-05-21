@@ -9,19 +9,17 @@ import piscina from "../image/piscina.jpg";
 //componentes
 import Header from "../components/Header/header";
 import Footer from "../components/Footer/Footer";
-import PictosHome from "../components/Pictos/PictosHome";
+
 
 export default class Servicios extends Component {
   render() {
     return (
       <div>
         <Header />
+        <div className="container-service">
 
         <div className="section01-service">
-          <h2 className="title-service-01">
-            {" "}
-            Discover the real <br /> ipsum nature!
-          </h2>
+          <h2 className="title-service-01">Discover the real <br /> ipsum nature!</h2>
           <p className="text-service">
             Lorem ipsum dolor sit amet consectetur adipiscing elit nibh
             venenatis, tellus malesuada tempor curabitur iaculis ultricies nulla
@@ -31,9 +29,13 @@ export default class Servicios extends Component {
             euismod at.
           </p>
           <img src={piscina} alt="img01-service" className="img01-service" />
-          <button onClick="" className="button-service-01">
-            Boow now
-          </button>
+        
+          <Link to="/reservation">
+              <button className="button-service-01 button-room01 button-deital-rooms">
+                Book now
+              </button>
+            </Link>
+         
         </div>
 
         <div className="section02">
@@ -58,9 +60,12 @@ export default class Servicios extends Component {
             commitment to local cuisine and Catalan products that will far
             exceed your expectations
           </p>
-          <button onClick="" className="button-service-02">
-            Boow now
-          </button>
+          <Link to="/reservation">
+              <button className="button-service-01 button-room01 button-deital-rooms">
+                Book now
+              </button>
+            </Link>
+          
         </div>
 
         <div className="section03">
@@ -84,6 +89,7 @@ export default class Servicios extends Component {
             venenatis, tellus malesuada tempor curabitur iaculis ultricies nulla
             lectus rutrum porttitor.
           </p>
+        </div>
         </div>
 
         <Footer />
