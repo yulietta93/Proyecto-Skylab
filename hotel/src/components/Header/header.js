@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import "./header.scss"
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { connect } from 'react-redux'
 import {setReservation} from '../../redux/actions/reservationActions'
 import { withRouter } from 'react-router-dom'
-import logo from "../../image/logo-blanco.svg";
 import Calendar from "../Calendar/Calendar";
 
 
@@ -45,8 +43,8 @@ class Header extends Component {
     return (
       <div className="cabecera">    
 
-        <div className="video">
-          <iframe src="https://player.vimeo.com/video/120909442?autoplay=1&color=ffffff&title=0&byline=0&portrait=0"  width ="100%"frameborder="0" allow="autoplay; fullscreen" allowfullscreen/>
+        <div className="video-container">
+          <iframe src="https://player.vimeo.com/video/120909442?autoplay=1&color=ffffff&title=0&byline=0&portrait=0" frameborder="0px" allow="autoplay; fullscreen" allowfullscreen=" "/>
         </div>
 
      

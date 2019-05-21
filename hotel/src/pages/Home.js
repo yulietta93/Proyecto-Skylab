@@ -19,14 +19,14 @@ class Home extends Component {
         <Header />
         <div className="container-textAbout">
 
-            <div className="tittleAbout">
+       
               <h2 className="about-tittle">
                 What's <br /> NN?
               </h2>
-            </div>
+ 
 
             <div className="textAbout">
-             <p> Ark-Shelters are prefabricated, fully finished, modular units. By
+             <p className="p-about"> Ark-Shelters are prefabricated, fully finished, modular units. By
               a lake, deep in a forest, at the edge of a field, a steep mountain
               hill or yourcity rooftop! Make your dream come true, installed in
               one day, no extra on-site work.</p>
