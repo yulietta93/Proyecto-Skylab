@@ -10,9 +10,9 @@ const ListRoomsHome = props => (
     <h3 >{props.title2} </h3>
     
     <div className="pictogramas-list-room">
-    <img className="picto" src={props.picto} width="15%"/>
-    <img className="picto2" src={props.picto2} width="16%" />
-    <img className="picto3" src={props.picto3} width="16%" />
+    <img className="picto" src={props.picto} />
+    <img className="picto2" src={props.picto2}  />
+    <img className="picto3" src={props.picto3} />
     </div>
 
     <span className ="price">{props.price}</span>

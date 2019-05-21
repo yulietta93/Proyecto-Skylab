@@ -63,10 +63,7 @@
   width: 165px;
 }
 
-.pictogramas-list-room {
-  margin-top: -6%;
-  margin-bottom: 6.6%;
-}
+
 
 .price {
   font-family: "Circular-Black";
@@ -82,114 +79,170 @@
 */
 
 
-  .container-rooms-home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    margin-bottom: 15%;
-  }
- 
-  .titulo-list-room{
-    width: 70%;
-    font-family: "Circular-Black";
-    font-size: 22px;
-    margin-top: 8%;
-    position: absolute;
-    margin-left: 16%;
-  }
-
-  .rooms-list-home{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-    margin-top:40%;
- 
-  }
-
-  .image-rooms {
-    object-fit: cover;
-    width: 160px;
-    height: 220px;
-  }
-
-  .tittle-rooms-home{
-    font-family: "Circular-Black";
-    font-size: 20px;
-    margin-top:2%;
-    padding: 0;
-    margin-bottom:0;
-  }
-
-  .contenedor-rooms-home{
-    display:flex;
-    flex-direction: column;
-  }
-
-  .description-rooms-home {
-    font-family: "Circular-Book";
-    font-size: 15px;
-    width: 165px;
-    margin-top:3%;
-  }
-
-  .pictogramas-list-room {
-    display: none;
-  }
-
-  .price {
-    font-family: "Circular-Black";
-    font-size: 15px;
-    margin-top:-9%;
-
-  }
-
-  .button-viewmore-home {
-    font-family: "Circular-Book";
-    color: white;
-    background-color: black;
-    width: 90px;
-    height: 35px;
-    font-size: 14px;
-    border-color:transparent;
-    display: flex;
-    flex-direction: column;
-    border-color:transparent;
-    text-align: center;
-    margin-top:10px;
-    
-
-    
-  }
-
-  .button-viewmore-home:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    
-  }
-
-  .picto2,
-  .picto3 {
-    display: none;
-  }
-
-
-.room01{
-margin-top:-230%;
-margin-left:28%;
+.container-rooms-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-bottom: 15%;
 }
 
-.room02{
-  margin-top:100%;
-  margin-left:27%;
-  }
+.titulo-list-room {
+  width: 70%;
+  font-family: "Circular-Black";
+  font-size: 22px;
+  margin-top: 8%;
+  position: absolute;
+  margin-left: 16%;
+}
 
-  .room03{
-    margin-top:100%;
-    margin-left:27%;
-    }
+.rooms-list-home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: 40%;
+}
+
+.image-rooms {
+  object-fit: cover;
+  width: 160px;
+  height: 220px;
+}
+
+.tittle-rooms-home {
+  font-family: "Circular-Black";
+  font-size: 20px;
+  margin-top: 2%;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.contenedor-rooms-home {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-rooms-home {
+  font-family: "Circular-Book";
+  font-size: 15px;
+  width: 165px;
+  margin-top: 3%;
+}
+
+.pictogramas-list-room {
+  display: none;
+}
+
+.price {
+  font-family: "Circular-Black";
+  font-size: 15px;
+  margin-top: -9%;
+}
+
+.button-viewmore-home {
+  font-family: "Circular-Book";
+  color: white;
+  background-color: black;
+  width: 90px;
+  height: 35px;
+  font-size: 14px;
+  border-color: transparent;
+  display: flex;
+  flex-direction: column;
+  border-color: transparent;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button-viewmore-home:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.picto2,
+.picto3 {
+  display: none;
+}
+
+.room01 {
+  margin-top: -230%;
+  margin-left: 28%;
+}
+
+.room02 {
+  margin-top: 100%;
+  margin-left: 27%;
+}
+
+.room03 {
+  margin-top: 100%;
+  margin-left: 27%;
+}
+
+@media (min-width: 769px) {
+.container-rooms-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 4%;
+  text-align: center;
+}
+
+.contenedor-rooms-home{
+  margin-top:16%;
+  margin-left:7%;
+}
+
+.description-rooms-home{
+  text-align: center;
+  margin-left: 8%;
+
+}
+
+.rooms-list-home {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin:0%;
+  justify-content: center;
+}
+
+.image-rooms {
+  object-fit: cover;
+  width: 200px;
+  height: 260px;
+}
+
+.titulo-list-room {
+  font-family: "Circular-Black";
+  font-size: 22px;
+  margin:0;
+  width: 16%;
+  margin-left:20%;
+  margin-top:-7%;
+}
+
+.container-button-viewmore{
+  display: flex;
+  flex-direction: row;
+  margin:0%;
+  margin-left:24%;
+  margin-top:-14%;
+  justify-content: space-between;
+  width: 47%;
+
+}
+a .button-viewmore-home{
+margin:0;
+}
+
+button .room02 {
+
+}
+
+}
