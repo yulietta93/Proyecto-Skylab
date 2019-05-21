@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CarouselSlider from "react-carousel-slider";
-import "./slider.css";
+import "./slider.scss";
 
 export default class Gallery extends Component {
   render() {
@@ -25,8 +25,18 @@ export default class Gallery extends Component {
     ];
 
     return (
+      <div className="container-slider"> 
+        <h2 className="galery-tittle">Spaces...Spaces in which to create and share.</h2>
         <CarouselSlider 
         slideItems={data} />
+        <div className="text-gallery">
+        <p>A building with roots in the nature, converted into a 
+        hotel. A hotel situated above a passage frequented by 
+        merchants, neighbors and visitors. We believe in the evolution 
+        of spaces and respect for the surrounding areas.
+        </p>
+      </div>
+      </div>
  
     );
   }

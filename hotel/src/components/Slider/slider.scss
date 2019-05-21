@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "Circular-Book";
-  font-style: normal;
-  font-weight: normal;
-  src: local("CircularStd-Book"),
-    url(../../fonts/CircularStd-Book.otf) format("otf");
-}
-
 /*Todo el slider*/
 .rcs_sliderSet {
   width: 60% !important;
@@ -51,20 +43,59 @@
   display: none;
 }
 
+.galery-tittle {
+  font-family: "Circular-Black";
+  font-size: 22px;
+  margin-top: 7%;
+  margin-left: -40%;
+}
+
+.text-gallery {
+  font-family: "Circular-Book";
+  width: 500px;
+  display: grid;
+  font-size: 15px;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  margin-left: 33%;
+  text-align: center;
+}
+
 @media (max-width: 375px) {
   /*Todo el slider*/
   .rcs_sliderSet {
-    width: 80% !important;
+    width: 70% !important;
+    margin-left: 15% !important;
   }
 
   /*Caja que contiene imagenes*/
   .rcs_sliderBox {
     width: 100%;
-    margin-top:3%;
   }
 
   div[style]{
     background-color:white;
     width: 100%;
   }
+
+  .container-slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:12%;
+  }
+
+  .galery-tittle {
+    text-align: center;
+    width: 50%;
+    margin-left:25%;
+  }
+  
+.text-gallery {
+  font-family: "Circular-Book";
+  width: 75%;
+  margin-left: 12%;
+}
 }

@@ -6,9 +6,9 @@
     url(../../fonts/CircularStd-Black.otf) format("otf");
 }
 
-/*.titulo-list-picto {
+.titulo-list-picto {
   font-family: "Circular-Black";
-  font-size: 20px;
+  font-size: 22px;
   margin-top: 5%;
   margin-left: -49%;
 }
@@ -42,17 +42,18 @@
 .picto-list-8 {
   padding-right: 7%;
   width: 12%;
-}*/
-
-.container-pictos-home{
-margin-top:5%;
 }
 
+@media (max-width: 375px) {
+ .container-pictos-home{
+   margin-top: 10%;
+ }
   .titulo-list-picto {
     font-family: "Circular-Black";
-    font-size: 22px;
-    margin-top: 10%;
-    margin-left: 5%;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 0%;
+    text-align: center;
   }
 
 div .pictos-list .pictos-list-2{
@@ -66,7 +67,6 @@ div .pictos-list .pictos-list-2{
     flex-direction: row;
     justify-content: flex-start;
     align-content: center;
-    flex-wrap: wrap;
   }
 
   .pictos-list2 {
@@ -82,7 +82,6 @@ div .pictos-list .pictos-list-2{
   .picto-list-7,
   .picto-list-8 {
     padding-right: 11%;
-    width: 55px;
+    width: 23%;
   }
-  
-
+}

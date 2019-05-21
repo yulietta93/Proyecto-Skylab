@@ -36,18 +36,7 @@ class Home extends Component {
 
         <RoomsHome />
         <PictosHome />
-        <h2 className="galery-tittle">
-          Spaces...
-          <br />
-          Spaces in which <br /> to create and share.
-        </h2>
         <Gallery />
-        <p className="text-gallery">
-          A building with roots in the nature, converted into a <br />
-          hotel. A hotel situated above a passage frequented by <br />
-          merchants, neighbors and visitors. We believe in the evolution <br />
-          of spaces and respect for the surrounding areas.
-        </p>
         <Footer />
       </div>
     );
