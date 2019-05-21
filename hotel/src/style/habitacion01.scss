@@ -1,95 +1,112 @@
 @font-face {
-    font-family: "Circular-Black";
-    font-style: normal;
-    font-weight: normal;
-    src: local("CircularStd-Black"),
-      url(../fonts/CircularStd-Black.otf) format("otf");
-  }
-  
-  @font-face {
-    font-family: "Circular-Book";
-    font-style: normal;
-    font-weight: normal;
-    src: local("CircularStd-Book"),
-      url(../fonts/CircularStd-Book.otf) format("otf");
-  }
-  
-
- .container-description-room{
-    margin-left:10%;
-    margin-top:45%;  
-    width: 60%;
- }
-
-
-.tittle-room-01{
-    font-family: "Circular-Black";
-    font-size: 20px;
-    margin-top:30%;
-    margin-left:-42%;
-
-  }
-
- .container-room-01{
-
- }
-
- .image01-room-01{
-    width: 380px;
-    margin-left:22%;
-    margin-top:4%;
-    height: auto;
-
- }
-
- .image02-room-01{
-    width: 140px;
-    margin-left:70%;
-    margin-top:-38%;
-     
-}
-.image03-room-01{
-    width:140px;
-    margin-left:90%;
-    margin-top:-43%;
-     
+  font-family: "Circular-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Black"),
+    url(../fonts/CircularStd-Black.otf) format("otf");
 }
 
-.description-room01{
-    width: 380px;
-    font-family: "Circular-Book";
-    font-size: 16px;
-    margin-left:22%;
-    margin-top:-4%;
-
+@font-face {
+  font-family: "Circular-Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Book"),
+    url(../fonts/CircularStd-Book.otf) format("otf");
 }
 
-.button-room01{
-    margin-left:23%;
+.container-description-room {
+  margin-left: 10%;
+  margin-top: 50%;
+  width: 60%;
+}
+
+.container-room-01 {
+  margin-top: -3%;
+}
+.tittle-room-01 {
+  font-family: "Circular-Black";
+  font-size: 28px;
+  margin-left: 23.5%;
+  width: 10%;
+}
+
+.image01-room-01 {
+  width: 380px;
+  margin-left: 22%;
+  margin-top: 4%;
+  height: auto;
+}
+
+.image02-room-01 {
+  width: 140px;
+  margin-left: 70%;
+  margin-top: -38%;
+}
+
+.image03-room-01 {
+  width: 140px;
+  margin-left: 90%;
+  margin-top: -43%;
+}
+
+.description-room01 {
+  width: 380px;
+  font-family: "Circular-Book";
+  font-size: 16px;
+  margin-left: 22%;
+  margin-top: -4%;
+}
+
+.button-room01 {
+  margin-left: 23%;
 }
 
 //SECTION 02
 
-.tittle-destacado02-room01{
-    font-family: "Circular-Black";
-    font-size: 22px;
-    margin-top:10%;
-    margin-left:22%;
+.destacado02-room01 {
+  margin-left: 6%;
+}
+.tittle-destacado02-room01 {
+  font-family: "Circular-Black";
+  font-size: 22px;
+  margin-top: 10%;
+  margin-left: 22%;
 }
 
-
-.text-destacado-room01{
-    font-family: "Circular-Book";
-    font-size: 16px;
-    line-height: 18px;
-    margin-top:3%;
-    margin-left:22%;
-    width: 300px;
+.text-destacado-room01 {
+  font-family: "Circular-Book";
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 3%;
+  margin-left: 22%;
+  width: 300px;
 }
 
+.image04-room-01 {
+  width: 200px;
+  margin-left: 55%;
+  margin-top: -20%;
+}
 
-.image04-room-01{
-    width: 200px;
-    margin-left:55%;
-    margin-top:-20%;  
+.container-room {
+  margin-top: -40%;
+}
+
+.button-deital-rooms {
+  font-family: "Circular-Book";
+  color: white;
+  background-color: black;
+  width: 90px;
+  height: 35px;
+  font-size: 14px;
+  border-color: transparent;
+}
+
+.button-deital-rooms:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+.container-map {
+  margin-left: 5%;
 }
