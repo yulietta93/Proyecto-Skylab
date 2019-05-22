@@ -53,7 +53,7 @@ class RoomDetail extends Component {
         </div>
 
         <div>
-      <h3 className="tittle-principal">Please fill in your details</h3>
+      <h3 className="tittle-principal"><u>Please fill in your details</u></h3>
       </div>
 
   <div className="container-tree-info">
@@ -62,45 +62,40 @@ class RoomDetail extends Component {
 
       <div className="roomdetail-map-description">
         {!loading && (<div className="detail-room">
-            <div className="room-typology">{room.typology}</div>
-            <div className="room-name">{room.name}</div>
+            <div className="room-typology-roomdetail">{room.typology}</div>
+            <div className="room-name-roomdetail">{room.name}</div>
             <img className="room-image-roomdetail" src={room.image}/>
             <div className="room-price-roomdetail">{room.price}€</div>
-            <div className="room-description-roomdetail">{room.description} </div>
+            <div className="room-description-roomdetail">{room.descriptionDetail} </div>
           </div>
         )}
+        <div className="button-atras">
+               <Link to="/reservation">
+               <button className="button-basic">Atrás</button>
+               </Link>
+               </div>
       </div>
 
 
-        <div className="form-select-info">
+      <div className="form-select-info">
         <FormRoomDetail />
-            <div className="button-atras">
-               <Link to="/reservation">
-               <button>Atrás</button>
-               </Link>
-            </div>
+           
         </div>
-        
 
-      <div className="container-ventajas-pictogramas">
+
+        <div className="container-ventajas-pictogramas">
         <h3 className="tittle-about-booking">More about your booking</h3>
         <ul className="list-picto-ventajas">
-        
-    
-       <li> <span className="round-tab"><img src="https://image.flaticon.com/icons/png/512/82/82646.png" alt="padlok" width="2%"></img>
+       <li> <span className="round-tab"><img src="https://image.flaticon.com/icons/png/512/82/82646.png" alt="padlok" width="15%" className="image-picto-about"></img>
         Best price guaranteed</span>
        </li>
-       
-
-       <li> <span className="round-tab"><img src="https://image.flaticon.com/icons/png/512/70/70482.png" alt="padlok" width="2%"></img>
+       <li> <span className="round-tab"><img src="https://image.flaticon.com/icons/png/512/70/70482.png" alt="padlok" width="15%" className="image-picto-about"></img>
         Free Wi-Fi</span>
        </li>
-
-       <li> <span className="round-tab"><img src="https://image.flaticon.com/icons/png/512/91/91834.png" alt="padlok" width="2%"></img>
+       <li> <span className="round-tab"><img src="https://image.flaticon.com/icons/png/512/91/91834.png" alt="padlok" width="15%" className="image-picto-about"></img>
         24h service</span>
        </li>
-
-       <li> <span className="round-tab"><img src="https://image.flaticon.com/icons/png/512/85/85966.png" alt="padlok" width="2%"></img>
+       <li> <span className="round-tab"><img src="https://image.flaticon.com/icons/png/512/85/85966.png" alt="padlok" width="15%" className="image-picto-about"></img>
        Simple check-in</span>
        </li>
         </ul>

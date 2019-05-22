@@ -18,7 +18,6 @@
 .room-detail {
   display: flex;
   flex-direction: column;
-  border:1px solid rgb(133, 133, 128);
 }
 
 .tittle-principal {
@@ -30,18 +29,14 @@
     display: flex;
     flex-direction: row;
     margin:0%;
-    border: 1px solid salmon;
-    justify-content: center;
-    
+    justify-content: space-around;
 }
 
 //ESQUEMA INICIAL
 .container-esquema ul{
     display: flex;
     flex-direction: row;
-    border: 1px solid salmon;
     justify-content:space-around;
-    flex-wrap: wrap;  
     margin:0%;
     margin-bottom: 0%;
 
@@ -76,6 +71,8 @@ img .padlok{
     z-index: 1;
 }
 
+
+
 //INFO HABITACION
 .roomdetail-map-description{
     margin:0%;
@@ -87,7 +84,6 @@ img .padlok{
 }
 
 .detail-room{
-    border: 3px solid yellow;
     margin:0%;
 }
 
@@ -98,25 +94,68 @@ img .padlok{
     margin:0%;
 }
 
+.room-typology-roomdetail{
+    font-family: "Circular-Book";
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.room-name-roomdetail{
+    font-family: "Circular-Black";
+    font-size: 25px; 
+}
+
 
 .room-image-roomdetail{
     object-fit: cover;
-    width: 350px;
-    height: 280px;
+    width: 450px;
+    height: 350px;
     margin:0%;
 }
 
 .room-price-roomdetail{
     font-family: "Circular-Black";
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .room-description-roomdetail{
     font-family: "Circular-Book";
     font-size: 16px;
-    width: 350px;
+    width: 430px;
+}
+
+.tittle-principal{
+    text-align: center;
+    padding: 50px 0px 50px 0px;
 }
 
 //FORMULARIO
 
 //VENTAJAS
+
+.container-ventajas-pictogramas{
+    display: flex;
+    flex-direction: column;
+    margin:0%;
+    width: 350px;
+   
+}
+
+.container-ventajas-pictogramas{
+    font-family: "Circular-Book";
+    font-size: 18px;
+    margin:10px,0;
+    line-height: 45px;
+}
+
+.tittle-about-booking{
+    font-family: "Circular-Black";
+    font-size: 25px; 
+    text-align: center;
+    height: auto;
+}
+
+.image-picto-about{
+    padding-right: 15px;
+}
