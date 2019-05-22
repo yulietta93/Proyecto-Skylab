@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import DataService from "../services/dataService";
 import TakeMoney from "../components/stripe/stripe";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import '../style/ReservationsDetail.scss';
 
 export default class ReservationsDetail extends Component {
   constructor(props) {
@@ -22,24 +23,45 @@ export default class ReservationsDetail extends Component {
     const { reservations, loading } = this.state;
     return (
       <div className="container-roomdetail">
-       <h3>Resumen de tu reserva</h3>
+
+       <h3 className="tittle-summary">Summary of your Reservation</h3>
+
+       <div className="container-map-summary-description">
         {!loading && (
-          <div className="detail-room">
-            <p>{reservations.roomType}</p>
-            <p> {reservations.startDate}</p>
-           <p> {reservations.endDate}</p>
-           <p> {reservations.name}</p>
-           <p>{reservations.surname}</p>
-           <p> {reservations.phone}</p>
-           <p> {reservations.specialRequests}</p>
-          </div>
+          <table className="detail-room">
+          <tr>
+           <td> <p className="reservations-roomType"><span className="name-caracter">Typology </span> <br></br> {reservations.roomType}</p></td>
+           <td> <p className="reservations-startDate"> <span className="name-caracter">Check-in</span> <br></br> {reservations.startDate}</p></td>
+           <td> <p className="reservations-endDate"> <span className="name-caracter">Check-out</span> <br></br> {reservations.endDate}</p></td>
+           <td><p className="reservations-name"><span className="name-caracter">Name</span> <br></br> {reservations.name}</p></td>
+           </tr>
+
+           <tr>
+           <td><p className="reservations-surname"><span className="name-caracter">Lastname</span> <br></br> {reservations.surname}</p></td>
+           <td> <p className="reservations-phone"><span className="name-caracter"> Phon</span>e <br></br> {reservations.phone}</p></td>
+           <td> <p className="reservations-specialRequests"><span className="name-caracter"> Special Requests</span> <br></br> {reservations.specialRequests}</p></td>
+           <td><TakeMoney /></td>
+           </tr>
+          </table>
         )}
-      <TakeMoney />
+     </div>
+
       <div>
           <Link to="/roomdetail/:id">
-            <button>Atrás</button>
+            <button className="button-basic button-reservationdetail">Back</button>
           </Link>
         </div>
+
+        <div className="message-finally">
+        <h3 className="tittle-message-finally">Thank you for your reservation!</h3>
+        <div>
+          <Link to="/">
+            <button className="button-basic button-home">Home</button>
+          </Link>
+        </div>
+
+        </div>
+
       </div>
  
 
