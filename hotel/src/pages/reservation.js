@@ -48,18 +48,31 @@ class Reservation extends Component {
     const { rooms, calendar } = this.state;
 
     return (
-      <div>
-        <h3 className="tittle-reservation">Select <br></br>your room</h3>
+  
 
-        <div className="select-date">
-        <Calendar/>
-        {calendar && calendar.startDate && calendar.endDate &&
-        <div>
-        <p className=""><span>Inicio: </span><span>{calendar.startDate.displayDate}</span></p>
-        <p><span>Fin: </span><span>{calendar.endDate.displayDate}</span></p>
-        <p><span>Tipo de habitacion: </span><span>{calendar.roomType}</span></p></div>
-        }
-        </div>
+      <div className="container-reservation">
+
+    <div className="container-description-reservation">
+      <div className="select-date">
+      {calendar && calendar.startDate && calendar.endDate &&
+      <div>
+        <h4 className="tittle-date-selected"> Your Dates</h4>
+      <p className="start-parraf"><span className="check-selected" >Check-in: </span><span className="date-selected">{calendar.startDate.displayDate}</span></p>
+      <p className="end-parraf"><span className="check-selected">Check-out: </span><span className="date-selected">{calendar.endDate.displayDate}</span></p>
+      <p className="roomType-parraf"><span className="check-selected">Room Type: </span><span className="date-selected">{calendar.roomType}</span></p></div>
+      }
+    </div>
+
+      <h3 className="tittle-reservation">Select your room</h3>
+      <img className="image-description" src="https://www.massalagros.com/wp-content/uploads/2018/05/Gastronomia25.jpg" ></img>
+      <p className="text-description-reservation">NN is the first EcoResort 100% ecological of the peninsula.
+      We are located in a natural reserve, overlooking the protected 
+      park of the Serralada Litoral. Our location, together with our 
+      100% sustainable operation, make this a unique place in 
+      the peninsula.</p>
+
+      </div>
+       
 
         <div className="container-map-room-firebase">
           {rooms &&
@@ -82,18 +95,21 @@ class Reservation extends Component {
                    
 
                   <div className="button-price">
-                  {!room.available && <div className="room-nodisponible">HABITACION NO DISPOBIBLE</div>}
+                  {!room.available && <div className="room-nodisponible">ROOM NOT AVAILABLE</div>}
                     <div className="room-price"> {room.price}€ </div>
                     <button disabled={!room.available} className={!room.available ?  'disabled' : 'button-deital-rooms'} onClick={() => this.onRoomDetailClicked(room.id)} > Book now </button>
                   </div>
-
-                  
                   </div>
                 );
               }
             })}
+              
         </div>
+        <div className="calendar-page-reservation">
+              <Calendar className="component-calendar"/>
+              </div>
       </div>
+   
     );
   }
 }

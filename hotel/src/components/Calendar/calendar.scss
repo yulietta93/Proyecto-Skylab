@@ -14,6 +14,7 @@
     url(../../fonts/CircularStd-Book.otf) format("otf");
 }
 
+/*
 .container-calendar {
   display: flex;
   align-items: row;
@@ -48,7 +49,6 @@ input[type="date"] {
   border: none;
   border: 1px solid black;
   background-color: white;
-
 }
 
 .roomType{
@@ -79,27 +79,86 @@ input[type="date"] {
   color: black;
   border: 1px solid black;
 }
+*/
 
 @media (min-width: 769px) {
-  
-  .container-calendar {
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-self:flex-start;
-    margin:0%;
-    align-content: center;
-    margin-bottom:0%;
-    margin-left: 110%;
-    margin-top:-50%;
-  }
 
-  .title-booknow {
-    font-size: 45px;
-    line-height: 42px;
-    font-family: "Circular-Black";
-    margin-left:0%;
-    margin-bottom: 25%;
-  }
+//CONTAINERS FLEX
+.container-calendar{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-content:center;
+  border:1px solid red;
+}
+
+.tittle-calendar{
+  margin:0%;
+}
+ 
+.title-booknow{
+  display: flex;
+  font-family: "Circular-Black";
+  font-size: 35px;
+  line-height: 30px;
+  border:1px solid yellow;
+  margin:0px;
+  text-align: start;
+  padding-right: 43px;
+}
+
+.form-calendar{
+  display: flex;
+  flex-direction: column;
+  align-self:center;
   
+}
+
+.form-book{
+  margin-top:10%;
+}
+
+.check-in-label,
+.check-out-label,
+.room-label{
+  text-align: center;
+  margin:0%;
+  font-family: "Circular-Black";
+  font-style: UpperCase;
+}
+
+
+
+//DETALLES
+input[type="date"] {
+  border: none;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.roomType{
+  border: none;
+  border: 1px solid black;
+  border-radius: 0px;
+  background-color: white;
+}
+
+//BUTTON
+.button-basic{
+  font-family: "Circular-Book";
+   color: white;
+   background-color: black;
+   width: 90px;
+   height: 35px;
+   font-size: 14px;
+   border-color:transparent;
+}
+
+.button-basic:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
 }

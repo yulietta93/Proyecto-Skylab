@@ -85,4 +85,12 @@ h1 {
     height: 707px;
     background-color: black;
   }
+
+  .calendario-date{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 15%;
+    margin-top:5%;
+  }
 }

@@ -13,9 +13,19 @@
   src: local("CircularStd-Book"),
     url(../fonts/CircularStd-Book.otf) format("otf");
 }
+
+//CONTAINER TOTAL (FORM/LIST ROOMS / DATES / TITTLE)
+.container-reservation {
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+  align-items: center;
+  justify-content: space-around;
+  margin-top:1%;
+}
 //CONTAINER MAP
 .container-map-room-firebase {
-  margin-top: 15%;
+  // margin-top: 15%;
 }
 //CONTAINER ROOMS
 .container-room-firebase {
@@ -26,7 +36,6 @@
   align-content: center;
   border: 0.6px solid gainsboro;
   padding: 20px;
-  margin-left: 30%;
 }
 
 //CONTAINER TEXTO
@@ -100,7 +109,6 @@
 }
 
 //BUTTON
-
 .button-deital-rooms {
   font-family: "Circular-Book";
   color: white;
@@ -124,4 +132,58 @@
   height: 35px;
   background-color: gainsboro;
   color: grey;
+}
+
+//CALENDARIO COMPONENT
+.calendar-page-reservation {
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+
+//DATOS ELEGIDOS DE RESERVA
+
+.select-date {
+  display: flex;
+  height: auto;
+  margin:0%;
+  width: 200px;
+  padding: 8px;
+}
+
+.check-selected {
+  font-family: "Circular-Black";
+}
+
+.date-selected {
+  font-family: "Circular-Book";
+}
+
+//CONTAINER LEFT DESCRIPTION TITTLE, IMAGE, DESCRIPTION
+.container-description-reservation {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.tittle-reservation{
+  font-family: "Circular-Black";
+  
+}
+.image-description {
+  object-fit: cover;
+  width: 400px;
+  height: 200px;
+}
+
+.text-description-reservation {
+  font-family: "Circular-Book";
+  font-size: 16px;
+  width: 400px;
+  margin:0%;
+}
+
+.tittle-date-selected{
+  font-family: "Circular-Black";
+
 }
