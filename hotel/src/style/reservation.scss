@@ -1,4 +1,127 @@
-.typology-name{
-    font-size: 30px;
-    color:red;
+@font-face {
+  font-family: "Circular-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Black"),
+    url(../fonts/CircularStd-Black.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Circular-Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Book"),
+    url(../fonts/CircularStd-Book.otf) format("otf");
+}
+//CONTAINER MAP
+.container-map-room-firebase {
+  margin-top: 15%;
+}
+//CONTAINER ROOMS
+.container-room-firebase {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  justify-content: space-between;
+  align-content: center;
+  border: 0.6px solid gainsboro;
+  padding: 20px;
+  margin-left: 30%;
+}
+
+//CONTAINER TEXTO
+.rooms-list-available {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+}
+
+//PRECIO Y BOTON  y disponibilidad CONTAINER
+.button-price {
+  display: flex;
+  flex-direction: column;
+  font-family: "Circular-Black";
+  font-size: 20px;
+  align-items: center;
+  margin-top: 5%;
+}
+
+//CONTAINER ROOM
+.image-room {
+  display: flex;
+  align-self: flex-start;
+}
+
+.room-image {
+  object-fit: contain;
+  width: 200px;
+  height: 150px;
+}
+
+//DETALLES
+.tittle-reservation {
+  font-family: "Circular-Black";
+  font-size: 30px;
+}
+.room-typology {
+  font-family: "Circular-Book";
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin: 0%;
+}
+
+.room-name {
+  font-family: "Circular-Black";
+  font-size: 20px;
+  line-height: 20px;
+  width: 80%;
+}
+
+.room-nodisponible {
+  font-family: "Circular-Black";
+  font-size: 13px;
+  letter-spacing: 0px;
+  color: red;
+  margin: 0%;
+  text-align: center;
+}
+
+.room-totalRooms {
+  font-family: "Circular-Black";
+  font-size: 14px;
+  margin-top: 3%;
+}
+
+.room-description {
+  font-family: "Circular-Book";
+  font-size: 13px;
+  width: 70%;
+}
+
+//BUTTON
+
+.button-deital-rooms {
+  font-family: "Circular-Book";
+  color: white;
+  background-color: black;
+  width: 90px;
+  height: 35px;
+  font-size: 14px;
+  border-color: transparent;
+}
+
+.button-deital-rooms:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.disabled {
+  font-family: "Circular-Book";
+  font-size: 14px;
+  width: 90px;
+  height: 35px;
+  background-color: gainsboro;
+  color: grey;
 }

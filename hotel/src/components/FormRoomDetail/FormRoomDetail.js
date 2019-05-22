@@ -17,11 +17,10 @@ class RoomDetail extends Component {
           startDate: '',
           endDate: '',
           roomType: '',
-          uid:this.props.userInfo.uid,
+         // uid:this.props.userInfo.uid,
         }
       }
     
-
       onChangeInput = (e) => {
         this.setState({[e.target.name]: e.target.value})
       }

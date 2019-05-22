@@ -49,31 +49,45 @@ class Reservation extends Component {
 
     return (
       <div>
-        <h3>List Rooms</h3>
+        <h3 className="tittle-reservation">Select <br></br>your room</h3>
+
+        <div className="select-date">
         <Calendar/>
         {calendar && calendar.startDate && calendar.endDate &&
         <div>
-        <p><span>Inicio: </span><span>{calendar.startDate.displayDate}</span></p>
+        <p className=""><span>Inicio: </span><span>{calendar.startDate.displayDate}</span></p>
         <p><span>Fin: </span><span>{calendar.endDate.displayDate}</span></p>
         <p><span>Tipo de habitacion: </span><span>{calendar.roomType}</span></p></div>
         }
-        <div>
+        </div>
+
+        <div className="container-map-room-firebase">
           {rooms &&
             rooms.map((room,key) => {
               console.log(room)
               if (room) {
                 return (
-                  <div key={key} className="Rooms-list-available">
-                    <div className="typology-name">{room.typology} </div>
-                    <div className="available-name">{room.name}</div>
-                    <div className="typology-name"> {room.price} </div>
-                    {room.totalRooms}
-                    {room.description}
+                  <div className="container-room-firebase">
 
-                    {!room.available && <div>HABITACION NO DISPOBIBLE</div>}
+                  <div className="image-room">
+                      <img className="room-image" src={room.image} />
+                  </div>
 
-                    <img src={room.image} />
-                    <button disabled={!room.available} className={!room.available ?  'disabled' : ''} onClick={() => this.onRoomDetailClicked(room.id)} > Detail</button>
+                  <div key={key} className="rooms-list-available">
+                    <div className="room-typology">{room.typology} </div>
+                    <div className="room-name">{room.name}</div>
+                    <div className="room-totalRooms">Available: {room.totalRooms} </div>
+                    <div className="room-description">{room.description} </div>
+                  </div>
+                   
+
+                  <div className="button-price">
+                  {!room.available && <div className="room-nodisponible">HABITACION NO DISPOBIBLE</div>}
+                    <div className="room-price"> {room.price}€ </div>
+                    <button disabled={!room.available} className={!room.available ?  'disabled' : 'button-deital-rooms'} onClick={() => this.onRoomDetailClicked(room.id)} > Book now </button>
+                  </div>
+
+                  
                   </div>
                 );
               }
