@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Circular-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Black"),
+    url(../fonts/CircularStd-Black.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Circular-Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Book"),
+    url(../fonts/CircularStd-Book.otf) format("otf");
+}
+
+//CONTAINERS
+.room-detail {
+  display: flex;
+  flex-direction: column;
+  border:1px solid rgb(133, 133, 128);
+}
+
+.tittle-principal {
+  font-family: "Circular-Black";
+  font-size: 30px;
+}
+
+.container-tree-info{
+    display: flex;
+    flex-direction: row;
+    margin:0%;
+    border: 1px solid salmon;
+    justify-content: center;
+    
+}
+
+//ESQUEMA INICIAL
+.container-esquema ul{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid salmon;
+    justify-content:space-around;
+    flex-wrap: wrap;  
+    margin:0%;
+    margin-bottom: 0%;
+
+}
+
+.name-picto{
+    font-family: "Circular-Book";
+    font-size: 16px;  
+    width: 40%;
+    margin:0%;
+    text-align: center;
+}
+
+
+li{
+list-style: none;
+
+}
+img .padlok{
+    object-fit: contain;
+    width: 6%;
+    height: auto;
+}
+.line-esquema{
+    background: black;
+    height: 3px;
+    margin:0 auto;
+    position: absolute;
+    right: 0;
+    top:17%;
+    width: 100%;
+    z-index: 1;
+}
+
+//INFO HABITACION
+.roomdetail-map-description{
+    margin:0%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+   
+
+}
+
+.detail-room{
+    border: 3px solid yellow;
+    margin:0%;
+}
+
+.room-typology,
+.room-name,
+.room-price,
+.room-description{
+    margin:0%;
+}
+
+
+.room-image-roomdetail{
+    object-fit: cover;
+    width: 350px;
+    height: 280px;
+    margin:0%;
+}
+
+.room-price-roomdetail{
+    font-family: "Circular-Black";
+    font-size: 16px;
+}
+
+.room-description-roomdetail{
+    font-family: "Circular-Book";
+    font-size: 16px;
+    width: 350px;
+}
+
+//FORMULARIO
+
+//VENTAJAS

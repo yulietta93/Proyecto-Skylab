@@ -1,5 +1,4 @@
 import * as firebase from 'firebase';
-import { debug } from 'util';
 
 export default class DataService {
 
@@ -179,7 +178,7 @@ static async getAvailableRoomsByDates(userbook) {
 
   
 //TRAER ROOMS ID 
-static async getRoomsDetail(collection, objId) {
+  static async getRoomsDetail(collection, objId) {
   const db = firebase.firestore();
   let rooms = null;
 
