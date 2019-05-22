@@ -51,46 +51,58 @@ h1 {
 }
 
 @media (min-width: 769px) {
+  .container-cabecera {
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+  }
 
-  .cabecera {
-    max-width: 70%;
-    justify-content: flex-start;
-    margin: 0;
+  .video-tittle {
+    display: flex;
+    flex-direction: row;
   }
 
   .image-mobile img {
-    display: flex;
-    justify-content: flex-start;
-    width: 900px;
-    height: 658px;
+    display: none;
+  }
+
+  .video-container {
+    width: 1400px;
+    height: 600px;
+    margin: 0%;
+  }
+
+  video {
     object-fit: cover;
+    width: 1150px;
+    height: 564px;
   }
 
-  .video-container iframe{
-    display:none;
+  .opacity{
+    width: 1150px;
+    height: 564px;
+    background-color: black;
+
   }
 
-  h1 {
-    color: red;
-    font-size: 80px;
-    margin-top: -90%;
-    line-height: 70px;
-    margin-left: -350%;
+  h1{
+    color: white;
     font-family: "Circular-Black";
-    position: relative;
+    font-size: 50px;
+    line-height: 40px;
+    margin-top: 0%;
   }
-
   .line {
     width: 100px;
     height: 707px;
     background-color: black;
   }
 
-  .calendario-date{
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  .calendario-date {
     margin-right: 15%;
-    margin-top:5%;
+    margin-left:6%;
   }
 }

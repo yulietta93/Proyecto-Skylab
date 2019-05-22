@@ -43,27 +43,26 @@ class Header extends Component {
     return (
 
       <div className="container-cabecera">
-      
-      <div className="calendario-date">
-      <Calendar />
+      <div className="tittle-cabecera">
+        <h1 className="tittle-cabecera-h1">Desconecta y relájate en nuestro EcoResort</h1>
       </div>
-
-      <div className="cabecera">    
-
+      
         <div className="video-container">
-          <iframe src="https://www.massalagros.com/wp-content/uploads/2019/05/salagros-home.mp4" frameborder="0px" allow="autoplay; fullscreen" allowfullscreen=" "/>
+          <video src="https://www.massalagros.com/wp-content/uploads/2019/05/salagros-home.mp4" frameborder="0px" allow="autoplay; fullscreen" allowfullscreen="true "/>
         </div>
-
-     
-
         <div className="image-mobile">
             <img  src="https://images.unsplash.com/photo-1537240937103-98b1d7a1c466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"/> 
         </div>
 
-        <div className="h1-tittle"><h1>Back to <br />nature</h1></div>
+        
+
+
         <div className="line" />
       
-        </div>
+
+        <div className="calendario-date">
+      <Calendar />
+      </div>
        
       </div>
     );

@@ -19,7 +19,6 @@ class Home extends Component {
         <Header />
         <div className="container-textAbout">
 
-       
               <h2 className="about-tittle">
                 What's <br /> NN?
               </h2>
