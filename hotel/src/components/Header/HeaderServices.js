@@ -5,7 +5,7 @@ import { setReservation } from "../../redux/actions/reservationActions";
 import { withRouter } from "react-router-dom";
 import Calendar from "../Calendar/Calendar";
 
-class Header extends Component {
+class HeaderServices extends Component {
   render() {
     return (
       <div className="container-cabecera">
@@ -14,7 +14,7 @@ class Header extends Component {
         </div>
 
         <div className="video-titte">
-          <div className="tittle-header"> Naturae</div>
+          <div className="tittle-header"> Services</div>
 
           <p className="text-header">
             Is an EcoResort in which we work every day to offer a sustainable
@@ -24,13 +24,10 @@ class Header extends Component {
 
           <img
             className="img-cabecera"
-            src="https://images.unsplash.com/photo-1503278501277-e50457741130?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+            src="https://www.yurbbanpassage.com/assets/img/gallery/Gastronom%C3%ADa/en/vista_genera_restaurante_d_aprop_yurbban_passage.jpg"
           />
         </div>
 
-        <div className="image-mobile">
-          <img src="https://images.unsplash.com/photo-1537240937103-98b1d7a1c466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" />
-        </div>
       </div>
     );
   }
@@ -45,4 +42,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   null,
   mapDispatchToProps
-)(withRouter(Header));
+)(withRouter(HeaderServices));

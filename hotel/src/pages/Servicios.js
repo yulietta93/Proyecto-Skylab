@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import piscina from "../image/piscina.jpg";
 
 //componentes
-import Header from "../components/Header/header";
+import HeaderServices from "../components/Header/HeaderServices";
 import Footer from "../components/Footer/Footer";
 
 
@@ -15,7 +15,7 @@ export default class Servicios extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <HeaderServices />
         <div className="container-service">
 
         <div className="section01-service">

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 
-import Header from "../components/Header/header";
+import HeaderRoom from "../components/Header/HeaderRoom";
 import Footer from "../components/Footer/Footer";
 import PictosHome from "../components/Pictos/PictosHome";
 import '../style/rooms.scss';
@@ -11,8 +11,10 @@ export default class Habitaciones extends Component {
   render() {
     return (
       <div>
-        <Header />
+
+        <HeaderRoom />
 <div className="container-total-room">
+
         <div className="container-rooms">
           <h3 className="titlle-rooms">Room 01 <br /> Junior Suite</h3>
           <div className="container-image">

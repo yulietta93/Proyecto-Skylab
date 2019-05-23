@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 
 //componentes
-import Header from "../components/Header/header";
+import HeaderOffer from "../components/Header/HeaderOffer";
 import Footer from "../components/Footer/Footer";
 
 
@@ -19,7 +19,7 @@ export default class Ofertas extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <HeaderOffer />
         <div className="contenedor-offer">
      
       <div className="offer-left">
