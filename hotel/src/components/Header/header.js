@@ -41,30 +41,30 @@ class Header extends Component {
 
   render() {
     return (
-
       <div className="container-cabecera">
-      <div className="tittle-cabecera">
-        <h1 className="tittle-cabecera-h1">Desconecta y relájate en nuestro EcoResort</h1>
+   
+     <div className="calendario-date">
+      <Calendar />
       </div>
       
-        <div className="video-container">
-          <video src="https://www.massalagros.com/wp-content/uploads/2019/05/salagros-home.mp4" frameborder="0px" allow="autoplay; fullscreen" allowfullscreen="true "/>
-        </div>
+      <div className="video-titte">
+        <div className="tittle-header"> Named</div>
+ 
+          <p className="text-header">Is an EcoResort in which we work every 
+            day to offer a sustainable tourism option 
+            to our guests through energy savings, biofuels, 
+            low consumption lighting and environmentally 
+            friendly products.</p>
+ 
+        <img className="img-cabecera"src="https://images.unsplash.com/photo-1503278501277-e50457741130?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"/>
+      </div>
+
         <div className="image-mobile">
             <img  src="https://images.unsplash.com/photo-1537240937103-98b1d7a1c466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"/> 
         </div>
+   
+        </div> 
 
-        
-
-
-        <div className="line" />
-      
-
-        <div className="calendario-date">
-      <Calendar />
-      </div>
-       
-      </div>
     );
   }
 }
