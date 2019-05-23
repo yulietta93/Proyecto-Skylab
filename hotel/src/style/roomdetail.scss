@@ -1,17 +1,6 @@
 @font-face {
-  font-family: "Circular-Black";
-  font-style: normal;
-  font-weight: normal;
-  src: local("CircularStd-Black"),
-    url(../fonts/CircularStd-Black.otf) format("otf");
-}
-
-@font-face {
-  font-family: "Circular-Book";
-  font-style: normal;
-  font-weight: normal;
-  src: local("CircularStd-Book"),
-    url(../fonts/CircularStd-Book.otf) format("otf");
+  src: url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,700,800&display=swap");
+  font-family: "Merriweather Sans", sans-serif;
 }
 
 //CONTAINERS
@@ -21,150 +10,149 @@
 }
 
 .tittle-principal {
-  font-family: "Circular-Black";
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 800;
   font-size: 30px;
 }
 
-.container-tree-info{
-    display: flex;
-    flex-direction: row;
-    margin:0%;
-    justify-content: space-around;
+.container-tree-info {
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+  justify-content: space-around;
 }
 
 //ESQUEMA INICIAL
 .container-esquema ul {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    margin:0%;
-    margin-bottom: 0%;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0%;
+  margin-bottom: 0%;
 }
 
-.name-picto{
-    font-family: "Circular-Book";
-    font-size: 16px;  
-    width: 70%;
-    margin:0%;
-    text-align: center;
+.name-picto {
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  width: 70%;
+  margin: 0%;
+  text-align: center;
 }
 
-p .name-picto{
-    margin-right: 10%;
+p .name-picto {
+  margin-right: 10%;
 }
 
-
-li{
-list-style: none;
-margin:0%;
+li {
+  list-style: none;
+  margin: 0%;
 }
 
-.li.presentation{
-   display: flex;
-  
+.li.presentation {
+  display: flex;
 }
-img .padlok{
-    object-fit: contain;
-    width: 6%;
-    height: auto;
+img .padlok {
+  object-fit: contain;
+  width: 6%;
+  height: auto;
 }
-.line-esquema{
-    background: black;
-    height: 3px;
-    margin:0 auto;
-    position: absolute;
-    right: 0;
-    top:17%;
-    width: 100%;
-    z-index: -1;
+.line-esquema {
+  background: black;
+  height: 3px;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 17%;
+  width: 100%;
+  z-index: -1;
 }
-
-
 
 //INFO HABITACION
-.roomdetail-map-description{
-    margin:0%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-   
-
+.roomdetail-map-description {
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
-.detail-room{
-    margin:0%;
+.detail-room {
+  margin: 0%;
 }
 
 .room-typology,
 .room-name,
 .room-price,
-.room-description{
-    margin:0%;
+.room-description {
+  margin: 0%;
 }
 
-.room-typology-roomdetail{
-    font-family: "Circular-Book";
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+.room-typology-roomdetail {
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
-.room-name-roomdetail{
-    font-family: "Circular-Black";
-    font-size: 25px; 
+.room-name-roomdetail {
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 800;
+  font-size: 25px;
 }
 
-
-.room-image-roomdetail{
-    object-fit: cover;
-    width: 450px;
-    height: 350px;
-    margin:0%;
+.room-image-roomdetail {
+  object-fit: cover;
+  width: 450px;
+  height: 350px;
+  margin: 0%;
 }
 
-.room-price-roomdetail{
-    font-family: "Circular-Black";
-    font-size: 18px;
+.room-price-roomdetail {
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 800;
+  font-size: 18px;
 }
 
-.room-description-roomdetail{
-    font-family: "Circular-Book";
-    font-size: 16px;
-    width: 430px;
+.room-description-roomdetail {
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  width: 430px;
 }
 
-.tittle-principal{
-    text-align: center;
-    padding: 50px 0px 50px 0px;
+.tittle-principal {
+  text-align: center;
+  padding: 50px 0px 50px 0px;
 }
 
 //FORMULARIO
 
 //VENTAJAS
 
-.container-ventajas-pictogramas{
-    display: flex;
-    flex-direction: column;
-    margin:0%;
-    width: 350px;
-   
+.container-ventajas-pictogramas {
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+  width: 350px;
 }
 
-.container-ventajas-pictogramas{
-    font-family: "Circular-Book";
-    font-size: 18px;
-    margin:10px,0;
-    line-height: 45px;
+.container-ventajas-pictogramas {
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 10px, 0;
+  line-height: 45px;
 }
 
-.tittle-about-booking{
-    font-family: "Circular-Black";
-    font-size: 25px; 
-    text-align: center;
-    height: auto;
+.tittle-about-booking {
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  height: auto;
 }
 
-.image-picto-about{
-    padding-right: 15px;
+.image-picto-about {
+  padding-right: 15px;
 }

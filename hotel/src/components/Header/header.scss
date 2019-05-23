@@ -1,17 +1,6 @@
-@font-face {
-  font-family: "Circular-Black";
-  font-style: normal;
-  font-weight: normal;
-  src: local("CircularStd-Black"),
-    url(../../fonts/CircularStd-Black.otf) format("otf");
-}
-
-@font-face {
-  font-family: "Circular-Book";
-  font-style: normal;
-  font-weight: normal;
-  src: local("CircularStd-Book"),
-    url(../../fonts/CircularStd-Book.otf) format("otf");
+@font-face{
+  src:url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,700,800&display=swap');
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 .cabecera {
@@ -35,7 +24,8 @@
 
 h1 {
   color: white;
-  font-family: "Circular-Black";
+  font-family: 'Merriweather Sans' sans-serif;
+  font-weight:800;
   font-size: 50px;
   line-height: 40px;
   margin-top: -270%;
@@ -92,11 +82,12 @@ h1 {
   }
 
   .tittle-header {
-    font-family: "Circular-Black";
+    font-family: 'Merriweather Sans' sans-serif;
+    font-weight:800;
     font-size: 150px;
     line-height: 80px;
     position: absolute;
-    top: 14%;
+    top: 15%;
     right: 50%;
     width: 500px;
     color:black;
@@ -107,7 +98,8 @@ h1 {
   }
 
   .text-header{
-    font-family: "Circular-Book";
+    font-family: 'Merriweather Sans' sans-serif;
+    font-weight:300;
     font-size: 16px;
     width: 230px;
     position:absolute;

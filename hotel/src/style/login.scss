@@ -1,8 +1,14 @@
-.text-signup{
-    font-family: "Circular-Book";
-    font-size: 16px;
-    color:black;
-    margin-bottom:35px;
-    width: 200px;
-    text-align: center;
+@font-face {
+  src: url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,700,800&display=swap");
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.text-signup {
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 35px;
+  width: 200px;
+  text-align: center;
 }

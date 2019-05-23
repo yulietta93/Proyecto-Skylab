@@ -73,18 +73,19 @@ export default class Signup extends Component {
             <input type="email" name="email" value={email} onChange={this.onChangeInput}class="form-control" />
           </div>
           <div>
-            <label className="label-name">Contraseña</label>
+            <label className="label-name">Password</label>
             <input type="password" name="password" value={password} onChange={this.onChangeInput} class="form-control"/>
           </div>
-          <button className="button-basic">¡Entrar!</button>
+          <button className="button-basic">Enter</button>
           {errorMessage && <p>{errorMessage}</p>}
         </form>
-        <Modal 
+        <Modal customStyles={{ backgroundColor: "white", borderRadius: '0px'}}
           visible={showModal} 
           onClose={this.onCloseModal}
           size='s'
-          message="¡Has hecho login súper bien!"
-          closeButtonText="Llévame a la home :D "
+          message="Welcome to Naturae"
+          closeButtonText="Go to home "
+          
         />
       </div>
     )

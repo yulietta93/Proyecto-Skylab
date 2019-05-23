@@ -1,18 +1,8 @@
-@font-face {
-  font-family: "Circular-Black";
-  font-style: normal;
-  font-weight: normal;
-  src: local("CircularStd-Black"),
-    url(../../fonts/CircularStd-Black.otf) format("otf");
+@font-face{
+  src:url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,700,800&display=swap');
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
-@font-face {
-  font-family: "Circular-Book";
-  font-style: normal;
-  font-weight: normal;
-  src: local("CircularStd-Book"),
-    url(../../fonts/CircularStd-Book.otf) format("otf");
-}
 /*
 .container-rooms-home {
   margin-top: 25%;
@@ -90,7 +80,8 @@
 
 .titulo-list-room {
   width: 70%;
-  font-family: "Circular-Black";
+  font-family: 'Merriweather Sans' sans-serif;
+  font-weight:800;
   font-size: 22px;
   margin-top: 8%;
   position: absolute;
@@ -114,7 +105,8 @@
 }
 
 .tittle-rooms-home {
-  font-family: "Circular-Black";
+  font-family: 'Merriweather Sans' sans-serif;
+  font-weight:800;
   font-size: 20px;
   margin-top: 2%;
   padding: 0;
@@ -127,7 +119,8 @@
 }
 
 .description-rooms-home {
-  font-family: "Circular-Book";
+  font-family: 'Merriweather Sans' sans-serif;
+  font-weight:300;
   font-size: 15px;
   width: 165px;
   margin-top: 3%;
@@ -138,13 +131,15 @@
 }
 
 .price {
-  font-family: "Circular-Black";
+  font-family: 'Merriweather Sans' sans-serif;
+  font-weight:800;
   font-size: 15px;
   margin-top: -9%;
 }
 
 .button-viewmore-home {
-  font-family: "Circular-Book";
+  font-family: 'Merriweather Sans' sans-serif;
+  font-weight:300;
   color: white;
   background-color: black;
   width: 90px;
@@ -219,7 +214,8 @@
 }
 
 .titulo-list-room {
-  font-family: "Circular-Black";
+  font-family: 'Merriweather Sans' sans-serif;
+  font-weight:800;
   font-size: 22px;
   margin:0;
   width: 16%;
@@ -241,8 +237,6 @@ a .button-viewmore-home{
 margin:0;
 }
 
-button .room02 {
 
-}
 
 }

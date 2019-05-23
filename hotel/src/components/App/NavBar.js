@@ -34,7 +34,6 @@ import {
       } else {
           return capitalize(name)
       }
-    
   }
 
   logout = () => {
@@ -72,7 +71,16 @@ import {
                   </DropdownItem>}
                   <DropdownItem divider />
                   <DropdownItem>
-                    Reset
+                  <Link to='/'> Home </Link>   
+                  </DropdownItem>
+                  <DropdownItem>
+                  <Link to='/habitaciones'> Rooms </Link>   
+                  </DropdownItem>
+                  <DropdownItem>
+                  <Link to='/ofertas'> Offers </Link>   
+                  </DropdownItem>
+                  <DropdownItem>
+                  <Link to='/servicios'> Services </Link>   
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

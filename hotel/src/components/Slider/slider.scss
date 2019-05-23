@@ -1,3 +1,8 @@
+@font-face{
+  src:url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,700,800&display=swap');
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
 /*Todo el slider*/
 .rcs_sliderSet {
   width: 60% !important;
@@ -44,7 +49,8 @@
 }
 
 .galery-tittle {
-  font-family: "Circular-Black";
+  font-family: 'Merriweather Sans' sans-serif;
+  font-weight:800;
   font-size: 22px;
   margin-top: 8%;
   margin-left: 26%;
@@ -52,7 +58,8 @@
 }
 
 .text-gallery {
-  font-family: "Circular-Book";
+  font-family: 'Merriweather Sans' sans-serif;
+  font-weight:300;
   width: 480px;
   display: grid;
   font-size: 15px;
@@ -95,7 +102,8 @@
   }
   
 .text-gallery {
-  font-family: "Circular-Book";
+  font-family: 'Merriweather Sans' sans-serif;
+  font-weight:300;
   width: 75%;
   margin-left: 12%;
 }

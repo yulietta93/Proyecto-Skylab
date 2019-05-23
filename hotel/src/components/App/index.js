@@ -6,9 +6,7 @@ import { setUserInfo } from "../../redux/actions/userActions";
 import './index.scss';
 
 //NAVBAR
-import Toolbar from '../../components/Toolbar/Toolbar';
 import Backdrop from "../../components/Backdrop/Backdrop";
-import SideDrawer from "../../components/SideDrawer/SideDrawer";
 import NavBar from './NavBar'
 
 //SERVICES
@@ -57,7 +55,6 @@ class App extends Component {
     });
   }
 
-
   //NAVBAR HAMBURG
   DrawerToggleClickHandler = () => {
     this.setState((prevState)=>{
@@ -77,17 +74,16 @@ class App extends Component {
     const { loading } = this.state;
     if (loading) return <div>Loading</div>;
 
-    //NAVBAR
+    /*//NAVBAR
     let backdrop;
     if(this.state.sideDrawerOpen){
       backdrop= <Backdrop click={this.backdropClickHandler}/>;
-    }
+    }*/
 
     return (
         <main>
             <Router> 
             <NavBar />
-
           <Switch>
             <Route path="/reservationsdetail/:id" component={ReservationsDetail} />
             <Route path="/roomdetail/:id" component={RoomDetail} />

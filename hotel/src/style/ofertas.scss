@@ -1,40 +1,26 @@
 @font-face {
-  font-family: "Circular-Black";
-  font-style: normal;
-  font-weight: normal;
-  src: local("CircularStd-Black"),
-    url(../fonts/CircularStd-Black.otf) format("otf");
+  src: url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,700,800&display=swap");
+  font-family: "Merriweather Sans", sans-serif;
 }
 
-@font-face {
-  font-family: "Circular-Book";
-  font-style: normal;
-  font-weight: normal;
-  src: local("CircularStd-Book"),
-    url(../fonts/CircularStd-Book.otf) format("otf");
-}
-
-.contenedor-offer{
-  margin-top:5%;
+.contenedor-offer {
+  margin-top: 5%;
 }
 
 .offer-left {
   margin-left: 20%;
-  margin-top:10%;
+  margin-top: 10%;
 }
 
 .offer-right {
   margin-left: 20%;
-  margin-top:16%;
-}
-
-.container-offer-right{
-
+  margin-top: 16%;
 }
 
 .tittle-offer-left {
   width: 380px;
-  font-family: "Circular-Black";
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 800;
   font-size: 20px;
 }
 
@@ -45,23 +31,24 @@
 }
 
 .description-offer-left {
-  font-family: "Circular-Book";
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 300;
   font-size: 16px;
   width: 400px;
   margin-top: -12%;
 }
 
-
 .offer-right {
   margin-left: 20%;
 }
 
-.tittle-offer-right{
+.tittle-offer-right {
   width: 380px;
-  font-family: "Circular-Black";
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 800;
   font-size: 20px;
   margin-left: 43%;
-  margin-top:-20%;
+  margin-top: -20%;
 }
 
 .image-offer-right {
@@ -71,20 +58,20 @@
 }
 
 .description-offer-right {
-  font-family: "Circular-Book";
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 300;
   font-size: 16px;
   width: 400px;
   margin-top: 0%;
   margin-left: 43%;
 }
 
+//BUTTON
 
- //BUTTON
-
- .button-offer-left{
-  margin-left:0%;
+.button-offer-left {
+  margin-left: 0%;
 }
 
-.button-offer-right{
-  margin-left:43%;
+.button-offer-right {
+  margin-left: 43%;
 }

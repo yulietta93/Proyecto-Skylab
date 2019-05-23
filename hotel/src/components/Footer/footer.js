@@ -12,7 +12,7 @@ const Footer = () => {
         <MDBRow className="mt-4">
           <MDBCol md="3" lg="4" xl="3" className="mb-4">
             <h6 className="text-uppercase font-weight-bold">
-              <strong  style={{ color: "white"}} > Nature Norway</strong>
+              <strong  style={{ color: "white"}} > Naturae</strong>
             </h6>
             <hr
               className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"

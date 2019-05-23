@@ -1,22 +1,12 @@
-@font-face {
-    font-family: "Circular-Black";
-    font-style: normal;
-    font-weight: normal;
-    src: local("CircularStd-Black"),
-      url(../../fonts/CircularStd-Black.otf) format("otf");
-  }
-
-  @font-face {
-    font-family: "Circular-Book";
-    font-style: normal;
-    font-weight: normal;
-    src: local("CircularStd-Book"),
-      url(../../fonts/CircularStd-Book.otf) format("otf");
-  }
+@font-face{
+  src:url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,700,800&display=swap');
+  font-family: 'Merriweather Sans', sans-serif;
+}
 
 
   .mb-4, .container-content, .mt-4, .rowm, .probar{
-    font-family: "Circular-Book";
+    font-family: 'Merriweather Sans' sans-serif;
+    font-weight:300;
     font-size: 15px;
     margin-top: 4.1% !important;
     margin-left: 8%;

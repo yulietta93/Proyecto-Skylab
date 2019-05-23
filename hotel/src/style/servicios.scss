@@ -1,134 +1,127 @@
 @font-face {
-    font-family: "Circular-Black";
-    font-style: normal;
-    font-weight: normal;
-    src: local("CircularStd-Black"),
-      url(../fonts/CircularStd-Black.otf) format("otf");
-  }
-  
-  @font-face {
-    font-family: "Circular-Book";
-    font-style: normal;
-    font-weight: normal;
-    src: local("CircularStd-Book"),
-      url(../fonts/CircularStd-Book.otf) format("otf");
-  }
-
-.section01-service{
-  margin-left:30%;
+  src: url("https://fonts.googleapis.com/css?family=Merriweather+Sans:300,700,800&display=swap");
+  font-family: "Merriweather Sans", sans-serif;
 }
 
-
-.title-service-01{
-    margin-top: 70%;
-    width: 380px;
-    font-family: "Circular-Black";
-    font-size: 20px;
-    margin-left: -15%;
+.section01-service {
+  margin-left: 30%;
 }
 
-.text-service{
-  font-family: "Circular-Book";
-  font-size:15px;
+.title-service-01 {
+  margin-top: 70%;
+  width: 380px;
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-left: -15%;
+}
+
+.text-service {
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 300;
+  font-size: 15px;
   width: 300px;
-  margin-top:4%;
+  margin-top: 4%;
   margin-left: -4%;
 }
 
-.img01-service{
-    width: 350px;
-    margin-left:33%;
-    margin-top:-42%;
+.img01-service {
+  width: 350px;
+  margin-left: 33%;
+  margin-top: -42%;
 }
 
-.button-service-01{
-    margin-top:1%;
-    margin-left:-72%;
+.button-service-01 {
+  margin-top: 1%;
+  margin-left: -72%;
 }
 
 //------SECTION 02
 
-.section02{
-    margin-left:30%;
-    margin-top:-43%;
-  }
-
-.title-service-02{
-    margin-top: 70%;
-    width: 380px;
-    font-family: "Circular-Black";
-    font-size: 20px;
-    margin-left: -14%;
+.section02 {
+  margin-left: 30%;
+  margin-top: -43%;
 }
 
-.text-service02{
-  font-family: "Circular-Book";
-  font-size:15px;
+.title-service-02 {
+  margin-top: 70%;
   width: 380px;
-  margin-top:3%;
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-left: -14%;
+}
+
+.text-service02 {
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  width: 380px;
+  margin-top: 3%;
   margin-left: -4%;
 }
 
-.img02-service{
-    width: 450px;
-    margin-left:-4.5%;
-    margin-top:2%;
+.img02-service {
+  width: 450px;
+  margin-left: -4.5%;
+  margin-top: 2%;
 }
-.img03-service{
-    width: 150px;
-    margin-left:3%;
-    margin-top:-6%;
+.img03-service {
+  width: 150px;
+  margin-left: 3%;
+  margin-top: -6%;
 }
 
-.button-service-02{
-    margin-top:1%;
-    margin-left:-72%;
+.button-service-02 {
+  margin-top: 1%;
+  margin-left: -72%;
 }
 
 //SECTION 03
 
-.section03{
-    margin-left:31.3%;
-    margin-top:-43%;
-  }
-
-.title-service-03{
-    margin-top: 70%;
-    width: 380px;
-    font-family: "Circular-Black";
-    font-size: 20px;
-    margin-left: -14%;
+.section03 {
+  margin-left: 31.3%;
+  margin-top: -43%;
 }
 
-.text-service03{
-  font-family: "Circular-Book";
-  font-size:15px;
+.title-service-03 {
+  margin-top: 70%;
   width: 380px;
-  margin-top:3%;
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  margin-left: -14%;
+}
+
+.text-service03 {
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  width: 380px;
+  margin-top: 3%;
   margin-left: -4%;
 }
 
-.img04-service{
-    width: 450px;
-    margin-left:-6.3%;
-    margin-top:2%;
+.img04-service {
+  width: 450px;
+  margin-left: -6.3%;
+  margin-top: 2%;
 }
-.img05-service{
-    width: 150px;
-    margin-left:2%;
-    margin-top:-5%;
+.img05-service {
+  width: 150px;
+  margin-left: 2%;
+  margin-top: -5%;
 }
 
-.text-service03{
-    font-family: "Circular-Book";
-    font-size:15px;
-    width: 400px;
-    margin-top:3%;
-    margin-left: -6%;
-  }
+.text-service03 {
+  font-family: "Merriweather Sans" sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  width: 400px;
+  margin-top: 3%;
+  margin-left: -6%;
+}
 
-  .container-service{
-    margin-top:-42%;
-  }
-
- 
+.container-service {
+  margin-top: -42%;
+}
