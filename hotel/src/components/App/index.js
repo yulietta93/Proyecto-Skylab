@@ -9,6 +9,7 @@ import './index.css';
 import Toolbar from '../../components/Toolbar/Toolbar';
 import Backdrop from "../../components/Backdrop/Backdrop";
 import SideDrawer from "../../components/SideDrawer/SideDrawer";
+import NavBar from './NavBar'
 
 //SERVICES
 import AuthService from "../../services/authService";
@@ -56,10 +57,6 @@ class App extends Component {
     });
   }
 
-  logout = () => {
-    AuthService.logout();
-    this.props.setUserInfo(null);
-  };
 
   //NAVBAR HAMBURG
   DrawerToggleClickHandler = () => {
@@ -88,29 +85,8 @@ class App extends Component {
 
     return (
         <main>
-            <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
-            <SideDrawer show={this.state.sideDrawerOpen}/>
-           {backdrop}
-            
-
             <Router> 
-            <nav className="nav-container">
-            <ul className="login-container">
-              {!userInfo && <li><Link to="/signup">Signup</Link></li>}
-              {!userInfo && <li><Link to="/login">Login</Link></li>}
-              {userInfo && <li onClick={this.logout}>Logout</li>}
-              </ul>
-              {userInfo && <div><span>{userInfo.name}</span></div>}
-            </nav>
-            
-         {/* 
-              <ul>   
-              <li> <Link to="/">Home</Link></li>
-              <li> <Link to="/habitaciones">Rooms</Link></li>
-              <li> <Link to="/ofertas">Offers</Link></li>
-              <li> <Link to="/servicios">Services</Link></li>
-            </ul>
-            */}
+            <NavBar />
 
           <Switch>
             <Route path="/reservationsdetail/:id" component={ReservationsDetail} />

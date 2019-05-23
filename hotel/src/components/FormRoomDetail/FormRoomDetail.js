@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { setUserInfo } from "../../redux/actions/userActions";
 //import Calendar from "../Calendar/Calendar";
 import './FormRoomDetail.scss';
-
+import { withRouter } from "react-router-dom";
 
 class FormRoomDetail extends Component {
     constructor(props) {
@@ -17,8 +17,8 @@ class FormRoomDetail extends Component {
           specialRequests    : '',
           startDate: '',
           endDate: '',
-          roomType: '',
-         // uid:this.props.userInfo.uid,
+          roomType:'',
+          uid:this.props.userInfo.uid,
         }
       }
     
@@ -26,19 +26,20 @@ class FormRoomDetail extends Component {
         this.setState({[e.target.name]: e.target.value})
       }
   
-      onFormSubmit = async (event) => {
-        event.preventDefault();
-        console.log("estado",this.state)
-        let {name,surname,phone,specialRequests,startDate,endDate,roomType,uid}=this.state;
-        await DataService.addForm('reservations',{name:name,surname:surname,phone:phone,specialRequests:specialRequests, startDate, endDate,roomType,uid});
-      }
+      onFormSubmit = async (e) => {
+        e.preventDefault();
 
-      onReservationDetailClicked = (reservationsId) => {
-        this.props.history.push(`/reservationsdetail/${reservationsId}`);
+        const{name, surname, phone, specialRequests,endDate,startDate,roomType,reservationsId}=this.state
+
+        const reservation = await DataService.addForm('reservations',{name:name,surname:surname,phone:phone,specialRequests:specialRequests, startDate, endDate,roomType, uid:'18ppxIL8wOWDZkXsvcOwce60KJ32'});
+       const {history}=this.props; 
+        console.log(reservation)
+        this.props.history.push(`/reservationsdetail/${reservation.id}`);
+    
       }
 
       render() {
-          const{name, surname, phone, specialRequests,endDate,startDate,reservationsId}=this.state
+          const{name, surname, phone, specialRequests,endDate,startDate,roomType,reservationsId}=this.state
           console.log('state', this.state);
         return (
             <div className="container-form-room-detail">
@@ -78,7 +79,8 @@ class FormRoomDetail extends Component {
                   <label>Special Requests</label>
                   <textarea type="text" name="specialRequests" value={specialRequests} onChange={this.onChangeInput} class="form-control text-form"/>
                 </div>
-                <button className="button-basic" onClick={() => this.onReservationDetailClicked(reservationsId.id)}>Book Now</button>
+                <button type="submit"  className="send" value="Submit" className="button-basic">Book now</button>
+
               </form>
             </div>
           )
@@ -101,4 +103,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(FormRoomDetail);
+)(withRouter(FormRoomDetail));

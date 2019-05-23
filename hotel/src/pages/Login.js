@@ -64,18 +64,19 @@ export default class Signup extends Component {
     const { email, password, errorMessage, showModal } = this.state;
 
     return (
-      <div className="form-login">
-        <h1>Login</h1>
+      <div className="container-signup">
+        <h3 className="tittle-signup">Login</h3>
+        <p className="text-signup"> Welcome back! Login to access the Name.</p>
         <form onSubmit={this.onSignup}>
           <div>
-            <label>Email</label>
-            <input type="email" name="email" value={email} onChange={this.onChangeInput} />
+            <label className="label-name">Email</label>
+            <input type="email" name="email" value={email} onChange={this.onChangeInput}class="form-control" />
           </div>
           <div>
-            <label>Contraseña</label>
-            <input type="password" name="password" value={password} onChange={this.onChangeInput} />
+            <label className="label-name">Contraseña</label>
+            <input type="password" name="password" value={password} onChange={this.onChangeInput} class="form-control"/>
           </div>
-          <button>¡Entrar!</button>
+          <button className="button-basic">¡Entrar!</button>
           {errorMessage && <p>{errorMessage}</p>}
         </form>
         <Modal 

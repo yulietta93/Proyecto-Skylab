@@ -48,7 +48,7 @@ class Header extends Component {
       </div>
       
       <div className="video-titte">
-        <div className="tittle-header"> Named</div>
+        <div className="tittle-header"> Naturae</div>
  
           <p className="text-header">Is an EcoResort in which we work every 
             day to offer a sustainable tourism option 

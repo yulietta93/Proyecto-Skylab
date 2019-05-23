@@ -40,14 +40,19 @@
   .container-textAbout{
     display: flex;
     flex-direction: row;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin-left:8%;
+
   }
   .about-tittle {
     font-family: "Circular-Black";
-    font-size: 22px;
+    border: 1px solid blue;
+    font-size: 35px;
     text-align: center;
     margin:0;
+    transform: rotate(-90deg);
   }
   
   .textAbout {

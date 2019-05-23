@@ -43,7 +43,6 @@ class Reservation extends Component {
   onRoomDetailClicked = (roomsId) => {
     this.props.history.push(`/roomdetail/${roomsId}`);
   }
-
   render() {
     const { rooms, calendar } = this.state;
 

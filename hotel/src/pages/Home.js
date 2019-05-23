@@ -20,15 +20,11 @@ class Home extends Component {
         <div className="container-textAbout">
 
               <h2 className="about-tittle">
-                What's <br /> NN?
+                What's <br /> Naturae?
               </h2>
  
-
             <div className="textAbout">
-             <p className="p-about"> Ark-Shelters are prefabricated, fully finished, modular units. By
-              a lake, deep in a forest, at the edge of a field, a steep mountain
-              hill or yourcity rooftop! Make your dream come true, installed in
-              one day, no extra on-site work.</p>
+             <p className="p-about"> We comply with the standards established by European regulations to respect sustainability standards, which take into account the materials used in construction, energy efficiency and waste management. In Naturae you will find from ecological amenities to local and seasonal ingredients for restoration.</p>
             </div>
 
           </div>

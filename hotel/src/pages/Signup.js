@@ -61,26 +61,27 @@ export default class Signup extends Component {
     const { email, name, lastname, password, errorMessage } = this.state;
 
     return (
-      <div>
-        <h1>Signup and manage your contacts now!</h1>
+      <div className="container-signup">
+        <h3 className="tittle-signup">Signup and manage your contacts now!</h3>
+       
         <form onSubmit={this.onSignup} className="form-signup">
           <div>
-            <label>Name</label>
-            <input type="name" name="name" value={name} onChange={this.onChangeInput} />
+            <label className="label-name">Name</label>
+            <input type="name" name="name" value={name} required onChange={this.onChangeInput} class="form-control"/>
           </div>
           <div>
-            <label>Lastname</label>
-            <input type="lastname" name="lastname" value={lastname} onChange={this.onChangeInput} />
+            <label className="label-name">Lastname</label>
+            <input type="lastname" name="lastname" value={lastname} required onChange={this.onChangeInput} class="form-control"/>
           </div>
           <div>
-            <label>Email</label>
-            <input type="email" name="email" value={email} onChange={this.onChangeInput} />
+            <label className="label-name">Email</label>
+            <input type="email" name="email" value={email} required onChange={this.onChangeInput} class="form-control"/>
           </div>
           <div>
-            <label>Contraseña</label>
-            <input type="password" name="password" value={password} onChange={this.onChangeInput} />
+            <label className="label-name">Contraseña</label>
+            <input type="password" name="password" value={password}required onChange={this.onChangeInput}class="form-control" />
           </div>
-          <button className="crear-cuenta">¡Crear cuenta!</button>
+          <button className="button-basic">Sign up</button>
           {errorMessage && <p>{errorMessage}</p>}
         </form>
       </div>

@@ -205,6 +205,7 @@ static async addForm(collection, data) {
     if (docRef && docRef.id) {
       console.log("success");
       success = true;
+      return docRef;
     }
   } catch (err) {
     console.log("TCL: DataService -> addContact -> err", err);
