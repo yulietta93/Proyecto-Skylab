@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { connect } from "react-redux";
 import { setUserInfo } from "../../redux/actions/userActions";
-import './index.css';
+import './index.scss';
 
 //NAVBAR
 import Toolbar from '../../components/Toolbar/Toolbar';

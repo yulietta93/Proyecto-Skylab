@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { setUserInfo } from "../../redux/actions/userActions";
 import { Link } from 'react-router-dom';
 import capitalize from 'lodash.capitalize';
+import PropTypes from 'prop-types';
 
 import {
   Collapse,
@@ -15,8 +16,6 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
-import Signup from '../../pages/Login';
-import { userInfo } from 'os';
 
  class NavBar extends Component {
   constructor(props) {
@@ -84,6 +83,18 @@ import { userInfo } from 'os';
     );
   }
 }
+
+Navbar.propTypes = {
+    light: PropTypes.bool,
+    dark: PropTypes.bool,
+    fixed: PropTypes.string,
+    color: PropTypes.string,
+    role: PropTypes.string,
+    expand: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+    tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
+    // pass in custom element to use
+  }
+
 const mapStateToProps = state => {
     return {
       userInfo: state.userReducer.user
@@ -95,6 +106,7 @@ const mapDispatchToProps = dispatch => {
       setUserInfo: user => dispatch(setUserInfo(user))
     };
   };
+
   
   export default connect(
     mapStateToProps,

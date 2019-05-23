@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Circular-Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Black"),
+    url(../../fonts/CircularStd-Black.otf) format("otf");
+}
+
+@font-face {
+  font-family: "Circular-Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CircularStd-Book"),
+    url(../../fonts/CircularStd-Book.otf) format("otf");
+}
+
+body{
+  overflow-x: hidden;
+}
