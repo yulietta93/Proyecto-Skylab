@@ -109,8 +109,6 @@ export default class Habitaciones extends Component {
             </div>
           </div>
         </div>
-
-        <PictosHome />
         <Footer />
       </div>
     );

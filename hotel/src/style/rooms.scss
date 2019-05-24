@@ -6,25 +6,22 @@
 .container-total-room {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-content: center;
   align-items: center;
-  margin-top:7%;
-
-  
+  margin-top: 7%;
 }
 
-.container-rooms-01{
+.container-rooms-01 {
   display: flex;
   flex-direction: column;
   width: 700px;
   justify-content: space-around;
-  margin:0;
+  margin: 0;
   margin-bottom: 10%;
-  
 }
 
-.container-image{
+.container-image {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -34,7 +31,7 @@
   object-fit: contain;
   width: 150px;
   height: 150px;
-  margin:0px;
+  margin: 0px;
 }
 
 .image-rooms2- {
@@ -48,7 +45,7 @@
   height: 150px;
 }
 
-.titlle-rooms{
+.titlle-rooms {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 800;
   font-size: 30px;
@@ -56,97 +53,19 @@
   margin-left: 4%;
 }
 
-.text-button{
+.text-button {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 500px;
-  margin:0;
-  margin-left:14%;
+  margin: 0;
+  margin-left: 14%;
   align-content: center;
   align-items: center;
 }
-.description-rooms{
+.description-rooms {
   font-family: "Merriweather Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
   width: 400px;
 }
-
-/*
-.image-rooms- {
-  width: 140px;
-  height: auto;
-  margin-top: -5%;
-  padding-right: 2%;
-}
-
-.image-rooms2- {
-  width: 400px;
-  height: auto;
-  margin-top: 2%;
-}
-
-.image-rooms3- {
-  width: 150px;
-  height: auto;
-  margin-top: -5%;
-  padding-left: 2%;
-}
-
-.titlle-rooms {
-  margin-top: 65%;
-  font-family: "Merriweather Sans" sans-serif;
-  font-weight: 800;
-}
-
-.titlle2-rooms {
-  font-family: "Merriweather Sans" sans-serif;
-  font-weight: 800;
-}
-
-.description-rooms {
-  font-family: "Merriweather Sans" sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  width: 410px;
-  margin-left: 13%;
-  line-height: 18px;
-  margin-top: 2%;
-  text-align: center;
-}
-
-.button-deital-rooms {
-  font-family: "Merriweather Sans" sans-serif;
-  font-weight: 300;
-  color: white;
-  background-color: black;
-  width: 90px;
-  height: 35px;
-  font-size: 14px;
-  border-color: transparent;
-}
-
-.button-deital-rooms:hover {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-}
-
-.viewmore-rooms-room01 {
-  margin-left: 30%;
-}
-
-.container-total-room {
-  display: flex;
-  flex-direction: column;
-  margin-top: -40%;
-}
-
-.room02-container {
-  margin-top: -20%;
-}
-
-.room03-container {
-  margin-top: -40%;
-}*/

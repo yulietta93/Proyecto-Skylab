@@ -21,8 +21,7 @@ export default class Ofertas extends Component {
         <div className="contenedor-offer">
           <div className="offer-left">
             <h3 className="tittle-offer-left">
-              Reward yourself with a hot shower after a long day and then slide
-              in-between the sheets of our incredible beds.
+              10% discount / minim. 4 nigth Discover nature at a good price
             </h3>
             <img
               className="image-offer-left"
@@ -44,8 +43,7 @@ export default class Ofertas extends Component {
 
           <div className="offer-left">
             <h3 className="tittle-offer-left">
-              Reward yourself with a hot shower after a long day and then slide
-              in-between the sheets of our incredible beds.
+            15% discount / minim. 7 days. Discover the fusion between nature and food.
             </h3>
             <img
               className="image-offer-left"
@@ -73,8 +71,7 @@ export default class Ofertas extends Component {
                 width="20%"
               />
               <h3 className="tittle-offer-right">
-                Reward yourself with a hot shower after a long day and then
-                slide in-between the sheets of our incredible beds.
+              15% discount / minim. 7 days. Discover the fusion between nature and food 100% eco.
               </h3>
               <p className="description-offer-right">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit placerat
@@ -96,8 +93,7 @@ export default class Ofertas extends Component {
                 width="20%"
               />
               <h3 className="tittle-offer-right">
-                Reward yourself with a hot shower after a long day and then
-                slide in-between the sheets of our incredible beds.
+              5% discount / minim. 2 nigth. Discover nature at a good price
               </h3>
               <p className="description-offer-right">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit placerat
