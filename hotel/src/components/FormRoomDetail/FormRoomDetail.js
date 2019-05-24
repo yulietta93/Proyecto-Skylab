@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import DataService from '../../services/dataService';
 import { connect } from "react-redux";
 import { setUserInfo } from "../../redux/actions/userActions";
-//import Calendar from "../Calendar/Calendar";
 import './FormRoomDetail.scss';
 import { withRouter } from "react-router-dom";
 
