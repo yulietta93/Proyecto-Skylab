@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../style/habitacion01.scss";
 
-import Header from "../components/Header/header";
+import HeaderRoom from "../components/Header/HeaderRoom";
 import Footer from "../components/Footer/Footer";
 import PictosHome from "../components/Pictos/PictosHome";
 
@@ -41,7 +41,7 @@ export default class Habitacion01 extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <HeaderRoom />
         <div className="container-room">
           <div className="container-map">
             {this.state.list.map(element => (
