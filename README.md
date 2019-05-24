@@ -1,44 +1,32 @@
 # Naturae Hotel
 
 ### Demo 
-[Naturae](https://hotel-skylab.firebaseapp.com/)
+
+[Naturae Link](https://hotel-skylab.firebaseapp.com/)
 
 ## Introduction
-Naturae es la pagina web de un hotel en plena naturaleza, pensado para desconectar y descansar.
+Naturae is the website of a hotel surrounded by nature and designed to disconnect and rest. It could be defined as an eco-resort since everything it offers is 100% natural and organic.
 
-Podría definirse como un ecoresort, dado que todo lo que ofrece es 100% natural y orgánico. 
-
-En la web podremos reservar una habitación, ver información detallada de su servicio de: spa, masajes, restaurante (donde la comida es totalmente orgánica, de cercanía) para que la experiencia en tu estancia sea de 360º.
+ On their website, we can easily book a room, see detailed information of their service: spa, massages, restaurant (where all the food is organic) so that the experience in your stay is 360.
 
 ## Why did I decide to do this project?
-Al tener que pensar un proyecto nuevo donde las funcionalidad era lo que mas trabajo llevaría, decidí diseñar la página web de un hotel, dado que actualmente me dedico a ser diseñadora digital  y una de mis funciones principales es diseñar paginas web de hoteles, y en cuanto estructura y funcionalidad sabía que era un tema que controlaba, y así podría invertir mas tiempo en la lógica. 
+When I had to think about a new project where the functionality was what would be the most work, I decided to design a hotel's website. I am currently working as a digital designer, and one of my primary functions is the design of hotel websites. 
 
-Esta vez a nivel de diseño he podido elegir todo, desde el principio hasta el final, algo que disfruto mucho. 
+The familiarity of the subject gave me more time to focus on the program's logistics. This time at the design level I was able to choose everything, from the beginning to the end, something in which I really enjoyed doing.
 
 ## Descripcion funcional
 
-La pagina web es una muestra por todos los servicios y facilidades que te puede ofrecer el hotel. 
+This website is a sample for all the services and facilities that the hotel can offer you. The primary function of this site is the feasibility of reserving a room. To be able to execute a reservation, you must be able to login to your account or register for one. Once you filter in the dates and the type of room you would like, then the information will be put into a Firebase database. Moreover, there will be pictures of the rooms, and when the "book now" button appears, then you can proceed to the next page. If it does not appear, then the room is already booked by another customer.   
 
-La función principal es la reserva de una habitación. Para poder reservada primero debes iniciar sesión o registrarte.
+In case it is available, it will take you to the page to confirm the reservation,  there we will find a detailed description of the room and blank spaces to fill in your information. 
+Once you have sent your information, it will take you to another page with the purchase summary, and this is where you can make the payment. 
 
-Una vez pongas las fechas y tipo de habitación en el motor de búsqueda buscara información en la base de datos Firebase y nos pintara la nuestra habitaciones disponibles / no disponibles, si la habitación no esta disponible el botón “Book now” estará deshabitalitado, sino nos dejará continuar con el proceso. 
-
-
-
-En caso de que este disponible, nos llevará a la página para poder hacer la reserva, allí encontraremos una   descripción detallada de la habitación y un formulario para poder hacer la reserva coon nuestros datos. 
-
-
-
-Una vez hayamos mandado nuestra información, nos llevará a una página con nuestro resumen de compra, y la pasarela de pago. 
-
-
-
-De esta forma habremos reservado nuestra primera habitación.
+In this way, we will have reserved our first room.
 
 ### Description funcional graphic:
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+![alt text]()
+![Image](../image/diagrama-01.jpg)
 
 ### Pages and Components
 #### Pages:
@@ -104,7 +92,7 @@ Format: ![Alt Text](url)
 
 #### Datebase: build
 
-Users: {
+* Users: {
 
 	email: string,
     lastname: string,
@@ -112,9 +100,9 @@ Users: {
     uid: string
 }
 
-Rooms: {
+* Rooms: {
 
-description: string,
+description: string;
 image: string,
 name: string,
 price: number,
@@ -126,7 +114,7 @@ reservation: array,
     
 }
 
-Reservation: {
+* Reservation: {
 
 name: string,
 lastname: string,
