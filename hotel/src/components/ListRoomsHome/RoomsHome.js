@@ -68,13 +68,13 @@ export default class RoomsHome extends Component {
         </div>
         <div className="container-button-viewmore">
           <Link to="/habitaciones/habitacion01">
-            <button className="button-viewmore-home room01">View More</button>
+            <button className="button-basic">View More</button>
           </Link>
           <Link to="/habitaciones/habitacion02">
-            <button className="button-viewmore-home room02">View More</button>
+            <button className="button-basic">View More</button>
           </Link>
           <Link to="/habitaciones/habitacion03">
-            <button className="button-viewmore-home room03">View More</button>
+            <button className="button-basic">View More</button>
           </Link>
         </div>
       </div>

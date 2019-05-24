@@ -9,37 +9,32 @@
   flex-direction: column;
   height: auto;
 }
-
-.video iframe {
+.text-header{
   display: none;
 }
 
-.line {
-  display: none;
-}
-
-.h1-tittle {
-  position: relative;
-}
-
-h1 {
-  color: white;
+.tittle-header {
   font-family: 'Merriweather Sans' sans-serif;
   font-weight:800;
-  font-size: 50px;
-  line-height: 40px;
-  margin-top: -270%;
+  font-size: 80px;
+  line-height: 80px;
+  position: absolute;
+  right: 50%;
+  width: 500px;
+  color:black;
 }
 
-.image-mobile img {
+.img-cabecera {
   display: flex;
   justify-content: flex-start;
   width: 375px;
   height: 617px;
   object-fit: cover;
-  margin-top: -3%;
+  margin-top: -90%;
 }
 
+
+//DESKTOP
 @media (min-width: 769px) {
   .container-cabecera {
     display: flex;
