@@ -64,7 +64,7 @@ class Reservation extends Component {
 
       <h3 className="tittle-reservation">Select your room</h3>
       <img className="image-description" src="https://www.massalagros.com/wp-content/uploads/2018/05/Gastronomia25.jpg" ></img>
-      <p className="text-description-reservation">NN is the first EcoResort 100% ecological of the peninsula.
+      <p className="text-description-reservation">Naturae is the first resort 100% ecological of the peninsula.
       We are located in a natural reserve, overlooking the protected 
       park of the Serralada Litoral. Our location, together with our 
       100% sustainable operation, make this a unique place in 

@@ -24,7 +24,7 @@ class HeaderServices extends Component {
 
           <img
             className="img-cabecera"
-            src="https://www.yurbbanpassage.com/assets/img/gallery/Gastronom%C3%ADa/en/vista_genera_restaurante_d_aprop_yurbban_passage.jpg"
+            src="https://www.yurbbanpassage.com/assets/img/gallery/Espacios/en/KITCHEN_LAB.jpg"
           />
         </div>
 

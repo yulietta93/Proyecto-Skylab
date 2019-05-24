@@ -31,28 +31,30 @@
   .container-textAbout {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-left:12%;
   }
+
   .about-tittle {
     font-family: "Merriweather Sans" sans-serif;
     font-weight: 800;
-    border: 1px solid blue;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
-    margin: 0;
-    transform: rotate(-90deg);
+    margin: 0px 0px 0px 0px;
+    padding-right: 50px;
   }
 
   .textAbout {
     font-family: "Merriweather Sans" sans-serif;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 30px;
-    margin-top: 0%;
-    padding-left: 8%;
+    font-size: 16px;
+    line-height: 28px;
+    width: 800px;
+
   }
 
   .p-about {

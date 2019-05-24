@@ -24,7 +24,7 @@ class HeaderOffer extends Component {
 
           <img
             className="img-cabecera"
-            src="https://images.unsplash.com/photo-1539786775244-0336276a6d8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
+            src="https://images.unsplash.com/photo-1440756427076-7480f7eab5bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1492&q=80"
           />
         </div>
 

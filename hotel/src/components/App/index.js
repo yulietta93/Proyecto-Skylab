@@ -6,7 +6,6 @@ import { setUserInfo } from "../../redux/actions/userActions";
 import './index.scss';
 
 //NAVBAR
-import Backdrop from "../../components/Backdrop/Backdrop";
 import NavBar from './NavBar'
 
 //SERVICES
@@ -55,30 +54,12 @@ class App extends Component {
     });
   }
 
-  //NAVBAR HAMBURG
-  DrawerToggleClickHandler = () => {
-    this.setState((prevState)=>{
-      return {sideDrawerOpen: !prevState.sideDrawerOpen};
-    });
-  };
-
-  //NAVBAR HAMBR
-  backdropClick = () => {
-    this.setState({sideDrawerOpen: false});
-  };
-
 
   render() {
     //USER
     const { userInfo } = this.props;
     const { loading } = this.state;
     if (loading) return <div>Loading</div>;
-
-    /*//NAVBAR
-    let backdrop;
-    if(this.state.sideDrawerOpen){
-      backdrop= <Backdrop click={this.backdropClickHandler}/>;
-    }*/
 
     return (
         <main>

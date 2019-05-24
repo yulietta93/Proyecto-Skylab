@@ -1,68 +1,140 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Naturae Hotel
 
-## Available Scripts
+### Demo 
 
-In the project directory, you can run:
+[Naturae Link](https://hotel-skylab.firebaseapp.com/)
 
-### `npm start`
+## Introduction
+Naturae es la pagina web de un hotel en plena naturaleza, pensado para desconectar y descansar.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Podría definirse como un ecoresort, dado que todo lo que ofrece es 100% natural y orgánico. 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+En la web podremos reservar una habitación, ver información detallada de su servicio de: spa, masajes, restaurante (donde la comida es totalmente orgánica, de cercanía) para que la experiencia en tu estancia sea de 360º.
 
-### `npm test`
+## Why did I decide to do this project?
+Al tener que pensar un proyecto nuevo donde las funcionalidad era lo que mas trabajo llevaría, decidí diseñar la página web de un hotel, dado que actualmente me dedico a ser diseñadora digital  y una de mis funciones principales es diseñar paginas web de hoteles, y en cuanto estructura y funcionalidad sabía que era un tema que controlaba, y así podría invertir mas tiempo en la lógica. 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Esta vez a nivel de diseño he podido elegir todo, desde el principio hasta el final, algo que disfruto mucho. 
 
-### `npm run build`
+## Descripcion funcional
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+La pagina web es una muestra por todos los servicios y facilidades que te puede ofrecer el hotel. 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+La función principal es la reserva de una habitación. Para poder reservada primero debes iniciar sesión o registrarte.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Una vez pongas las fechas y tipo de habitación en el motor de búsqueda buscara información en la base de datos Firebase y nos pintara la nuestra habitaciones disponibles / no disponibles, si la habitación no esta disponible el botón “Book now” estará deshabitalitado, sino nos dejará continuar con el proceso. 
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+En caso de que este disponible, nos llevará a la página para poder hacer la reserva, allí encontraremos una   descripción detallada de la habitación y un formulario para poder hacer la reserva coon nuestros datos. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+Una vez hayamos mandado nuestra información, nos llevará a una página con nuestro resumen de compra, y la pasarela de pago. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+De esta forma habremos reservado nuestra primera habitación.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Description funcional graphic:
 
-### Analyzing the Bundle Size
+![Image](../image/diagrama-01.jpg)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+### Pages and Components
+#### Pages:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+* Home
 
-### Advanced Configuration
+* Login
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+* Signup
 
-### Deployment
+* Reservation
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+* RoomDetail
 
-### `npm run build` fails to minify
+* ReservationDetail
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* Habitaciones
+
+* Habitacion01
+
+* Habitacion02
+
+* Habitacion03
+
+* Ofertas
+
+* Servicios
+
+#### Components:
+
+* Calendar
+
+* Footer
+
+* FormRoomDetail
+
+* Header
+
+* ListRoomsHome
+
+* Modal
+
+* Pactos
+
+* Slider
+
+* Stripe
+
+### Build
+
+* ReactJS
+* React-router
+* React-redux
+* Bootstrap
+* Sass
+* Rodal-modal
+* 
+### Database: Firebase
+
+* Authentication
+* DataBase
+* Hosting
+
+#### Datebase: build
+
+* Users: {
+
+	email: string,
+    lastname: string,
+    name: string,
+    uid: string
+}
+
+* Rooms: {
+
+description: string;
+image: string,
+name: string,
+price: number,
+totalRooms: number,
+typology: string,
+reservation: array,
+	endDate: map,
+	startDate: map,
+    
+}
+
+* Reservation: {
+
+name: string,
+lastname: string,
+phone: number,
+price: number,
+checkin: string,
+checkout; string,
+roomType: string,
+
+}
