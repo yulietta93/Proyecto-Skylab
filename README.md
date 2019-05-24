@@ -25,8 +25,7 @@ In this way, we will have reserved our first room.
 
 ### Description funcional graphic:
 
-![alt text]()
-![Image](../image/diagrama-01.jpg)
+![alt text](https://raw.githubusercontent.com/yulietta93/Proyecto-Skylab/master/hotel/driagrama-01.jpg)
 
 ### Pages and Components
 #### Pages:
