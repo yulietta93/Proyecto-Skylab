@@ -1,9 +1,7 @@
 # Naturae Hotel
 
 ### Demo 
-
-http://github.com - automatic!
-[GitHub](http://github.com)
+[Naturae](https://hotel-skylab.firebaseapp.com/)
 
 ## Introduction
 Naturae es la pagina web de un hotel en plena naturaleza, pensado para desconectar y descansar.
