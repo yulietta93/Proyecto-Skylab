@@ -1,10 +1,11 @@
 # Naturae Hotel
 
 ### Demo 
-ES: Es necesario estar registrado para reservar una habitación (Prueba beta)
+
+**ES: Es necesario estar registrado para reservar una habitación (Prueba beta)**
 EN: You need these registered to reserve a room
 
-[Demo Link](https://hotel-skylab.firebaseapp.com/)
+----> [Demo Link](https://hotel-skylab.firebaseapp.com/) <---- 
 
 ## Introduction
 Naturae is the website of a hotel surrounded by nature and designed to disconnect and rest. It could be defined as an eco-resort since everything it offers is 100% natural and organic.
