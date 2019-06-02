@@ -17,7 +17,7 @@ class FormRoomDetail extends Component {
           startDate: '',
           endDate: '',
           roomType:'',
-          uid:this.props.userInfo.uid,
+         // uid:this.props.userInfo.uid,
         }
       }
     

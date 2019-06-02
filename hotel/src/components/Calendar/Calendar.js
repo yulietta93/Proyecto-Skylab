@@ -22,7 +22,7 @@ class Calendar extends Component {
     e.preventDefault();
     const { startDate, endDate, roomType } = this.state;
 
-    // this.props.reservation
+    // storage calendar
     const calendar = { startDate, endDate, roomType };
     storage.setCalendar(calendar);
 
@@ -87,6 +87,7 @@ class Calendar extends Component {
               className="roomType"
               onChange={this.handleReservationData}
             >
+              <option value="selec">Select your room</option>
               <option value="junior">Junior Suite</option>
               <option value="standar">Junior Suite Standar</option>
               <option value="premium">Junior Suite Premium</option>

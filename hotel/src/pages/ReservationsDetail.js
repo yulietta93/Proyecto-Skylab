@@ -48,9 +48,8 @@ export default class ReservationsDetail extends Component {
                   </p>
                 </td>
                 <td>
-                  {" "}
+
                   <p className="reservations-endDate">
-                    {" "}
                     <span className="name-caracter">Check-out</span> <br />{" "}
                     {reservations.endDate}
                   </p>
@@ -73,7 +72,7 @@ export default class ReservationsDetail extends Component {
                 <td>
                   {" "}
                   <p className="reservations-phone">
-                    <span className="name-caracter"> Phon</span>e <br />{" "}
+                    <span className="name-caracter"> Phone</span> <br />{" "}
                     {reservations.phone}
                   </p>
                 </td>
@@ -92,13 +91,6 @@ export default class ReservationsDetail extends Component {
           )}
         </div>
 
-        <div>
-          <Link to="/roomdetail/:id">
-            <button className="button-basic button-reservationdetail">
-              Back
-            </button>
-          </Link>
-        </div>
 
         <div className="message-finally">
           <h3 className="tittle-message-finally">

@@ -5,7 +5,6 @@ export default class AuthService {
   //REGISTRARSE
   static async signup(email, password) {
     let error = null;
-
     try {
       await firebase.auth().createUserWithEmailAndPassword(email, password);
     } catch (err) {
@@ -31,7 +30,6 @@ export default class AuthService {
     const errMsg = ERROR_MESSAGES[code];
     return errMsg || 'Error inesperado';
   }
-    
   static registerAuthObserver(callback){
     return firebase.auth().onAuthStateChanged(callback);
   }
@@ -41,7 +39,6 @@ export default class AuthService {
     firebase.auth().signOut();
   }
 }
-
 const ERROR_MESSAGES = {
   'auth/weak-password'        : 'La contraseña debe tener al menos 6 caracteres',
   'auth/invalid-email'        : 'El email no es válido',
