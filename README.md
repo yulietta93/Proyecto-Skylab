@@ -2,9 +2,6 @@
 
 ### Demo 
 
-**ES: Es necesario estar registrado para reservar una habitación (Prueba beta)**
-EN: You need these registered to reserve a room
-
 ----> [Demo Link](https://hotel-skylab.firebaseapp.com/) <---- Version Desktop
 
 ## Introduction
